@@ -833,7 +833,7 @@ p.cart_vat span {
 }
 /* hero price   */
 .hero_price_area .before_price {
-	display: block !important;
+	/* display: block !important; */
 }
 .before_price {
 	font-weight: 600;
@@ -1079,6 +1079,7 @@ p.cart_vat span {
 	margin-right: 2px;
 	font-size: 15px !important;
 	width: 40px;
+	text-align: center;
 }
 .counter_plus_minus {
 }

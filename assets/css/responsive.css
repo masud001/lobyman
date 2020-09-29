@@ -1,4 +1,7 @@
 @media (min-width: 320px) {
+	.hero_left_bg {
+		width: 93px;
+	}
 	.navigation_menu ul li a {
 		font-size: 14px;
 		padding: 8px 8px;
@@ -128,6 +131,9 @@
 	}
 }
 @media (min-width: 576px) {
+	.hero_left_bg {
+		width: 128px;
+	}
 	.perrier_jouet_bg_right {
 		background-position: 163%;
 	}
@@ -217,6 +223,9 @@
 	}
 }
 @media (min-width: 768px) {
+	.hero_left_bg {
+		width: 170px;
+	}
 	.wine_maker_bg_right {
 		background-position: -350px;
 	}
