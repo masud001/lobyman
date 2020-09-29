@@ -312,7 +312,7 @@ span {
 }
 nav {
 	padding-top: 1rem !important;
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 }
 .logo_img img {
 	width: 60px;
@@ -1695,7 +1695,7 @@ p.cart_vat span {
 .term_conditions {
 	margin-bottom: 15px;
 }
-.email_submission p.terms{
+.email_submission p.terms {
 	font-size: 8px;
 }
 
@@ -1782,7 +1782,7 @@ p.cart_vat span {
 .shipping_partner_logo img,
 .payments_methods_logo img {
 	width: 25px;
-	margin-right: 10px!important;
+	margin-right: 10px !important;
 	height: 25px;
 	padding: 2px;
 	background-color: #e9d8d8;
