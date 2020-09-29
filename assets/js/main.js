@@ -1,85 +1,10 @@
 $(document).ready(function () {
-	// auto complete in search dropdown menu START
-	//code = 2k minified
-
-	function createAuto(i, elem) {
-		var input = $(elem);
-		var dropdown = input.closest(".dropdown");
-		var listContainer = dropdown.find(".list-autocomplete");
-		var listItems = listContainer.find(".dropdown-item");
-		var hasNoResults = dropdown.find(".hasNoResults");
-
-		listItems.hide();
-		listItems.each(function () {
-			$(this).data("value", $(this).text());
-			//!important, keep this copy of the text outside of keyup/input function
-		});
-
-		input.on("input", function (e) {
-			if ((e.keyCode ? e.keyCode : e.which) == 13) {
-				$(this)
-					.closest(".dropdown")
-					.removeClass("open")
-					.removeClass("in");
-				return; //if enter key, close dropdown and stop
-			}
-			if ((e.keyCode ? e.keyCode : e.which) == 9) {
-				return; //if tab key, stop
-			}
-
-			var query = input.val().toLowerCase();
-
-			if (query.length > 1) {
-				dropdown.addClass("open").addClass("in");
-
-				listItems.each(function () {
-					var text = $(this).data("value");
-					if (text.toLowerCase().indexOf(query) > -1) {
-						var textStart = text.toLowerCase().indexOf(query);
-						var textEnd = textStart + query.length;
-						var htmlR =
-							text.substring(0, textStart) +
-							"<em>" +
-							text.substring(textStart, textEnd) +
-							"</em>" +
-							text.substring(textEnd + length);
-						$(this).html(htmlR);
-						$(this).show();
-					} else {
-						$(this).hide();
-					}
-				});
-
-				var count = listItems.filter(":visible").length;
-				count > 0 ? hasNoResults.hide() : hasNoResults.show();
-			} else {
-				listItems.hide();
-				dropdown.removeClass("open").removeClass("in");
-				hasNoResults.show();
-			}
-		});
-
-		listItems.on("click", function (e) {
-			var txt = $(this)
-				.text()
-				.replace(/^\s+|\s+$/g, ""); //remove leading and trailing whitespace
-			input.val(txt);
-			dropdown.removeClass("open").removeClass("in");
-		});
-	}
-
-	$(".jAuto").each(createAuto);
-
-	$(document).on("focus", ".jAuto", function () {
-		$(this).select(); // in case input text already exists
-	});
-	// auto complete in search dropdown menu END
-
 	// hero slider for home page end
 	$(".hero_slider").owlCarousel({
 		loop: true,
 		autoplay: false,
 		dots: true,
+		autoHeight: true,
 		nav: true,
 		navText: [
 			"<i class='fas fa-arrow-left'></i>",
@@ -119,7 +44,10 @@ $(document).ready(function () {
 			600: {
 				items: 1,
 			},
-			1000: {
+			992: {
+				items: 2,
+			},
+			1200: {
 				items: 3,
 			},
 		},
@@ -144,7 +72,10 @@ $(document).ready(function () {
 			600: {
 				items: 1,
 			},
-			1000: {
+			992: {
+				items: 2,
+			},
+			1200: {
 				items: 3,
 			},
 		},
@@ -169,13 +100,16 @@ $(document).ready(function () {
 			600: {
 				items: 1,
 			},
-			1000: {
+			992: {
+				items: 2,
+			},
+			1200: {
 				items: 3,
 			},
 		},
 	});
 	// wine_of_weeks for home page start
-	// wine_advocate_slider home page end
+	// wine_advocate_slider home page start
 	$(".wine_advocate_slider").owlCarousel({
 		loop: true,
 		autoplay: false,
@@ -194,13 +128,28 @@ $(document).ready(function () {
 			600: {
 				items: 1,
 			},
-			1000: {
+			992: {
+				items: 2,
+			},
+			1200: {
 				items: 3,
 			},
 		},
 	});
-	// wine_advocate_slider for home page start
-
+	// wine_advocate_slider for home page end
+	// customar details page testimonials slider start
+	$(".testimonial_slider_wrapper").owlCarousel({
+		center: true,
+		items: 3,
+		loop: true,
+		margin: 10,
+		responsive: {
+			600: {
+				items: 4,
+			},
+		},
+	});
+	// customar details page testimonials slider end
 	// video play button youtube video play
 
 	//
@@ -240,5 +189,21 @@ $(document).ready(function () {
 			srcAction: "iframe_src", // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
 		},
 		// other options
+	});
+
+	// accordion toggle class for faq plus and minus
+	$("button").click(function () {
+		// $(this).toggleClass("color");
+		// if ($("button").hasClass("collapsed")) {
+		// 	$("i.fas").addClass("fa-minus");
+		// 	$("i.fas").removeClass("fa-plus");
+		// } else {
+		// 	$("i.fas").addClass("fa-plus");
+		// 	$("i.fas").removeClass("fa-minus");
+		// }
+	});
+	$(".result_view_button span").click(function () {
+		$(".result_view_button span").removeClass("active");
+		$(this).addClass("active");
 	});
 });
