@@ -1076,6 +1076,7 @@ p.cart_vat span {
 	margin-right: 2px;
 	font-size: 15px !important;
 	width: 40px;
+	text-align: center;
 }
 .counter_plus_minus {
 }
@@ -1692,7 +1693,7 @@ p.cart_vat span {
 .term_conditions {
 	margin-bottom: 15px;
 }
-.email_submission p.terms{
+.email_submission p.terms {
 	font-size: 8px;
 }
 
@@ -1779,7 +1780,7 @@ p.cart_vat span {
 .shipping_partner_logo img,
 .payments_methods_logo img {
 	width: 25px;
-	margin-right: 10px!important;
+	margin-right: 10px !important;
 	height: 25px;
 	padding: 2px;
 	background-color: #e9d8d8;
