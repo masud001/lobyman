@@ -312,7 +312,7 @@ span {
 }
 nav {
 	padding-top: 1rem !important;
-	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 .logo_img img {
 	width: 60px;
@@ -832,9 +832,6 @@ p.cart_vat span {
 	color: #ffaf00;
 }
 /* hero price   */
-.hero_price_area .before_price {
-	display: block !important;
-}
 .before_price {
 	font-weight: 600;
 	text-transform: capitalize;
@@ -867,7 +864,7 @@ p.cart_vat span {
 	margin-right: 25px;
 }
 .buy_now_btn a {
-	padding: 10px 25px;
+	padding: 10px 24px;
 	background-color: #791216;
 	border-radius: 30px;
 	text-transform: uppercase;

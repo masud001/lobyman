@@ -2,8 +2,6 @@
 a:hover {
 	text-decoration: none;
 }
-.page_container {
-}
 .section_breadcrumb {
 	background-size: cover;
 	background-position: center;
@@ -91,7 +89,7 @@ a:hover {
 	padding: 11px 16px;
 	margin-right: 17px;
 	text-transform: uppercase;
-	font-size: 17px;
+	font-size: 11px;
 	font-family: Nunito_Sans_Semi_B;
 }
 .delivery.section_contents button:first-child {
@@ -101,6 +99,7 @@ a:hover {
 .delivery.section_contents button:last-child {
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
+	margin-right: unset;
 }
 .delivery.section_contents button:focus {
 	outline: none;
@@ -122,9 +121,10 @@ a:hover {
 .about_section_title h1 {
 	text-transform: capitalize;
 	color: #292929;
-	line-height: 45px;
+	line-height: 20px;
 	border-bottom: 2px solid #b8b8b8;
 	font-family: Nunito_Sans_Reg!important;
+	padding-bottom: 0.8rem;
 }
 .section_contents {
 }
@@ -419,7 +419,7 @@ a:hover {
 	font-size: 14px;
 	color: #303030;
 	font-weight: 400;
-	line-height: 27px;
+	line-height: 20px;
 	margin-bottom: 15px;
 }
 .my_account_tab_content a {
@@ -480,6 +480,9 @@ a:hover {
 	text-transform: capitalize;
 	color: #909192;
 	font-family: Nunito_Sans_B;
+}
+.address_heading .input-group{
+	width: 50%;
 }
 .address_head_right_img {
 	width: 50px;
@@ -636,7 +639,7 @@ label.payment,
 	border: 1px solid #791216;
 }
 .address_eidt_update a button {
-	padding: 13px 65px;
+	padding: 10px 25px;
 	border: 1px solid #791216;
 	color: #791216;
 	text-transform: capitalize;
@@ -1045,6 +1048,7 @@ span.delivered {
 .delivery_process {
 }
 .delivery_process img {
+	width: 56px;
 }
 .delivery_process h1 {
 	text-transform: capitalize;
@@ -1207,6 +1211,7 @@ span.delivered {
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
+	font-size: 11px;
 }
 .faq_pagination ul li a.active {
 	background-color: #791216;
@@ -1531,14 +1536,6 @@ span.delivered {
 }
 
 @media (min-width: 320px) {
-	.delivery.section_contents button,.faq_pagination ul li a {
-		font-size: 11px;
-	}
-
-	.delivery_section_title h1,
-	.about_section_title h1{
-		font-size: 20px;
-	}
 
 	.address_heading h1 ,.my_account_tab_content h1 ,.section_breadcrumb_title h1,.delivery.section_contents .contents h1,.help_bord_area.faq_head h1,.help_bord_area h1{
 		font-size: 16px;
@@ -1591,7 +1588,7 @@ span.delivered {
 		font-size: 35px;
 	}
 	.address_heading h1,.delivery_process h1,.delivery.section_contents .contents h1,.faq_pagination ul li a {
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.address_delete_update a p,.address_heading h3,.authentication_check span,.authentication_successfull h2{
 		font-size: 14px;
@@ -1619,7 +1616,7 @@ span.delivered {
 		font-size: 22px;
 	}
 	.my_account_tab_content h1,.help_bord_menu ul li a ,.help_bord_menu ul li a span {
-		font-size: 23px;
+		font-size: 16px;
 	}
 	.delivery.section_contents .contents h2{
 		font-size: 27px;
@@ -1627,4 +1624,16 @@ span.delivered {
 	.help_bord_area.faq_head h1,.help_bord_area h1{
 		font-size: 26px;
 	}
-}	
+	.address_heading .input-group{
+		width: 25%;
+	}
+}
+
+@media (min-width: 992px){
+	.my_account_tab_content{
+		height: 240px;
+	}
+	.my_account_tab_content h1, .help_bord_menu ul li a, .help_bord_menu ul li a span{
+		font-size: 23px;
+	}
+}
