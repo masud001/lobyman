@@ -206,4 +206,14 @@ $(document).ready(function () {
 		$(".result_view_button span").removeClass("active");
 		$(this).addClass("active");
 	});
+
+	// var filter_trigger_state = 0;
+	// $("#filter_trigger").click(function(){
+	// 	$("#search_filter").toggleClass("active");
+	// 	filter_trigger_state = 1;
+	// })
+
+	// $("body").click(function(){
+	// 	$("#search_filter").removeClass("active")
+	// })
 });

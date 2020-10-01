@@ -80,9 +80,10 @@ a:hover {
 	letter-spacing: 2px;
 	font-family: PT_Serif;
 }
-.about_section_title {
-}
-.delivery.section_contents {
+.about-content img{
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 .delivery.section_contents button {
 	border: none;
@@ -155,7 +156,7 @@ a:hover {
 .section_contents p {
 	color: #292929;
 	font-weight: 400;
-	line-height: 30px;
+	line-height: 22px;
 }
 .section_contents p span {
 	color: #791216 !important;
@@ -625,6 +626,10 @@ label.payment,
 .address_eidt_update a {
 	display: flex;
 	justify-content: inherit;
+	margin-right: 1rem;
+}
+.address_eidt_update a:last-child{
+	margin-right: unset;
 }
 .address_eidt_update a:hover {
 	text-decoration: none;
@@ -1195,7 +1200,7 @@ span.delivered {
 	float: right;
 	border-radius: 57px;
 	border: 1px solid #e6e6e6;
-	padding: 10px 15px;
+	padding: 5px;
 }
 .faq_pagination ul {
 }
@@ -1207,9 +1212,9 @@ span.delivered {
 	color: #303030;
 	font-family: Nunito_Sans_B;
 	text-decoration: none;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
 	text-align: center;
 	font-size: 11px;
 }
@@ -1354,6 +1359,28 @@ span.delivered {
 }
 
 /* filter page design  */
+.body_wrapper.active{
+	opacity: 0.5;
+}
+
+.search_filter{
+	position: absolute;
+	z-index: 999;
+	right: 0;
+	top: 0;
+	width: 0;
+	opacity: 0;
+	overflow: hidden;
+	padding: 0;
+	transition: opacity ease 0.5s;
+}
+.search_filter.active{
+	width: 100%;
+	opacity: 1;
+}
+.mobile_filter_control p{
+	color: #791216;
+}
 .filter_breadcrumb_wrapper {
 	padding: 15px 0px;
 	/* color: #8d8d8d; */
@@ -1362,11 +1389,12 @@ span.delivered {
 .filter_breadcrumb_wrapper a {
 	text-transform: uppercase;
 	color: #8d8d8d;
+	font-size: 14px;
 }
 
 .filter_breadcrumb_wrapper a span {
 	color: #c7263c;
-	margin: 0px 15px;
+	margin: 0px 10px;
 }
 .filter-reset {
 	padding: 15px;
@@ -1407,6 +1435,7 @@ span.delivered {
 .about_section_title.search_result_view h1 {
 	display: inline-block;
 	border-bottom: 1px solid #bc898b;
+	font-size: 20px;
 }
 .about_section_title.search_result_view p {
 	text-transform: uppercase;
@@ -1566,7 +1595,7 @@ span.delivered {
 	.total h1,
 	.total h2,.invoiced_product_name h2,
 	.subtotal h1,
-	.shippingfee h1,.section_breadcrumb_title h2,.my_account_tab_content h1,.delivery_process h1,.shipping_and_feature_wrapper nav a,.testing_nots_text h1,.delivery.section_contents .contents h1,.help_bord_area.faq_head h1,.help_bord_area h1{
+	.shippingfee h1,.section_breadcrumb_title h2,.my_account_tab_content h1,.delivery_process h1,.shipping_and_feature_wrapper nav a,.testing_nots_text h1,.delivery.section_contents .contents h1,.help_bord_area.faq_head h1,.help_bord_area h1,.filter_breadcrumb_wrapper a{
 		font-size: 18px;
 	}
 	.section_breadcrumb_title h1 {
@@ -1627,6 +1656,20 @@ span.delivered {
 	.address_heading .input-group{
 		width: 25%;
 	}
+	.section_contents p{
+		line-height: 33px;
+	}
+	.faq_pagination ul li a{
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.faq_pagination{
+		padding: 10px;
+	}
+	.filter_breadcrumb_wrapper a{
+		font-size: 24px;
+	}
 }
 
 @media (min-width: 992px){
@@ -1635,5 +1678,11 @@ span.delivered {
 	}
 	.my_account_tab_content h1, .help_bord_menu ul li a, .help_bord_menu ul li a span{
 		font-size: 23px;
+	}
+	.search_filter{
+		position: unset;
+		width: 100%;
+		opacity: 1;
+		padding: 0 15px;
 	}
 }
