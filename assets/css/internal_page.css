@@ -1378,6 +1378,19 @@ span.delivered {
 	width: 100%;
 	opacity: 1;
 }
+.search_filter_bg{
+	position: fixed;
+	width: 0;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(10, 10, 10, 0.3);
+	z-index: 1;
+}
+.search_filter_bg.active{
+	width: 100%;
+}
+
 .mobile_filter_control p{
 	color: #791216;
 }

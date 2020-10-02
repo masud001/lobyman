@@ -207,13 +207,14 @@ $(document).ready(function () {
 		$(this).addClass("active");
 	});
 
-	// var filter_trigger_state = 0;
-	// $("#filter_trigger").click(function(){
-	// 	$("#search_filter").toggleClass("active");
-	// 	filter_trigger_state = 1;
-	// })
 
-	// $("body").click(function(){
-	// 	$("#search_filter").removeClass("active")
-	// })
+	$("#filter_trigger").click(function(){
+		$("#search_filter").addClass("active");
+		$("#search_filter_bg").addClass("active");
+	})
+
+	$("#search_filter_bg").click(function(){
+		$(this).removeClass("active");
+		$("#search_filter").removeClass("active");
+	})
 });
