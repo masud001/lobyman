@@ -80,7 +80,7 @@ a:hover {
 	letter-spacing: 2px;
 	font-family: PT_Serif;
 }
-.about-content img{
+.about-content img {
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
@@ -124,7 +124,7 @@ a:hover {
 	color: #292929;
 	line-height: 20px;
 	border-bottom: 2px solid #b8b8b8;
-	font-family: Nunito_Sans_Reg!important;
+	font-family: Nunito_Sans_Reg !important;
 	padding-bottom: 0.8rem;
 }
 .section_contents {
@@ -482,7 +482,7 @@ a:hover {
 	color: #909192;
 	font-family: Nunito_Sans_B;
 }
-.address_heading .input-group{
+.address_heading .input-group {
 	width: 50%;
 }
 .address_head_right_img {
@@ -628,7 +628,7 @@ label.payment,
 	justify-content: inherit;
 	margin-right: 1rem;
 }
-.address_eidt_update a:last-child{
+.address_eidt_update a:last-child {
 	margin-right: unset;
 }
 .address_eidt_update a:hover {
@@ -854,14 +854,16 @@ span.delivered {
 	margin-right: 80px;
 }
 
-.single_order_step h1,.address_heading h1,.address_heading h3{
+.single_order_step h1,
+.address_heading h1,
+.address_heading h3 {
 	text-transform: capitalize;
 	font-family: Nunito_Sans_B;
 	color: #303030;
 	margin-bottom: 10px;
 }
-.address_heading h3{
-	color: #707070!important;
+.address_heading h3 {
+	color: #707070 !important;
 }
 .single_order_step p {
 	text-transform: capitalize;
@@ -893,7 +895,7 @@ span.delivered {
 	color: #303030;
 	text-transform: capitalize;
 	margin: 5px 0px;
-	font-family: Nunito_Sans_Semi_B!important;
+	font-family: Nunito_Sans_Semi_B !important;
 }
 
 /* my cart page   */
@@ -1332,20 +1334,22 @@ span.delivered {
 	text-transform: capitalize;
 	margin: 15px 0px;
 }
-.authentication_check span{
+.authentication_check span {
 	font-family: Nunito_Sans_Semi_B;
 }
 .authentication_successfull {
 	color: #474a57;
 	margin: 15px 0px;
 }
-.authentication_successfull h1,.authentication_successfull h2 {
+.authentication_successfull h1,
+.authentication_successfull h2 {
 	color: #474a57;
 	text-transform: capitalize;
 	margin: 5px 0px;
 	font-family: Nunito_Sans_Semi_B;
 }
-.authentication_successfull h1 span, .authentication_successfull h2 span{
+.authentication_successfull h1 span,
+.authentication_successfull h2 span {
 	color: #791216;
 	font-family: Nunito_Sans_B;
 }
@@ -1359,11 +1363,11 @@ span.delivered {
 }
 
 /* filter page design  */
-.body_wrapper.active{
+.body_wrapper.active {
 	opacity: 0.5;
 }
 
-.search_filter{
+.search_filter {
 	position: absolute;
 	z-index: 999;
 	right: 0;
@@ -1374,11 +1378,11 @@ span.delivered {
 	padding: 0;
 	transition: opacity ease 0.5s;
 }
-.search_filter.active{
+.search_filter.active {
 	width: 100%;
 	opacity: 1;
 }
-.search_filter_bg{
+.search_filter_bg {
 	position: fixed;
 	width: 0;
 	height: 100vh;
@@ -1387,11 +1391,11 @@ span.delivered {
 	background: rgba(10, 10, 10, 0.3);
 	z-index: 1;
 }
-.search_filter_bg.active{
+.search_filter_bg.active {
 	width: 100%;
 }
 
-.mobile_filter_control p{
+.mobile_filter_control p {
 	color: #791216;
 }
 .filter_breadcrumb_wrapper {
@@ -1570,54 +1574,296 @@ span.delivered {
 	background: #791216;
 }
 
-.cart_subtotal span:first-child,.cart_shipping span:first-child, .cart_discount span:first-child,.cart_total span{
+.cart_subtotal span:first-child,
+.cart_shipping span:first-child,
+.cart_discount span:first-child,
+.cart_total span {
 	font-family: Nunito_Sans_B;
 }
-.cart_subtotal span:last-child,.cart_shipping span:last-child, .cart_discount span:last-child{
+.cart_subtotal span:last-child,
+.cart_shipping span:last-child,
+.cart_discount span:last-child {
 	font-family: Nunito_Sans_Semi_B;
 }
 
-@media (min-width: 320px) {
+/* age limit page design
+=================================
+*/
 
-	.address_heading h1 ,.my_account_tab_content h1 ,.section_breadcrumb_title h1,.delivery.section_contents .contents h1,.help_bord_area.faq_head h1,.help_bord_area h1{
+.section_contents_area {
+}
+.section_contents_area h1 {
+	text-transform: capitalize;
+	font-weight: 700;
+	color: #091d0c;
+	font-size: 45px;
+	margin-top: 100px;
+}
+.section_contents_area h2 {
+	color: #791216;
+	font-size: 41px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 50px;
+}
+.section_contents_area img {
+	margin-top: 100px;
+}
+#show__id_area .section_bg_img {
+	background-image: url("https://picsum.photos/500/500");
+	background-color: #6e0615;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100;
+}
+
+.age_limit__worning_area {
+}
+.age_limit__worning_area h1 {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 45px;
+	text-transform: capitalize;
+	font-family: inherit;
+}
+.age_limit__worning_area h2 {
+	color: #fccc0e;
+	font-size: 50px;
+	text-transform: capitalize;
+	font-family: inherit;
+	font-weight: 700;
+}
+.age_verify_buttons {
+	margin-top: 100px;
+}
+
+.age_verify_buttons a,
+.page_not_found_buttons a {
+	padding: 10px 30px;
+	border: 1px solid;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 12px;
+}
+.age_limit_btn {
+}
+.age_limit_btn.yes {
+	background-color: #6e0615;
+	color: #ffffff;
+	border-color: #ffffff;
+	transition: all 0.3s ease-in;
+}
+.age_limit_btn.yes:hover {
+	background-color: #ffffff;
+	color: #6e0615;
+	border-color: #6e0615;
+}
+.age_limit_btn.no:hover {
+	background-color: #6e0615;
+	color: #ffffff;
+	border-color: #ffffff;
+}
+.age_limit_btn.no {
+	background-color: #ffffff;
+	color: #6e0615;
+	border-color: #6e0615;
+	transition: all 0.3s ease-in;
+}
+.yes__class {
+	text-transform: capitalize;
+	font-size: 18px;
+}
+.no__class {
+	text-transform: capitalize;
+	font-size: 18px;
+}
+.privecy__policy_text {
+	margin-top: 50px;
+}
+.privecy__policy_text p {
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 18px;
+	font-family: inherit;
+	line-height: 27px;
+}
+.privecy__policy_text p a {
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+.age__limit_page_social_icons {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding-bottom: 25px;
+	padding-right: 25px;
+}
+.age__limit_page_social_icons span a i {
+	color: #ffffff;
+	padding: 10px;
+	font-size: 25px;
+}
+
+/* 404 page 
+========================
+*/
+.contact__section .promo_contents h3 {
+	color: #091d0c;
+}
+.contact__section .promo_contents p {
+	color: #091d0c;
+}
+#page_not_found_area .promo_contents {
+}
+.contact_us_btn_404 {
+	color: #091d0c;
+	border: 1px solid #091d0c;
+	padding: 15px 50px;
+	border-radius: 30px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.error__section {
+	background-color: #f8fbfd;
+	border-top: 2px solid #838d85;
+	border-bottom: 2px solid #838d85;
+	padding: 15px 0px;
+}
+.page_not_found__content_wrapper {
+	padding: 30px 0px;
+	background-color: #fff;
+}
+.page_not_found__section_contents_area h1 {
+	color: #6e0615;
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+.page_not_found__section_contents_area h2 {
+	color: #091d0c;
+	font-size: 18px;
+	font-weight: 700;
+}
+.page_not_found__contents p {
+	line-height: 27px;
+	color: #091d0c;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.contact__section {
+	background-color: #f8fbfd;
+	padding: 30px 0px;
+	margin-bottom: 50px;
+}
+
+@media (min-width: 320px) {
+	.address_heading h1,
+	.my_account_tab_content h1,
+	.section_breadcrumb_title h1,
+	.delivery.section_contents .contents h1,
+	.help_bord_area.faq_head h1,
+	.help_bord_area h1 {
 		font-size: 16px;
 	}
-	.address_delete_update a p,.order_history_contents table thead th,.table td,.section_breadcrumb_title h2,.testing_nots_text h4,.rigion .section_breadcrumb_title p,.checkout_oprions .card button,.faq .card button ,.card-body p,.authentication_check span,.authentication_successfull h2,.filter-reset span{
+	.address_delete_update a p,
+	.order_history_contents table thead th,
+	.table td,
+	.section_breadcrumb_title h2,
+	.testing_nots_text h4,
+	.rigion .section_breadcrumb_title p,
+	.checkout_oprions .card button,
+	.faq .card button,
+	.card-body p,
+	.authentication_check span,
+	.authentication_successfull h2,
+	.filter-reset span {
 		font-size: 12px;
 	}
-	.single_order_step h1,.single_order_step p,.address_heading h1,.address_heading h2,.address_eidt_update a button,.invoiced_product_name h1,
+	.single_order_step h1,
+	.single_order_step p,
+	.address_heading h1,
+	.address_heading h2,
+	.address_eidt_update a button,
+	.invoiced_product_name h1,
 	.quality h1,
 	.unit_price h1,
 	.total_price h1,
 	.total h1,
-	.total h2,.invoiced_product_name h2,
+	.total h2,
+	.invoiced_product_name h2,
 	.subtotal h1,
-	.shippingfee h1 ,.shipping_tab_content ul li,.delivery_process h1,.shipping_and_feature_wrapper nav a,.shipping_details_heading span,.shipping_details_items span,.testing_nots_text h1,.authentication_successfull h1,.delivery.section_contents .contents h2,.help_bord_menu ul li a,.help_bord_menu ul li a span {
+	.shippingfee h1,
+	.shipping_tab_content ul li,
+	.delivery_process h1,
+	.shipping_and_feature_wrapper nav a,
+	.shipping_details_heading span,
+	.shipping_details_items span,
+	.testing_nots_text h1,
+	.authentication_successfull h1,
+	.delivery.section_contents .contents h2,
+	.help_bord_menu ul li a,
+	.help_bord_menu ul li a span {
 		font-size: 14px;
 	}
-	.cart_product_name,.cart_product_discount,.cart_product_quantity,.section_contents p {	
+	.cart_product_name,
+	.cart_product_discount,
+	.cart_product_quantity,
+	.section_contents p {
 		font-size: 11px;
 	}
 }
 
-@media (min-width : 578px){
-	.single_order_step h1,.single_order_step p,.address_heading h1,.invoiced_product_name h1,
+@media (min-width: 578px) {
+	.single_order_step h1,
+	.single_order_step p,
+	.address_heading h1,
+	.invoiced_product_name h1,
 	.quality h1,
 	.unit_price h1,
 	.total_price h1,
 	.total h1,
-	.total h2,.invoiced_product_name h2,
+	.total h2,
+	.invoiced_product_name h2,
 	.subtotal h1,
-	.shippingfee h1,.section_breadcrumb_title h2,.my_account_tab_content h1,.delivery_process h1,.shipping_and_feature_wrapper nav a,.testing_nots_text h1,.delivery.section_contents .contents h1,.help_bord_area.faq_head h1,.help_bord_area h1,.filter_breadcrumb_wrapper a{
+	.shippingfee h1,
+	.section_breadcrumb_title h2,
+	.my_account_tab_content h1,
+	.delivery_process h1,
+	.shipping_and_feature_wrapper nav a,
+	.testing_nots_text h1,
+	.delivery.section_contents .contents h1,
+	.help_bord_area.faq_head h1,
+	.help_bord_area h1,
+	.filter_breadcrumb_wrapper a {
 		font-size: 18px;
 	}
 	.section_breadcrumb_title h1 {
 		font-size: 30px;
 	}
-	.cart_product_name,.cart_product_discount,.cart_product_quantity ,.shipping_tab_content ul li,.shipping_details_heading span,.testing_nots_text h4,.shipping_details_items span,.rigion .section_breadcrumb_title p,.checkout_oprions .card button,.faq .card button,.card-body p,.section_contents p,.delivery.section_contents .contents h2,.help_bord_menu ul li a,.faq_pagination ul li a {
-		font-size:16px;
+	.cart_product_name,
+	.cart_product_discount,
+	.cart_product_quantity,
+	.shipping_tab_content ul li,
+	.shipping_details_heading span,
+	.testing_nots_text h4,
+	.shipping_details_items span,
+	.rigion .section_breadcrumb_title p,
+	.checkout_oprions .card button,
+	.faq .card button,
+	.card-body p,
+	.section_contents p,
+	.delivery.section_contents .contents h2,
+	.help_bord_menu ul li a,
+	.faq_pagination ul li a {
+		font-size: 16px;
 	}
-	
 }
 
 @media (min-width: 768px) {
@@ -1626,73 +1872,105 @@ span.delivered {
 	}
 
 	.delivery_section_title h1,
-	.about_section_title h1,.testing_nots_text h1{
+	.about_section_title h1,
+	.testing_nots_text h1 {
 		font-size: 35px;
 	}
-	.address_heading h1,.delivery_process h1,.delivery.section_contents .contents h1,.faq_pagination ul li a {
+	.address_heading h1,
+	.delivery_process h1,
+	.delivery.section_contents .contents h1,
+	.faq_pagination ul li a {
 		font-size: 25px;
 	}
-	.address_delete_update a p,.address_heading h3,.authentication_check span,.authentication_successfull h2{
+	.address_delete_update a p,
+	.address_heading h3,
+	.authentication_check span,
+	.authentication_successfull h2 {
 		font-size: 14px;
 	}
-	.address_eidt_update a button,.authentication_successfull h1,.filter-reset span {
-		font-size: 16px!important;
+	.address_eidt_update a button,
+	.authentication_successfull h1,
+	.filter-reset span {
+		font-size: 16px !important;
 	}
-	.order_history_contents table thead th,.table td{
+	.order_history_contents table thead th,
+	.table td {
 		font-size: 18px;
 	}
-	.single_order_step h1,.single_order_step p,.address_heading h1,.invoiced_product_name h1,
+	.single_order_step h1,
+	.single_order_step p,
+	.address_heading h1,
+	.invoiced_product_name h1,
 	.quality h1,
 	.unit_price h1,
 	.total_price h1,
 	.total h1,
-	.total h2 ,.invoiced_product_name h2,
+	.total h2,
+	.invoiced_product_name h2,
 	.subtotal h1,
-	.shippingfee h1,.cart_product_name,.cart_product_quantity,.address_heading h2,.shipping_tab_content ul li,.shipping_details_heading span,.shipping_details_items span {
+	.shippingfee h1,
+	.cart_product_name,
+	.cart_product_quantity,
+	.address_heading h2,
+	.shipping_tab_content ul li,
+	.shipping_details_heading span,
+	.shipping_details_items span {
 		font-size: 20px;
 	}
 	.section_breadcrumb_title h1 {
 		font-size: 60px;
 	}
-	.section_breadcrumb_title h2,.shipping_and_feature_wrapper nav a,.testing_nots_text h4,.rigion .section_breadcrumb_title p,.checkout_oprions .card button,.faq .card button,.card-body p ,.section_contents p{
+	.section_breadcrumb_title h2,
+	.shipping_and_feature_wrapper nav a,
+	.testing_nots_text h4,
+	.rigion .section_breadcrumb_title p,
+	.checkout_oprions .card button,
+	.faq .card button,
+	.card-body p,
+	.section_contents p {
 		font-size: 22px;
 	}
-	.my_account_tab_content h1,.help_bord_menu ul li a ,.help_bord_menu ul li a span {
+	.my_account_tab_content h1,
+	.help_bord_menu ul li a,
+	.help_bord_menu ul li a span {
 		font-size: 16px;
 	}
-	.delivery.section_contents .contents h2{
+	.delivery.section_contents .contents h2 {
 		font-size: 27px;
 	}
-	.help_bord_area.faq_head h1,.help_bord_area h1{
+	.help_bord_area.faq_head h1,
+	.help_bord_area h1 {
 		font-size: 26px;
 	}
-	.address_heading .input-group{
+	.address_heading .input-group {
 		width: 25%;
 	}
-	.section_contents p{
+	.section_contents p {
 		line-height: 33px;
 	}
-	.faq_pagination ul li a{
+	.faq_pagination ul li a {
 		width: 40px;
 		height: 40px;
 		line-height: 40px;
 	}
-	.faq_pagination{
+	.faq_pagination {
 		padding: 10px;
 	}
-	.filter_breadcrumb_wrapper a{
+	.filter_breadcrumb_wrapper a {
 		font-size: 24px;
 	}
 }
 
-@media (min-width: 992px){
-	.my_account_tab_content{
+@media (min-width: 992px) {
+	.my_account_tab_content {
 		height: 240px;
 	}
-	.my_account_tab_content h1, .help_bord_menu ul li a, .help_bord_menu ul li a span{
+	.my_account_tab_content h1,
+	.help_bord_menu ul li a,
+	.help_bord_menu ul li a span {
 		font-size: 23px;
 	}
-	.search_filter{
+	.search_filter {
 		position: unset;
 		width: 100%;
 		opacity: 1;
