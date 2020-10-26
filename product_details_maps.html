@@ -2784,42 +2784,45 @@
 																		src="./assets/img/backgounds/note-icon.png"
 																		alt=""
 																	/>
-																	<div
-																		class="product_counter_btn product__map_page_counter d-flex align-items-center"
+																	<form
+																		action="#"
+																		method="GET"
+																		class="product_counter_btn d-flex align-items-center"
 																	>
 																		<input
 																			type="text"
 																			class="product_counter_number"
-																			placeholder="1"
+																			value="1"
+																			autocomplete="off"
 																		/>
 
 																		<div
 																			class="counter_plus_minus d-flex flex-column align-items-center"
 																		>
-																			<button
+																			<span
 																				class="counter_plus_btn"
+																				onclick="incrmnt(this)"
 																			>
 																				+
-																			</button>
-																			<button
+																			</span>
+																			<span
 																				class="counter_minus_btn"
+																				onclick="dcrmnt(this)"
 																			>
 																				-
-																			</button>
+																			</span>
 																		</div>
 																		<div
-																			class="product_buy_now_btn product__map_btn"
+																			class="product_buy_now_btn"
 																		>
 																			<a
-																				class="text-capitalize"
 																				href="#"
 																			>
-																				add
-																				to
-																				cart</a
+																				buy
+																				now</a
 																			>
 																		</div>
-																	</div>
+																	</form>
 																</div>
 															</div>
 															<!-- product price and counter end -->
@@ -3259,188 +3262,182 @@
 						<div class="row py-3">
 							<div class="col-12 col-md-6 col-lg-4 py-4">
 								<!-- single arival items start -->
-								<div class="arival_single_item">
-									<div class="product_wrapper">
-										<div class="product_contents">
-											<h1>
-												Vega sicilia unico gran reserva
-												1970 ribera del duero
-											</h1>
-											<p>
-												Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-												Aperiam, neque cupiditate.
-											</p>
-											<!-- product details  -->
-											<div
-												class="product_details d-flex align-items-center"
-											>
-												<div class="product_img">
+								<div class="product_wrapper">
+									<div class="product_contents">
+										<h1>
+											Vega sicilia unico gran reserva 1970
+											ribera del duero
+										</h1>
+										<p>
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+											Aperiam, neque cupiditate.
+										</p>
+										<!-- product details  -->
+										<div
+											class="product_details d-flex align-items-center"
+										>
+											<div class="product_img">
+												<img
+													class="img-fluid"
+													src="./assets/img/bottol/bottol.png"
+													alt=""
+												/>
+											</div>
+											<div class="product_spacifications">
+												<div
+													class="product_country d-flex align-items-center"
+												>
 													<img
 														class="img-fluid"
-														src="./assets/img/bottol/bottol.png"
+														src="./assets/img/country-flags/spain.png"
 														alt=""
 													/>
+													<span>Spain</span>
 												</div>
 												<div
-													class="product_spacifications"
-												>
-													<div
-														class="product_country d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/country-flags/spain.png"
-															alt=""
-														/>
-														<span>Spain</span>
-													</div>
-													<div
-														class="product_riesling d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/products/fruits.png"
-															alt=""
-														/>
-														<span>Riesling</span>
-													</div>
-													<div
-														class="product_parker d-flex align-items-center"
-													>
-														<span
-															class="parker_number"
-															>92</span
-														>
-														<span
-															class="parker_name"
-															>parker</span
-														>
-													</div>
-													<div
-														class="product_penin d-flex align-items-center"
-													>
-														<span
-															class="penin_number"
-															>98</span
-														>
-														<span class="penin_name"
-															>penin</span
-														>
-													</div>
-													<div
-														class="product_sommelier d-flex align-items-center"
-													>
-														<span
-															class="sommelier_number"
-															>95</span
-														>
-														<span
-															class="sommelier_name"
-															>sommelier</span
-														>
-													</div>
-													<div class="reviews_start">
-														<span class="starts">
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															4.9
-														</span>
-														<span class="rating"
-															>39 Reviews</span
-														>
-													</div>
-												</div>
-											</div>
-											<!-- product price and counter  -->
-											<div
-												class="product_price_counter d-flex align-items-center justify-content-start"
-											>
-												<div
-													class="product_price d-flex flex-column"
-												>
-													<span
-														class="product_old d-flex align-items-center pb-2"
-													>
-														<span
-															class="product_old_price"
-															>2162,00</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-													<span
-														class="product_new d-flex align-items-center pt-md-2"
-													>
-														<span
-															class="product_new_price"
-															>1003,09</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-												</div>
-												<div
-													class="product_counter d-flex align-items-center ml-3"
+													class="product_riesling d-flex align-items-center"
 												>
 													<img
-														class="img-fluid mr-3"
-														src="./assets/img/backgounds/note-icon.png"
+														class="img-fluid"
+														src="./assets/img/products/fruits.png"
 														alt=""
 													/>
-													<div
-														class="product_counter_btn d-flex align-items-center"
-													>
-														<input
-															type="text"
-															class="product_counter_number"
-															placeholder="1"
-														/>
-
-														<div
-															class="counter_plus_minus d-flex flex-column align-items-center"
-														>
-															<button
-																class="counter_plus_btn"
-															>
-																+
-															</button>
-															<button
-																class="counter_minus_btn"
-															>
-																-
-															</button>
-														</div>
-														<div
-															class="product_buy_now_btn"
-														>
-															<a href="#">
-																buy now</a
-															>
-														</div>
-													</div>
+													<span>Riesling</span>
 												</div>
+												<div
+													class="product_parker d-flex align-items-center"
+												>
+													<span class="parker_number"
+														>92</span
+													>
+													<span class="parker_name"
+														>parker</span
+													>
+												</div>
+												<div
+													class="product_penin d-flex align-items-center"
+												>
+													<span class="penin_number"
+														>98</span
+													>
+													<span class="penin_name"
+														>penin</span
+													>
+												</div>
+												<div
+													class="product_sommelier d-flex align-items-center"
+												>
+													<span
+														class="sommelier_number"
+														>95</span
+													>
+													<span class="sommelier_name"
+														>sommelier</span
+													>
+												</div>
+												<div class="reviews_start">
+													<span class="starts">
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														4.9
+													</span>
+													<span class="rating"
+														>39 Reviews</span
+													>
+												</div>
+											</div>
+										</div>
+										<!-- product price and counter  -->
+										<div
+											class="product_price_counter d-flex align-items-center justify-content-center"
+										>
+											<div
+												class="product_price d-flex flex-column"
+											>
+												<span
+													class="product_old d-flex align-items-center pb-2"
+												>
+													<span
+														class="product_old_price"
+														>2162,00</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+												<span
+													class="product_new d-flex align-items-center pt-md-2"
+												>
+													<span
+														class="product_new_price"
+														>1003,09</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+											</div>
+											<div
+												class="product_counter d-flex align-items-center ml-3"
+											>
+												<img
+													class="img-fluid mr-3"
+													src="./assets/img/backgounds/note-icon.png"
+													alt=""
+												/>
+												<form
+													action="#"
+													method="GET"
+													class="product_counter_btn d-flex align-items-center"
+												>
+													<input
+														type="text"
+														class="product_counter_number"
+														value="1"
+													/>
+
+													<div
+														class="counter_plus_minus d-flex flex-column align-items-center"
+													>
+														<span
+															class="counter_plus_btn"
+															onclick="incrmnt(this)"
+														>
+															+
+														</span>
+														<span
+															class="counter_minus_btn"
+															onclick="dcrmnt(this)"
+														>
+															-
+														</span>
+													</div>
+													<div
+														class="product_buy_now_btn"
+													>
+														<a href="#"> buy now</a>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -3449,188 +3446,182 @@
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 py-4">
 								<!-- single arival items start -->
-								<div class="arival_single_item">
-									<div class="product_wrapper">
-										<div class="product_contents">
-											<h1>
-												Vega sicilia unico gran reserva
-												1970 ribera del duero
-											</h1>
-											<p>
-												Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-												Aperiam, neque cupiditate.
-											</p>
-											<!-- product details  -->
-											<div
-												class="product_details d-flex align-items-center"
-											>
-												<div class="product_img">
+								<div class="product_wrapper">
+									<div class="product_contents">
+										<h1>
+											Vega sicilia unico gran reserva 1970
+											ribera del duero
+										</h1>
+										<p>
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+											Aperiam, neque cupiditate.
+										</p>
+										<!-- product details  -->
+										<div
+											class="product_details d-flex align-items-center"
+										>
+											<div class="product_img">
+												<img
+													class="img-fluid"
+													src="./assets/img/bottol/bottol.png"
+													alt=""
+												/>
+											</div>
+											<div class="product_spacifications">
+												<div
+													class="product_country d-flex align-items-center"
+												>
 													<img
 														class="img-fluid"
-														src="./assets/img/bottol/bottol.png"
+														src="./assets/img/country-flags/spain.png"
 														alt=""
 													/>
+													<span>Spain</span>
 												</div>
 												<div
-													class="product_spacifications"
-												>
-													<div
-														class="product_country d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/country-flags/spain.png"
-															alt=""
-														/>
-														<span>Spain</span>
-													</div>
-													<div
-														class="product_riesling d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/products/fruits.png"
-															alt=""
-														/>
-														<span>Riesling</span>
-													</div>
-													<div
-														class="product_parker d-flex align-items-center"
-													>
-														<span
-															class="parker_number"
-															>92</span
-														>
-														<span
-															class="parker_name"
-															>parker</span
-														>
-													</div>
-													<div
-														class="product_penin d-flex align-items-center"
-													>
-														<span
-															class="penin_number"
-															>98</span
-														>
-														<span class="penin_name"
-															>penin</span
-														>
-													</div>
-													<div
-														class="product_sommelier d-flex align-items-center"
-													>
-														<span
-															class="sommelier_number"
-															>95</span
-														>
-														<span
-															class="sommelier_name"
-															>sommelier</span
-														>
-													</div>
-													<div class="reviews_start">
-														<span class="starts">
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															4.9
-														</span>
-														<span class="rating"
-															>39 Reviews</span
-														>
-													</div>
-												</div>
-											</div>
-											<!-- product price and counter  -->
-											<div
-												class="product_price_counter d-flex align-items-center justify-content-start"
-											>
-												<div
-													class="product_price d-flex flex-column"
-												>
-													<span
-														class="product_old d-flex align-items-center pb-2"
-													>
-														<span
-															class="product_old_price"
-															>2162,00</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-													<span
-														class="product_new d-flex align-items-center pt-md-2"
-													>
-														<span
-															class="product_new_price"
-															>1003,09</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-												</div>
-												<div
-													class="product_counter d-flex align-items-center ml-3"
+													class="product_riesling d-flex align-items-center"
 												>
 													<img
-														class="img-fluid mr-3"
-														src="./assets/img/backgounds/note-icon.png"
+														class="img-fluid"
+														src="./assets/img/products/fruits.png"
 														alt=""
 													/>
-													<div
-														class="product_counter_btn d-flex align-items-center"
-													>
-														<input
-															type="text"
-															class="product_counter_number"
-															placeholder="1"
-														/>
-
-														<div
-															class="counter_plus_minus d-flex flex-column align-items-center"
-														>
-															<button
-																class="counter_plus_btn"
-															>
-																+
-															</button>
-															<button
-																class="counter_minus_btn"
-															>
-																-
-															</button>
-														</div>
-														<div
-															class="product_buy_now_btn"
-														>
-															<a href="#">
-																buy now</a
-															>
-														</div>
-													</div>
+													<span>Riesling</span>
 												</div>
+												<div
+													class="product_parker d-flex align-items-center"
+												>
+													<span class="parker_number"
+														>92</span
+													>
+													<span class="parker_name"
+														>parker</span
+													>
+												</div>
+												<div
+													class="product_penin d-flex align-items-center"
+												>
+													<span class="penin_number"
+														>98</span
+													>
+													<span class="penin_name"
+														>penin</span
+													>
+												</div>
+												<div
+													class="product_sommelier d-flex align-items-center"
+												>
+													<span
+														class="sommelier_number"
+														>95</span
+													>
+													<span class="sommelier_name"
+														>sommelier</span
+													>
+												</div>
+												<div class="reviews_start">
+													<span class="starts">
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														4.9
+													</span>
+													<span class="rating"
+														>39 Reviews</span
+													>
+												</div>
+											</div>
+										</div>
+										<!-- product price and counter  -->
+										<div
+											class="product_price_counter d-flex align-items-center justify-content-center"
+										>
+											<div
+												class="product_price d-flex flex-column"
+											>
+												<span
+													class="product_old d-flex align-items-center pb-2"
+												>
+													<span
+														class="product_old_price"
+														>2162,00</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+												<span
+													class="product_new d-flex align-items-center pt-md-2"
+												>
+													<span
+														class="product_new_price"
+														>1003,09</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+											</div>
+											<div
+												class="product_counter d-flex align-items-center ml-3"
+											>
+												<img
+													class="img-fluid mr-3"
+													src="./assets/img/backgounds/note-icon.png"
+													alt=""
+												/>
+												<form
+													action="#"
+													method="GET"
+													class="product_counter_btn d-flex align-items-center"
+												>
+													<input
+														type="text"
+														class="product_counter_number"
+														value="1"
+													/>
+
+													<div
+														class="counter_plus_minus d-flex flex-column align-items-center"
+													>
+														<span
+															class="counter_plus_btn"
+															onclick="incrmnt(this)"
+														>
+															+
+														</span>
+														<span
+															class="counter_minus_btn"
+															onclick="dcrmnt(this)"
+														>
+															-
+														</span>
+													</div>
+													<div
+														class="product_buy_now_btn"
+													>
+														<a href="#"> buy now</a>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -3639,188 +3630,182 @@
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 py-4">
 								<!-- single arival items start -->
-								<div class="arival_single_item">
-									<div class="product_wrapper">
-										<div class="product_contents">
-											<h1>
-												Vega sicilia unico gran reserva
-												1970 ribera del duero
-											</h1>
-											<p>
-												Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-												Aperiam, neque cupiditate.
-											</p>
-											<!-- product details  -->
-											<div
-												class="product_details d-flex align-items-center"
-											>
-												<div class="product_img">
+								<div class="product_wrapper">
+									<div class="product_contents">
+										<h1>
+											Vega sicilia unico gran reserva 1970
+											ribera del duero
+										</h1>
+										<p>
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+											Aperiam, neque cupiditate.
+										</p>
+										<!-- product details  -->
+										<div
+											class="product_details d-flex align-items-center"
+										>
+											<div class="product_img">
+												<img
+													class="img-fluid"
+													src="./assets/img/bottol/bottol.png"
+													alt=""
+												/>
+											</div>
+											<div class="product_spacifications">
+												<div
+													class="product_country d-flex align-items-center"
+												>
 													<img
 														class="img-fluid"
-														src="./assets/img/bottol/bottol.png"
+														src="./assets/img/country-flags/spain.png"
 														alt=""
 													/>
+													<span>Spain</span>
 												</div>
 												<div
-													class="product_spacifications"
-												>
-													<div
-														class="product_country d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/country-flags/spain.png"
-															alt=""
-														/>
-														<span>Spain</span>
-													</div>
-													<div
-														class="product_riesling d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/products/fruits.png"
-															alt=""
-														/>
-														<span>Riesling</span>
-													</div>
-													<div
-														class="product_parker d-flex align-items-center"
-													>
-														<span
-															class="parker_number"
-															>92</span
-														>
-														<span
-															class="parker_name"
-															>parker</span
-														>
-													</div>
-													<div
-														class="product_penin d-flex align-items-center"
-													>
-														<span
-															class="penin_number"
-															>98</span
-														>
-														<span class="penin_name"
-															>penin</span
-														>
-													</div>
-													<div
-														class="product_sommelier d-flex align-items-center"
-													>
-														<span
-															class="sommelier_number"
-															>95</span
-														>
-														<span
-															class="sommelier_name"
-															>sommelier</span
-														>
-													</div>
-													<div class="reviews_start">
-														<span class="starts">
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															4.9
-														</span>
-														<span class="rating"
-															>39 Reviews</span
-														>
-													</div>
-												</div>
-											</div>
-											<!-- product price and counter  -->
-											<div
-												class="product_price_counter d-flex align-items-center justify-content-start"
-											>
-												<div
-													class="product_price d-flex flex-column"
-												>
-													<span
-														class="product_old d-flex align-items-center pb-2"
-													>
-														<span
-															class="product_old_price"
-															>2162,00</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-													<span
-														class="product_new d-flex align-items-center pt-md-2"
-													>
-														<span
-															class="product_new_price"
-															>1003,09</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-												</div>
-												<div
-													class="product_counter d-flex align-items-center ml-3"
+													class="product_riesling d-flex align-items-center"
 												>
 													<img
-														class="img-fluid mr-3"
-														src="./assets/img/backgounds/note-icon.png"
+														class="img-fluid"
+														src="./assets/img/products/fruits.png"
 														alt=""
 													/>
-													<div
-														class="product_counter_btn d-flex align-items-center"
-													>
-														<input
-															type="text"
-															class="product_counter_number"
-															placeholder="1"
-														/>
-
-														<div
-															class="counter_plus_minus d-flex flex-column align-items-center"
-														>
-															<button
-																class="counter_plus_btn"
-															>
-																+
-															</button>
-															<button
-																class="counter_minus_btn"
-															>
-																-
-															</button>
-														</div>
-														<div
-															class="product_buy_now_btn"
-														>
-															<a href="#">
-																buy now</a
-															>
-														</div>
-													</div>
+													<span>Riesling</span>
 												</div>
+												<div
+													class="product_parker d-flex align-items-center"
+												>
+													<span class="parker_number"
+														>92</span
+													>
+													<span class="parker_name"
+														>parker</span
+													>
+												</div>
+												<div
+													class="product_penin d-flex align-items-center"
+												>
+													<span class="penin_number"
+														>98</span
+													>
+													<span class="penin_name"
+														>penin</span
+													>
+												</div>
+												<div
+													class="product_sommelier d-flex align-items-center"
+												>
+													<span
+														class="sommelier_number"
+														>95</span
+													>
+													<span class="sommelier_name"
+														>sommelier</span
+													>
+												</div>
+												<div class="reviews_start">
+													<span class="starts">
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														4.9
+													</span>
+													<span class="rating"
+														>39 Reviews</span
+													>
+												</div>
+											</div>
+										</div>
+										<!-- product price and counter  -->
+										<div
+											class="product_price_counter d-flex align-items-center justify-content-center"
+										>
+											<div
+												class="product_price d-flex flex-column"
+											>
+												<span
+													class="product_old d-flex align-items-center pb-2"
+												>
+													<span
+														class="product_old_price"
+														>2162,00</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+												<span
+													class="product_new d-flex align-items-center pt-md-2"
+												>
+													<span
+														class="product_new_price"
+														>1003,09</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+											</div>
+											<div
+												class="product_counter d-flex align-items-center ml-3"
+											>
+												<img
+													class="img-fluid mr-3"
+													src="./assets/img/backgounds/note-icon.png"
+													alt=""
+												/>
+												<form
+													action="#"
+													method="GET"
+													class="product_counter_btn d-flex align-items-center"
+												>
+													<input
+														type="text"
+														class="product_counter_number"
+														value="1"
+													/>
+
+													<div
+														class="counter_plus_minus d-flex flex-column align-items-center"
+													>
+														<span
+															class="counter_plus_btn"
+															onclick="incrmnt(this)"
+														>
+															+
+														</span>
+														<span
+															class="counter_minus_btn"
+															onclick="dcrmnt(this)"
+														>
+															-
+														</span>
+													</div>
+													<div
+														class="product_buy_now_btn"
+													>
+														<a href="#"> buy now</a>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -3846,188 +3831,182 @@
 						<div class="row py-3">
 							<div class="col-12 col-md-6 col-lg-4 py-4">
 								<!-- single arival items start -->
-								<div class="arival_single_item">
-									<div class="product_wrapper">
-										<div class="product_contents">
-											<h1>
-												Vega sicilia unico gran reserva
-												1970 ribera del duero
-											</h1>
-											<p>
-												Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-												Aperiam, neque cupiditate.
-											</p>
-											<!-- product details  -->
-											<div
-												class="product_details d-flex align-items-center"
-											>
-												<div class="product_img">
+								<div class="product_wrapper">
+									<div class="product_contents">
+										<h1>
+											Vega sicilia unico gran reserva 1970
+											ribera del duero
+										</h1>
+										<p>
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+											Aperiam, neque cupiditate.
+										</p>
+										<!-- product details  -->
+										<div
+											class="product_details d-flex align-items-center"
+										>
+											<div class="product_img">
+												<img
+													class="img-fluid"
+													src="./assets/img/bottol/bottol.png"
+													alt=""
+												/>
+											</div>
+											<div class="product_spacifications">
+												<div
+													class="product_country d-flex align-items-center"
+												>
 													<img
 														class="img-fluid"
-														src="./assets/img/bottol/bottol.png"
+														src="./assets/img/country-flags/spain.png"
 														alt=""
 													/>
+													<span>Spain</span>
 												</div>
 												<div
-													class="product_spacifications"
-												>
-													<div
-														class="product_country d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/country-flags/spain.png"
-															alt=""
-														/>
-														<span>Spain</span>
-													</div>
-													<div
-														class="product_riesling d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/products/fruits.png"
-															alt=""
-														/>
-														<span>Riesling</span>
-													</div>
-													<div
-														class="product_parker d-flex align-items-center"
-													>
-														<span
-															class="parker_number"
-															>92</span
-														>
-														<span
-															class="parker_name"
-															>parker</span
-														>
-													</div>
-													<div
-														class="product_penin d-flex align-items-center"
-													>
-														<span
-															class="penin_number"
-															>98</span
-														>
-														<span class="penin_name"
-															>penin</span
-														>
-													</div>
-													<div
-														class="product_sommelier d-flex align-items-center"
-													>
-														<span
-															class="sommelier_number"
-															>95</span
-														>
-														<span
-															class="sommelier_name"
-															>sommelier</span
-														>
-													</div>
-													<div class="reviews_start">
-														<span class="starts">
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															4.9
-														</span>
-														<span class="rating"
-															>39 Reviews</span
-														>
-													</div>
-												</div>
-											</div>
-											<!-- product price and counter  -->
-											<div
-												class="product_price_counter d-flex align-items-center justify-content-start"
-											>
-												<div
-													class="product_price d-flex flex-column"
-												>
-													<span
-														class="product_old d-flex align-items-center pb-2"
-													>
-														<span
-															class="product_old_price"
-															>2162,00</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-													<span
-														class="product_new d-flex align-items-center pt-md-2"
-													>
-														<span
-															class="product_new_price"
-															>1003,09</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-												</div>
-												<div
-													class="product_counter d-flex align-items-center ml-3"
+													class="product_riesling d-flex align-items-center"
 												>
 													<img
-														class="img-fluid mr-3"
-														src="./assets/img/backgounds/note-icon.png"
+														class="img-fluid"
+														src="./assets/img/products/fruits.png"
 														alt=""
 													/>
-													<div
-														class="product_counter_btn d-flex align-items-center"
-													>
-														<input
-															type="text"
-															class="product_counter_number"
-															placeholder="1"
-														/>
-
-														<div
-															class="counter_plus_minus d-flex flex-column align-items-center"
-														>
-															<button
-																class="counter_plus_btn"
-															>
-																+
-															</button>
-															<button
-																class="counter_minus_btn"
-															>
-																-
-															</button>
-														</div>
-														<div
-															class="product_buy_now_btn"
-														>
-															<a href="#">
-																buy now</a
-															>
-														</div>
-													</div>
+													<span>Riesling</span>
 												</div>
+												<div
+													class="product_parker d-flex align-items-center"
+												>
+													<span class="parker_number"
+														>92</span
+													>
+													<span class="parker_name"
+														>parker</span
+													>
+												</div>
+												<div
+													class="product_penin d-flex align-items-center"
+												>
+													<span class="penin_number"
+														>98</span
+													>
+													<span class="penin_name"
+														>penin</span
+													>
+												</div>
+												<div
+													class="product_sommelier d-flex align-items-center"
+												>
+													<span
+														class="sommelier_number"
+														>95</span
+													>
+													<span class="sommelier_name"
+														>sommelier</span
+													>
+												</div>
+												<div class="reviews_start">
+													<span class="starts">
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														4.9
+													</span>
+													<span class="rating"
+														>39 Reviews</span
+													>
+												</div>
+											</div>
+										</div>
+										<!-- product price and counter  -->
+										<div
+											class="product_price_counter d-flex align-items-center justify-content-center"
+										>
+											<div
+												class="product_price d-flex flex-column"
+											>
+												<span
+													class="product_old d-flex align-items-center pb-2"
+												>
+													<span
+														class="product_old_price"
+														>2162,00</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+												<span
+													class="product_new d-flex align-items-center pt-md-2"
+												>
+													<span
+														class="product_new_price"
+														>1003,09</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+											</div>
+											<div
+												class="product_counter d-flex align-items-center ml-3"
+											>
+												<img
+													class="img-fluid mr-3"
+													src="./assets/img/backgounds/note-icon.png"
+													alt=""
+												/>
+												<form
+													action="#"
+													method="GET"
+													class="product_counter_btn d-flex align-items-center"
+												>
+													<input
+														type="text"
+														class="product_counter_number"
+														value="1"
+													/>
+
+													<div
+														class="counter_plus_minus d-flex flex-column align-items-center"
+													>
+														<span
+															class="counter_plus_btn"
+															onclick="incrmnt(this)"
+														>
+															+
+														</span>
+														<span
+															class="counter_minus_btn"
+															onclick="dcrmnt(this)"
+														>
+															-
+														</span>
+													</div>
+													<div
+														class="product_buy_now_btn"
+													>
+														<a href="#"> buy now</a>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -4036,188 +4015,182 @@
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 py-4">
 								<!-- single arival items start -->
-								<div class="arival_single_item">
-									<div class="product_wrapper">
-										<div class="product_contents">
-											<h1>
-												Vega sicilia unico gran reserva
-												1970 ribera del duero
-											</h1>
-											<p>
-												Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-												Aperiam, neque cupiditate.
-											</p>
-											<!-- product details  -->
-											<div
-												class="product_details d-flex align-items-center"
-											>
-												<div class="product_img">
+								<div class="product_wrapper">
+									<div class="product_contents">
+										<h1>
+											Vega sicilia unico gran reserva 1970
+											ribera del duero
+										</h1>
+										<p>
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+											Aperiam, neque cupiditate.
+										</p>
+										<!-- product details  -->
+										<div
+											class="product_details d-flex align-items-center"
+										>
+											<div class="product_img">
+												<img
+													class="img-fluid"
+													src="./assets/img/bottol/bottol.png"
+													alt=""
+												/>
+											</div>
+											<div class="product_spacifications">
+												<div
+													class="product_country d-flex align-items-center"
+												>
 													<img
 														class="img-fluid"
-														src="./assets/img/bottol/bottol.png"
+														src="./assets/img/country-flags/spain.png"
 														alt=""
 													/>
+													<span>Spain</span>
 												</div>
 												<div
-													class="product_spacifications"
-												>
-													<div
-														class="product_country d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/country-flags/spain.png"
-															alt=""
-														/>
-														<span>Spain</span>
-													</div>
-													<div
-														class="product_riesling d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/products/fruits.png"
-															alt=""
-														/>
-														<span>Riesling</span>
-													</div>
-													<div
-														class="product_parker d-flex align-items-center"
-													>
-														<span
-															class="parker_number"
-															>92</span
-														>
-														<span
-															class="parker_name"
-															>parker</span
-														>
-													</div>
-													<div
-														class="product_penin d-flex align-items-center"
-													>
-														<span
-															class="penin_number"
-															>98</span
-														>
-														<span class="penin_name"
-															>penin</span
-														>
-													</div>
-													<div
-														class="product_sommelier d-flex align-items-center"
-													>
-														<span
-															class="sommelier_number"
-															>95</span
-														>
-														<span
-															class="sommelier_name"
-															>sommelier</span
-														>
-													</div>
-													<div class="reviews_start">
-														<span class="starts">
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															4.9
-														</span>
-														<span class="rating"
-															>39 Reviews</span
-														>
-													</div>
-												</div>
-											</div>
-											<!-- product price and counter  -->
-											<div
-												class="product_price_counter d-flex align-items-center justify-content-start"
-											>
-												<div
-													class="product_price d-flex flex-column"
-												>
-													<span
-														class="product_old d-flex align-items-center pb-2"
-													>
-														<span
-															class="product_old_price"
-															>2162,00</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-													<span
-														class="product_new d-flex align-items-center pt-md-2"
-													>
-														<span
-															class="product_new_price"
-															>1003,09</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-												</div>
-												<div
-													class="product_counter d-flex align-items-center ml-3"
+													class="product_riesling d-flex align-items-center"
 												>
 													<img
-														class="img-fluid mr-3"
-														src="./assets/img/backgounds/note-icon.png"
+														class="img-fluid"
+														src="./assets/img/products/fruits.png"
 														alt=""
 													/>
-													<div
-														class="product_counter_btn d-flex align-items-center"
-													>
-														<input
-															type="text"
-															class="product_counter_number"
-															placeholder="1"
-														/>
-
-														<div
-															class="counter_plus_minus d-flex flex-column align-items-center"
-														>
-															<button
-																class="counter_plus_btn"
-															>
-																+
-															</button>
-															<button
-																class="counter_minus_btn"
-															>
-																-
-															</button>
-														</div>
-														<div
-															class="product_buy_now_btn"
-														>
-															<a href="#">
-																buy now</a
-															>
-														</div>
-													</div>
+													<span>Riesling</span>
 												</div>
+												<div
+													class="product_parker d-flex align-items-center"
+												>
+													<span class="parker_number"
+														>92</span
+													>
+													<span class="parker_name"
+														>parker</span
+													>
+												</div>
+												<div
+													class="product_penin d-flex align-items-center"
+												>
+													<span class="penin_number"
+														>98</span
+													>
+													<span class="penin_name"
+														>penin</span
+													>
+												</div>
+												<div
+													class="product_sommelier d-flex align-items-center"
+												>
+													<span
+														class="sommelier_number"
+														>95</span
+													>
+													<span class="sommelier_name"
+														>sommelier</span
+													>
+												</div>
+												<div class="reviews_start">
+													<span class="starts">
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														4.9
+													</span>
+													<span class="rating"
+														>39 Reviews</span
+													>
+												</div>
+											</div>
+										</div>
+										<!-- product price and counter  -->
+										<div
+											class="product_price_counter d-flex align-items-center justify-content-center"
+										>
+											<div
+												class="product_price d-flex flex-column"
+											>
+												<span
+													class="product_old d-flex align-items-center pb-2"
+												>
+													<span
+														class="product_old_price"
+														>2162,00</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+												<span
+													class="product_new d-flex align-items-center pt-md-2"
+												>
+													<span
+														class="product_new_price"
+														>1003,09</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+											</div>
+											<div
+												class="product_counter d-flex align-items-center ml-3"
+											>
+												<img
+													class="img-fluid mr-3"
+													src="./assets/img/backgounds/note-icon.png"
+													alt=""
+												/>
+												<form
+													action="#"
+													method="GET"
+													class="product_counter_btn d-flex align-items-center"
+												>
+													<input
+														type="text"
+														class="product_counter_number"
+														value="1"
+													/>
+
+													<div
+														class="counter_plus_minus d-flex flex-column align-items-center"
+													>
+														<span
+															class="counter_plus_btn"
+															onclick="incrmnt(this)"
+														>
+															+
+														</span>
+														<span
+															class="counter_minus_btn"
+															onclick="dcrmnt(this)"
+														>
+															-
+														</span>
+													</div>
+													<div
+														class="product_buy_now_btn"
+													>
+														<a href="#"> buy now</a>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -4226,188 +4199,182 @@
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 py-4">
 								<!-- single arival items start -->
-								<div class="arival_single_item">
-									<div class="product_wrapper">
-										<div class="product_contents">
-											<h1>
-												Vega sicilia unico gran reserva
-												1970 ribera del duero
-											</h1>
-											<p>
-												Lorem ipsum dolor sit amet
-												consectetur adipisicing elit.
-												Aperiam, neque cupiditate.
-											</p>
-											<!-- product details  -->
-											<div
-												class="product_details d-flex align-items-center"
-											>
-												<div class="product_img">
+								<div class="product_wrapper">
+									<div class="product_contents">
+										<h1>
+											Vega sicilia unico gran reserva 1970
+											ribera del duero
+										</h1>
+										<p>
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+											Aperiam, neque cupiditate.
+										</p>
+										<!-- product details  -->
+										<div
+											class="product_details d-flex align-items-center"
+										>
+											<div class="product_img">
+												<img
+													class="img-fluid"
+													src="./assets/img/bottol/bottol.png"
+													alt=""
+												/>
+											</div>
+											<div class="product_spacifications">
+												<div
+													class="product_country d-flex align-items-center"
+												>
 													<img
 														class="img-fluid"
-														src="./assets/img/bottol/bottol.png"
+														src="./assets/img/country-flags/spain.png"
 														alt=""
 													/>
+													<span>Spain</span>
 												</div>
 												<div
-													class="product_spacifications"
-												>
-													<div
-														class="product_country d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/country-flags/spain.png"
-															alt=""
-														/>
-														<span>Spain</span>
-													</div>
-													<div
-														class="product_riesling d-flex align-items-center"
-													>
-														<img
-															class="img-fluid"
-															src="./assets/img/products/fruits.png"
-															alt=""
-														/>
-														<span>Riesling</span>
-													</div>
-													<div
-														class="product_parker d-flex align-items-center"
-													>
-														<span
-															class="parker_number"
-															>92</span
-														>
-														<span
-															class="parker_name"
-															>parker</span
-														>
-													</div>
-													<div
-														class="product_penin d-flex align-items-center"
-													>
-														<span
-															class="penin_number"
-															>98</span
-														>
-														<span class="penin_name"
-															>penin</span
-														>
-													</div>
-													<div
-														class="product_sommelier d-flex align-items-center"
-													>
-														<span
-															class="sommelier_number"
-															>95</span
-														>
-														<span
-															class="sommelier_name"
-															>sommelier</span
-														>
-													</div>
-													<div class="reviews_start">
-														<span class="starts">
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															<i
-																class="fas fa-star"
-															></i>
-															4.9
-														</span>
-														<span class="rating"
-															>39 Reviews</span
-														>
-													</div>
-												</div>
-											</div>
-											<!-- product price and counter  -->
-											<div
-												class="product_price_counter d-flex align-items-center justify-content-start"
-											>
-												<div
-													class="product_price d-flex flex-column"
-												>
-													<span
-														class="product_old d-flex align-items-center pb-2"
-													>
-														<span
-															class="product_old_price"
-															>2162,00</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-													<span
-														class="product_new d-flex align-items-center pt-md-2"
-													>
-														<span
-															class="product_new_price"
-															>1003,09</span
-														>
-														<span
-															class="product_currency_img"
-															><img
-																src="./assets/img/currency-icons/euro.png"
-																alt=""
-														/></span>
-													</span>
-												</div>
-												<div
-													class="product_counter d-flex align-items-center ml-3"
+													class="product_riesling d-flex align-items-center"
 												>
 													<img
-														class="img-fluid mr-3"
-														src="./assets/img/backgounds/note-icon.png"
+														class="img-fluid"
+														src="./assets/img/products/fruits.png"
 														alt=""
 													/>
-													<div
-														class="product_counter_btn d-flex align-items-center"
-													>
-														<input
-															type="text"
-															class="product_counter_number"
-															placeholder="1"
-														/>
-
-														<div
-															class="counter_plus_minus d-flex flex-column align-items-center"
-														>
-															<button
-																class="counter_plus_btn"
-															>
-																+
-															</button>
-															<button
-																class="counter_minus_btn"
-															>
-																-
-															</button>
-														</div>
-														<div
-															class="product_buy_now_btn"
-														>
-															<a href="#">
-																buy now</a
-															>
-														</div>
-													</div>
+													<span>Riesling</span>
 												</div>
+												<div
+													class="product_parker d-flex align-items-center"
+												>
+													<span class="parker_number"
+														>92</span
+													>
+													<span class="parker_name"
+														>parker</span
+													>
+												</div>
+												<div
+													class="product_penin d-flex align-items-center"
+												>
+													<span class="penin_number"
+														>98</span
+													>
+													<span class="penin_name"
+														>penin</span
+													>
+												</div>
+												<div
+													class="product_sommelier d-flex align-items-center"
+												>
+													<span
+														class="sommelier_number"
+														>95</span
+													>
+													<span class="sommelier_name"
+														>sommelier</span
+													>
+												</div>
+												<div class="reviews_start">
+													<span class="starts">
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														4.9
+													</span>
+													<span class="rating"
+														>39 Reviews</span
+													>
+												</div>
+											</div>
+										</div>
+										<!-- product price and counter  -->
+										<div
+											class="product_price_counter d-flex align-items-center justify-content-center"
+										>
+											<div
+												class="product_price d-flex flex-column"
+											>
+												<span
+													class="product_old d-flex align-items-center pb-2"
+												>
+													<span
+														class="product_old_price"
+														>2162,00</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+												<span
+													class="product_new d-flex align-items-center pt-md-2"
+												>
+													<span
+														class="product_new_price"
+														>1003,09</span
+													>
+													<span
+														class="product_currency_img"
+														><img
+															src="./assets/img/currency-icons/euro.png"
+															alt=""
+													/></span>
+												</span>
+											</div>
+											<div
+												class="product_counter d-flex align-items-center ml-3"
+											>
+												<img
+													class="img-fluid mr-3"
+													src="./assets/img/backgounds/note-icon.png"
+													alt=""
+												/>
+												<form
+													action="#"
+													method="GET"
+													class="product_counter_btn d-flex align-items-center"
+												>
+													<input
+														type="text"
+														class="product_counter_number"
+														value="1"
+													/>
+
+													<div
+														class="counter_plus_minus d-flex flex-column align-items-center"
+													>
+														<span
+															class="counter_plus_btn"
+															onclick="incrmnt(this)"
+														>
+															+
+														</span>
+														<span
+															class="counter_minus_btn"
+															onclick="dcrmnt(this)"
+														>
+															-
+														</span>
+													</div>
+													<div
+														class="product_buy_now_btn"
+													>
+														<a href="#"> buy now</a>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
