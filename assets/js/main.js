@@ -217,4 +217,34 @@ $(document).ready(function () {
 		$(this).removeClass("active");
 		$("#search_filter").removeClass("active");
 	})
+
+
+	$(".quantity__plus").click(function(){
+		let input = $(this).parent().children()[1];
+		let value = input.value;
+		let valueInt = Number.parseInt(value);
+		input.value = ++valueInt;
+	})
+
+	$(".quantity__minus").click(function(){
+		let input = $(this).parent().children()[1];
+		let value = input.value;
+		let valueInt = Number.parseInt(value);
+		input.value = valueInt <= 0 ? 0 : --valueInt;
+	})
 });
+
+
+function incrmnt(val){
+	let input = val.parentNode.parentNode.childNodes[1];
+	let value = input.value;
+	let valueInt = Number.parseInt(value);
+	input.value = ++valueInt;
+}
+
+function dcrmnt(val){
+	let input = val.parentNode.parentNode.childNodes[1];
+	let value = input.value;
+	let valueInt = Number.parseInt(value);
+	input.value = valueInt <= 0 ? 0 : --valueInt;
+}

@@ -1162,16 +1162,17 @@ p.cart_vat span {
 }
 .counter_plus_minus {
 }
-.counter_plus_minus button {
+.counter_plus_minus span {
 	border: 0;
 	background-color: #791216;
 	color: #fff;
 	font-size: 9px;
 	padding: 2px 5px;
+	cursor: pointer;
 }
-.counter_plus_minus button:focus {
+/* .counter_plus_minus button:focus {
 	outline: none;
-}
+} */
 .counter_plus_btn {
 	margin-bottom: 1px;
 }

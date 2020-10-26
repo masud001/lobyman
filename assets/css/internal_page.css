@@ -945,6 +945,7 @@ span.delivered {
 	padding: 5px 10px;
 	position: relative;
 	font-size: 20px;
+	cursor: pointer;
 }
 .quantity__input {
 	text-align: center;
