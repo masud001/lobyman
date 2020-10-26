@@ -455,7 +455,7 @@
 		padding: 10px;
 		width: 50px;
 	}
-	.counter_plus_minus button,
+	.counter_plus_minus span,
 	.product_buy_now_btn a {
 		font-size: 14px;
 	}
@@ -465,11 +465,12 @@
 	.product_counter img {
 		width: 16px !important;
 	}
-	.counter_plus_minus button {
-		padding: 0px 5px;
+	.counter_plus_minus span {
+		padding: 3px 5px;
 	}
 	.counter_minus_btn {
-		padding: 1px 6px !important;
+		padding-left: 6px !important;
+		padding-right:  6px !important;
 	}
 	.wine_maker_contents h1 {
 		font-size: 55px;

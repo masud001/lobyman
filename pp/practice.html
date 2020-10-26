@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <input
+            type="text"
+            value="1"
+        />
+
+        <div>
+            <p onclick="incrmnt(this)">
+                +
+            </p>
+            <p onclick="dcrmnt(this)">
+                -
+            </p>
+        </div>
+        <div>
+            <button type="submit"> buy now</button>
+        </div>
+    </form>
+
+    <!-- <br>
+    <br>
+
+    <div>
+        <input
+            type="text"
+            value="1"
+        />
+
+        <div>
+            <button onclick="incrmnt(this)">
+                +
+            </button>
+            <button onclick="dcrmnt(this)">
+                -
+            </button>
+        </div>
+        <div>
+            <button type="submit"> buy now</button>
+        </div>
+    </div> -->
+
+
+
+    <script>
+
+        function incrmnt(val){
+            let input = val.parentNode.parentNode.childNodes[1];
+            let value = input.value;
+            let valueInt = Number.parseInt(value);
+            input.value = ++valueInt;
+            return false;
+        }
+
+        function dcrmnt(val){
+            let input = val.parentNode.parentNode.childNodes[1];
+            let value = input.value;
+            let valueInt = Number.parseInt(value);
+            input.value = valueInt <= 0 ? 0 : --valueInt;
+        }
+    </script>
+
+
+</body>
+</html>
