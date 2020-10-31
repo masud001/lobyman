@@ -25,6 +25,7 @@
 		<title>FAQ PAGE || MASSETO</title>
 	</head>
 	<body>
+		<section class="main_page_container d-flex flex-column">
 		<!-- top order alert START  -->
 		<section class="top_order_alert d-none d-lg-block">
 			<div class="container">
@@ -398,7 +399,7 @@
 		<!-- top product searcing options and search bar END-->
 
 		<!-- heaer logo and menu area START -->
-		<header class="header_area">
+			<header class="header_area">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg">
 					<!-- brand logo  -->
@@ -431,7 +432,6 @@
 					<!-- navbar menu  -->
 					<div
 						class="collapse navbar-collapse navigation_menu order-4"
-						id="navbarMenu"
 					>
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item dropdown">
@@ -2475,233 +2475,91 @@
 									>very good deals</a
 								>
 							</li>
-							<!-- <li class="nav-item d-none d-lg-block">
+							<li class="nav-item d-none d-lg-block">
 								<a class="login_btn font-nunito_semi_b" href=""
 									>login</a
 								>
-							</li> -->
-							<li class="nav-item d-none d-lg-block dropdown">
-								<a
-									class="cart_btn"
-									href=""
-									id="cart_dropdown"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-								>
+							</li>
+							<li class="nav-item d-none d-lg-block">
+								<a class="cart_btn" href="">
 									<span class="badge_number">2</span>
 									<img
 										src="./assets/img/cart-icon/supermarket.png"
 										alt="cart icon"
 								/></a>
-								<!-- cart_dropdown drop down  -->
-								<div
-									class="dropdown-menu cart_dropdown dropdown-menu-right"
-									aria-labelledby="cart_dropdown"
-								>
-									<div class="cart_dropdown_wrapper">
-										<h1>my cart</h1>
-										<!-- single items  -->
-										<div
-											class="single_cart_items d-flex align-items-center justify-content-between"
-										>
-											<div class="cart_item_img">
-												<img
-													src="./assets/img/bottol/bottol.png"
-													alt=""
-												/>
-											</div>
-											<div
-												class="cart_item_name w-50 mr-auto"
-											>
-												<h1>
-													perrier jouet belle eoque
-													2012
-												</h1>
-												<h1 class="cart_price">
-													129,41
-													<i
-														class="fas fa-euro-sign"
-													></i>
-												</h1>
-												<p class="cart_vat">
-													<span>vat</span> included
-												</p>
-											</div>
-											<div
-												class="cart_dropdown_menu_btn d-flex flex-column"
-											>
-												<span
-													class="align-self-start ml-auto"
-													><i class="fas fa-trash"></i
-												></span>
-												<div
-													class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
-												>
-													<input
-														type="text"
-														value="2"
-													/>
-													<div
-														class="cart_increment_decrement_btn flex-column d-flex justify-content-center align-items-center"
-													>
-														<button
-															class="cart_increment"
-														>
-															+
-														</button>
-														<button
-															class="cart_decrement"
-														>
-															-
-														</button>
-													</div>
-													<button
-														class="cart_price_btn d-flex align-items-center"
-													>
-														<span>258,82</span>
-														<span
-															><i
-																class="fas fa-euro-sign"
-															></i
-														></span>
-													</button>
-												</div>
-											</div>
-										</div>
-										<hr />
-										<!-- single items  -->
-										<div
-											class="single_cart_items d-flex align-items-center justify-content-between"
-										>
-											<div class="cart_item_img">
-												<img
-													src="./assets/img/bottol/bottol.png"
-													alt=""
-												/>
-											</div>
-											<div
-												class="cart_item_name w-50 mr-auto"
-											>
-												<h1>
-													perrier jouet belle eoque
-													2012
-												</h1>
-												<h1 class="cart_price">
-													129,41
-													<i
-														class="fas fa-euro-sign"
-													></i>
-												</h1>
-												<p class="cart_vat">
-													<span>vat</span> included
-												</p>
-											</div>
-											<div
-												class="cart_dropdown_menu_btn d-flex flex-column"
-											>
-												<span
-													class="align-self-start ml-auto"
-													><i class="fas fa-trash"></i
-												></span>
-												<div
-													class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
-												>
-													<input
-														type="text"
-														value="2"
-													/>
-													<div
-														class="cart_increment_decrement_btn flex-column d-flex justify-content-center align-items-center"
-													>
-														<button
-															class="cart_increment"
-														>
-															+
-														</button>
-														<button
-															class="cart_decrement"
-														>
-															-
-														</button>
-													</div>
-													<button
-														class="cart_price_btn d-flex align-items-center"
-													>
-														<span>258,82</span>
-														<span
-															><i
-																class="fas fa-euro-sign"
-															></i
-														></span>
-													</button>
-												</div>
-											</div>
-										</div>
-										<hr />
-										<div
-											class="cart_drand_total_price d-flex justify-content-end"
-										>
-											<span class="grand_total">grand total</span>
-											<span class="text-center">
-												<button>
-													531,49
-													<i
-														class="fas fa-euro-sign"
-													></i>
-												</button>
-												<p class="cart_vat">
-													<span>vat</span> included
-												</p>
-											</span>
-										</div>
-										<div class="cart_checkout_wrapper">
-											<button type="submit">proceed to checkout</button>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="nav-item d-none d-lg-block dropdown">
-								<a
-									class="user_menu_btn d-flex align-items-center justify-content-start"
-									href="#"
-									id="user_dropdown"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-								>
-									<img
-										src="https://via.placeholder.com/50x50"
-										alt=""
-									/>
-									<span>maribel verdu</span>
-								</a>
-								<div
-									class="dropdown-menu dropdown-menu-right user_dropdown_menu"
-									aria-labelledby="user_dropdown"
-								>
-									<div class="user_dropdown_wrapper">
-										<ul>
-											<li><a href="#">my account</a></li>
-											<li>
-												<a href="#">saved addresses</a>
-											</li>
-											<li>
-												<a href="#">order history</a>
-											</li>
-											<li>
-												<a href="#">my credit slips</a>
-											</li>
-											<li><a href="#">wish list</a></li>
-											<li>
-												<a href="#"
-													>GDPR (personal data)</a
-												>
-											</li>
-											<li><a href="#">sign out</a></li>
-										</ul>
-									</div>
-								</div>
 							</li>
 						</ul>
+					</div>
+
+					<!-- Mobile navbar menu -->
+					<div
+						class="mobile_navbar_menu d-flex flex-column d-lg-none"
+						id="navbarMenu"
+					>
+						<!-- Crose button -->
+						<div class="crose_btn d-flex justify-content-end">
+							<button
+								class="btn float-right text-light navbar-toggler"
+								data-toggle="collapse"
+								data-target="#navbarMenu"
+							>
+								<i class="fas fa-times"></i>
+							</button>
+						</div>
+
+						<!-- Profile -->
+						<div
+							class="mobile_navbar_menu_profile d-flex align-items-center"
+						>
+							<!-- Image -->
+							<img
+								src="https://via.placeholder.com/50x50"
+								alt="profile"
+							/>
+							<!-- Name -->
+							<a href="#">Maribel Verdú</a>
+						</div>
+
+						<!-- Menu item -->
+						<ul class="mobile_navbar_menu_items list-unstyled">
+							<li>
+								<a href="#">PRICE LIST</a>
+							</li>
+							<li>
+								<a href="#">Red Wine</a>
+							</li>
+							<li>
+								<a href="#">White Wine</a>
+							</li>
+							<li>
+								<a href="#">Sparkling Wine</a>
+							</li>
+							<li>
+								<a href="#">Spirits</a>
+							</li>
+							<li>
+								<a href="#">By Vintage</a>
+							</li>
+						</ul>
+
+						<!-- Action link -->
+						<div class="action-link d-flex flex-column">
+							<!-- Link -->
+							<a href="#" class="action_link">NEW ARRIVALS</a>
+							<!-- Button -->
+							<button class="btn btn-warning mt-3">
+								VERY GOOD DEALS
+							</button>
+						</div>
+
+						<!-- Logout -->
+						<div
+							class="d-flex flex-column justify-content-end h-100"
+						>
+							<a href="#" class="mobile_navbar_logout"
+								>Sign Out</a
+							>
+						</div>
 					</div>
 				</nav>
 			</div>
@@ -2709,7 +2567,7 @@
 			<div class="produc_search_bar dropdown d-lg-none">
 				<!-- input field for search  -->
 				<div
-					class="input-group pb-4 px-4"
+					class="input-group pb-4 px-4 mt-3"
 					id="searchResultDropdown"
 					data-toggle="dropdown"
 					aria-haspopup="true"
@@ -3047,192 +2905,236 @@
 		</div>
 		<!-- news letter ares END -->
 
-		<!-- footer for desktop area START -->
-		<section class="desktop_footer desk_footer_bg_img">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="col-lg-2 d-none d-lg-flex">
-						<div class="desk_footer_logo">
-							<img
-								class="img-fluid"
-								src="./assets/img/backgounds/footer-logo.png"
-								alt=""
-							/>
-						</div>
-					</div>
-					<!-- desk footer middle column  -->
-					<div class="col-7 col-md-6 col-lg-7 no-gutters">
-						<div class="row py-3">
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>information</h1>
-									<ul>
-										<li>
-											<a href="#"
-												>privacy policy of social
-												network</a
-											>
-										</li>
-										<li><a href="#">term of use</a></li>
-										<li><a href="#">privacy policy</a></li>
-										<li>
-											<a href="#">term & conditions</a>
-										</li>
-										<li><a href="#">cookies policy</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>customar service</h1>
-									<ul>
-										<li>
-											<a href="#">genelar conditions</a>
-										</li>
-										<li><a href="#">contact us</a></li>
-										<li><a href="#">My account</a></li>
-										<li><a href="#">shipping policy</a></li>
-										<li><a href="#">return policy</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>payment & shipping</h1>
-									<ul>
-										<li>
-											<a href="#">Delivery information</a>
-										</li>
-										<li><a href="#">Payment methods</a></li>
-										<li><a href="#">shipping guide</a></li>
-										<li>
-											<a href="#">locations we ship to</a>
-										</li>
-										<li>
-											<a href="#"
-												>estimated delivery time</a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>about market</h1>
-									<ul>
-										<li><a href="#">about us</a></li>
-										<li><a href="#">blog</a></li>
-										<li><a href="#">term of use</a></li>
-										<li><a href="#">privecy policy</a></li>
-										<li><a href="#">site map</a></li>
-									</ul>
-								</div>
+		
+
+		<!-- Footer start -->
+		<footer class="footer mt-auto">
+			<!-- footer for desktop area START -->
+			<section class="desktop_footer desk_footer_bg_img">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-lg-2 d-none d-lg-flex">
+							<div class="desk_footer_logo">
+								<img
+									class="img-fluid"
+									src="./assets/img/backgounds/footer-logo.png"
+									alt=""
+								/>
 							</div>
 						</div>
-						<div class="row d-none d-lg-block">
-							<div class="col-lg-12">
-								<div class="footer_contents">
-									<p>
-										Lorem ipsum, dolor sit amet consectetur
-										adipisicing elit. Animi eum accusantium
-										fugiat dolore accusamus quae, officia
-										omnis veniam deserunt excepturi est
-										iusto repellendus quis quidem non
-										pariatur nulla quod facilis.
-									</p>
+						<!-- desk footer middle column  -->
+						<div class="col-7 col-md-6 col-lg-7 no-gutters">
+							<div class="row py-3">
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>information</h1>
+										<ul>
+											<li>
+												<a href="#"
+													>privacy policy of social
+													network</a
+												>
+											</li>
+											<li>
+												<a href="#">term of use</a>
+											</li>
+											<li>
+												<a href="#">privacy policy</a>
+											</li>
+											<li>
+												<a href="#"
+													>term & conditions</a
+												>
+											</li>
+											<li>
+												<a href="#">cookies policy</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>customar service</h1>
+										<ul>
+											<li>
+												<a href="#"
+													>genelar conditions</a
+												>
+											</li>
+											<li>
+												<a href="#">contact us</a>
+											</li>
+											<li>
+												<a href="#">My account</a>
+											</li>
+											<li>
+												<a href="#">shipping policy</a>
+											</li>
+											<li>
+												<a href="#">return policy</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>payment & shipping</h1>
+										<ul>
+											<li>
+												<a href="#"
+													>Delivery information</a
+												>
+											</li>
+											<li>
+												<a href="#">Payment methods</a>
+											</li>
+											<li>
+												<a href="#">shipping guide</a>
+											</li>
+											<li>
+												<a href="#"
+													>locations we ship to</a
+												>
+											</li>
+											<li>
+												<a href="#"
+													>estimated delivery time</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>about market</h1>
+										<ul>
+											<li>
+												<a href="#">about us</a>
+											</li>
+											<li><a href="#">blog</a></li>
+											<li>
+												<a href="#">term of use</a>
+											</li>
+											<li>
+												<a href="#">privecy policy</a>
+											</li>
+											<li>
+												<a href="#">site map</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row d-none d-lg-block">
+								<div class="col-lg-12">
+									<div class="footer_contents">
+										<p>
+											Lorem ipsum, dolor sit amet
+											consectetur adipisicing elit. Animi
+											eum accusantium fugiat dolore
+											accusamus quae, officia omnis veniam
+											deserunt excepturi est iusto
+											repellendus quis quidem non pariatur
+											nulla quod facilis.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- most right column  -->
-					<div class="col-5 col-md-6 col-lg-3 align-self-start">
-						<!-- elements for mobile  -->
-						<div class="footer_element_for_mobile d-lg-none mb-5">
-							<img
-								class="img-fluid"
-								src="./assets/img/backgounds/pngguru.com-6.png"
-								alt=""
-							/>
-						</div>
-						<!-- shipping and payments  -->
-						<div class="shipping_payments_wraapper">
-							<!-- shipping partners  -->
+						<!-- most right column  -->
+						<div class="col-5 col-md-6 col-lg-3 align-self-start">
+							<!-- elements for mobile  -->
 							<div
-								class="shipping_partner d-flex align-items-center justify-content-between"
+								class="footer_element_for_mobile d-lg-none mb-5"
 							>
-								<div class="shippings_options">
-									<h1>shipping partner</h1>
-									<div class="shipping_partner_logo d-flex">
+								<img
+									class="img-fluid"
+									src="./assets/img/backgounds/pngguru.com-6.png"
+									alt=""
+								/>
+							</div>
+							<!-- shipping and payments  -->
+							<div class="shipping_payments_wraapper">
+								<!-- shipping partners  -->
+								<div
+									class="shipping_partner d-flex align-items-center justify-content-between"
+								>
+									<div class="shippings_options">
+										<h1>shipping partner</h1>
+										<div
+											class="shipping_partner_logo d-flex"
+										>
+											<a href="#"
+												><img
+													class="img-fluid"
+													src="./assets/img/backgounds/ups.png"
+													alt=""
+											/></a>
+											<a href="#"
+												><img
+													class="img-fluid"
+													src="./assets/img/backgounds/mbe-logo.png"
+													alt=""
+											/></a>
+										</div>
+									</div>
+									<div
+										class="shippings_bg_img d-none d-lg-flex"
+									>
+										<img
+											class="img-fluid"
+											src="./assets/img/backgounds/pngguru.com-6.png"
+											alt=""
+										/>
+									</div>
+								</div>
+								<!-- payments  -->
+								<div class="payments_methods">
+									<h1>payment methods</h1>
+									<div class="payments_methods_logo d-flex">
 										<a href="#"
 											><img
 												class="img-fluid"
-												src="./assets/img/backgounds/ups.png"
+												src="./assets/img/backgounds/american-express.png"
 												alt=""
 										/></a>
 										<a href="#"
 											><img
 												class="img-fluid"
-												src="./assets/img/backgounds/mbe-logo.png"
+												src="./assets/img/backgounds/visa-card.png"
+												alt=""
+										/></a>
+										<a href="#"
+											><img
+												class="img-fluid"
+												src="./assets/img/backgounds/mastercart.png"
+												alt=""
+										/></a>
+										<a href="#"
+											><img
+												class="img-fluid"
+												src="./assets/img/backgounds/paypal.png"
 												alt=""
 										/></a>
 									</div>
 								</div>
-								<div class="shippings_bg_img d-none d-lg-flex">
-									<img
-										class="img-fluid"
-										src="./assets/img/backgounds/pngguru.com-6.png"
-										alt=""
-									/>
-								</div>
 							</div>
-							<!-- payments  -->
-							<div class="payments_methods">
-								<h1>payment methods</h1>
-								<div class="payments_methods_logo d-flex">
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/american-express.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/visa-card.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/mastercart.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/paypal.png"
-											alt=""
-									/></a>
-								</div>
+							<!-- elements for mobile  -->
+							<div
+								class="footer_element_for_mobile d-lg-none mt-5"
+							>
+								<img
+									class="img-fluid"
+									src="./assets/img/backgounds/footer-logo.png"
+									alt=""
+								/>
 							</div>
-						</div>
-						<!-- elements for mobile  -->
-						<div class="footer_element_for_mobile d-lg-none mt-5">
-							<img
-								class="img-fluid"
-								src="./assets/img/backgounds/footer-logo.png"
-								alt=""
-							/>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- .footer for desktop area END -->
-
-		<!-- Footer start -->
-		<footer class="footer">
-			<!-- Footer top -->
+			</section>
+			<!-- .footer for desktop area END -->
+			<!-- Footer mobile  -->
 			<div class="footer-top d-none d-lg-block">
 				<div class="container">
 					<div class="row">
@@ -3509,6 +3411,7 @@
 				</div>
 			</div>
 		</footer>
+		</section>
 		<!-- footer end -->
 		<!-- jquery library  -->
 		<script src="./assets/js/jquery.min.js"></script>

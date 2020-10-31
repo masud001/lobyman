@@ -16,12 +16,14 @@
 		<link rel="stylesheet" href="./assets/css/reset.css" />
 		<!-- custom css  -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/internal_page.css" />
 		<!-- footer css  -->
 		<link rel="stylesheet" href="./assets/css/footer.css" />
 		<link rel="stylesheet" href="./assets/css/responsive.css" />
 		<title>CART MENU || MASSETO</title>
 	</head>
 	<body>
+		<section class="main_page_container d-flex flex-column">
 		<!-- top order alert START  -->
 		<section class="top_order_alert d-none d-lg-block">
 			<div class="container">
@@ -2477,7 +2479,9 @@
 									>login</a
 								>
 							</li> -->
-							<li class="nav-item d-none d-lg-block dropdown cart_menu_wrapper">
+							<li
+								class="nav-item d-none d-lg-block dropdown cart_menu_wrapper"
+							>
 								<a
 									class="cart_btn"
 									href=""
@@ -2527,6 +2531,7 @@
 											<div
 												class="cart_dropdown_menu_btn d-flex flex-column"
 											>
+											
 												<span
 													class="align-self-start ml-auto"
 													><i class="fas fa-trash"></i
@@ -2534,24 +2539,32 @@
 												<div
 													class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
 												>
+												<form
+											action="#"
+											method="GET"
+											class="product_counter_btn d-flex align-items-center"
+										>
 													<input
-														type="text"
-														value="2"
-													/>
+												type="text"
+												class="product_counter_number"
+												value="1"
+											/>
 													<div
-														class="cart_increment_decrement_btn flex-column d-flex justify-content-center align-items-center"
-													>
-														<button
-															class="cart_increment"
-														>
-															+
-														</button>
-														<button
-															class="cart_decrement"
-														>
-															-
-														</button>
-													</div>
+												class="counter_plus_minus d-flex flex-column align-items-center"
+											>
+												<span
+													class="counter_plus_btn"
+													onclick="incrmnt(this)"
+												>
+													<i class="fa fa-plus"></i>
+												</span>
+												<span
+													class="counter_minus_btn"
+													onclick="dcrmnt(this)"
+												>
+													<i class="fa fa-minus"></i>
+												</span>
+											</div>
 													<button
 														class="cart_price_btn d-flex align-items-center"
 													>
@@ -2562,6 +2575,7 @@
 															></i
 														></span>
 													</button>
+													</form>
 												</div>
 											</div>
 										</div>
@@ -2603,24 +2617,32 @@
 												<div
 													class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
 												>
+													<form
+											action="#"
+											method="GET"
+											class="product_counter_btn d-flex align-items-center"
+										>
 													<input
-														type="text"
-														value="2"
-													/>
+												type="text"
+												class="product_counter_number"
+												value="1"
+											/>
 													<div
-														class="cart_increment_decrement_btn flex-column d-flex justify-content-center align-items-center"
-													>
-														<button
-															class="cart_increment"
-														>
-															+
-														</button>
-														<button
-															class="cart_decrement"
-														>
-															-
-														</button>
-													</div>
+												class="counter_plus_minus d-flex flex-column align-items-center"
+											>
+												<span
+													class="counter_plus_btn"
+													onclick="incrmnt(this)"
+												>
+													<i class="fa fa-plus"></i>
+												</span>
+												<span
+													class="counter_minus_btn"
+													onclick="dcrmnt(this)"
+												>
+													<i class="fa fa-minus"></i>
+												</span>
+											</div>
 													<button
 														class="cart_price_btn d-flex align-items-center"
 													>
@@ -2631,6 +2653,7 @@
 															></i
 														></span>
 													</button>
+													</form>
 												</div>
 											</div>
 										</div>
@@ -2661,7 +2684,9 @@
 									</div>
 								</div>
 							</li>
-							<li class="nav-item d-none d-lg-block dropdown user_menu_wrapper">
+							<li
+								class="nav-item d-none d-lg-block dropdown user_menu_wrapper"
+							>
 								<a
 									class="user_menu_btn d-flex align-items-center justify-content-start"
 									href="#"
@@ -4627,36 +4652,38 @@
 													alt=""
 												/>
 												<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
+													action="#"
+													method="GET"
+													class="product_counter_btn d-flex align-items-center"
+												>
+													<input
+														type="text"
+														class="product_counter_number"
+														value="1"
+													/>
 
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
-											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
-												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
-												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<div
+														class="counter_plus_minus d-flex flex-column align-items-center"
+													>
+														<span
+															class="counter_plus_btn"
+															onclick="incrmnt(this)"
+														>
+															+
+														</span>
+														<span
+															class="counter_minus_btn"
+															onclick="dcrmnt(this)"
+														>
+															-
+														</span>
+													</div>
+													<div
+														class="product_buy_now_btn"
+													>
+														<a href="#"> buy now</a>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -4796,36 +4823,38 @@
 													alt=""
 												/>
 												<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
+													action="#"
+													method="GET"
+													class="product_counter_btn d-flex align-items-center"
+												>
+													<input
+														type="text"
+														class="product_counter_number"
+														value="1"
+													/>
 
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
-											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
-												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
-												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<div
+														class="counter_plus_minus d-flex flex-column align-items-center"
+													>
+														<span
+															class="counter_plus_btn"
+															onclick="incrmnt(this)"
+														>
+															+
+														</span>
+														<span
+															class="counter_minus_btn"
+															onclick="dcrmnt(this)"
+														>
+															-
+														</span>
+													</div>
+													<div
+														class="product_buy_now_btn"
+													>
+														<a href="#"> buy now</a>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -4965,36 +4994,38 @@
 													alt=""
 												/>
 												<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
+													action="#"
+													method="GET"
+													class="product_counter_btn d-flex align-items-center"
+												>
+													<input
+														type="text"
+														class="product_counter_number"
+														value="1"
+													/>
 
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
-											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
-												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
-												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<div
+														class="counter_plus_minus d-flex flex-column align-items-center"
+													>
+														<span
+															class="counter_plus_btn"
+															onclick="incrmnt(this)"
+														>
+															+
+														</span>
+														<span
+															class="counter_minus_btn"
+															onclick="dcrmnt(this)"
+														>
+															-
+														</span>
+													</div>
+													<div
+														class="product_buy_now_btn"
+													>
+														<a href="#"> buy now</a>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -5321,36 +5352,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -5495,36 +5528,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -5669,36 +5704,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -5843,36 +5880,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -6038,36 +6077,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -6212,36 +6253,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -6386,36 +6429,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -6560,36 +6605,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -6849,36 +6896,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -7023,36 +7072,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -7197,36 +7248,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -7371,36 +7424,38 @@
 												</span>
 											</div>
 											<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-											<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-
-											<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													+
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														+
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														-
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
 												>
-													-
-												</span>
-											</div>
-											<div class="product_buy_now_btn">
-												<a href="#"> buy now</a>
-											</div>
-										</form>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -7646,192 +7701,236 @@
 		</div>
 		<!-- news letter ares END -->
 
-		<!-- footer for desktop area START -->
-		<section class="desktop_footer desk_footer_bg_img">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="col-lg-2 d-none d-lg-flex">
-						<div class="desk_footer_logo">
-							<img
-								class="img-fluid"
-								src="./assets/img/backgounds/footer-logo.png"
-								alt=""
-							/>
-						</div>
-					</div>
-					<!-- desk footer middle column  -->
-					<div class="col-7 col-md-6 col-lg-7 no-gutters">
-						<div class="row py-3">
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>information</h1>
-									<ul>
-										<li>
-											<a href="#"
-												>privacy policy of social
-												network</a
-											>
-										</li>
-										<li><a href="#">term of use</a></li>
-										<li><a href="#">privacy policy</a></li>
-										<li>
-											<a href="#">term & conditions</a>
-										</li>
-										<li><a href="#">cookies policy</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>customar service</h1>
-									<ul>
-										<li>
-											<a href="#">genelar conditions</a>
-										</li>
-										<li><a href="#">contact us</a></li>
-										<li><a href="#">My account</a></li>
-										<li><a href="#">shipping policy</a></li>
-										<li><a href="#">return policy</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>payment & shipping</h1>
-									<ul>
-										<li>
-											<a href="#">Delivery information</a>
-										</li>
-										<li><a href="#">Payment methods</a></li>
-										<li><a href="#">shipping guide</a></li>
-										<li>
-											<a href="#">locations we ship to</a>
-										</li>
-										<li>
-											<a href="#"
-												>estimated delivery time</a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>about market</h1>
-									<ul>
-										<li><a href="#">about us</a></li>
-										<li><a href="#">blog</a></li>
-										<li><a href="#">term of use</a></li>
-										<li><a href="#">privecy policy</a></li>
-										<li><a href="#">site map</a></li>
-									</ul>
-								</div>
+		
+
+		<!-- Footer start -->
+		<footer class="footer mt-auto">
+			<!-- footer for desktop area START -->
+			<section class="desktop_footer desk_footer_bg_img">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-lg-2 d-none d-lg-flex">
+							<div class="desk_footer_logo">
+								<img
+									class="img-fluid"
+									src="./assets/img/backgounds/footer-logo.png"
+									alt=""
+								/>
 							</div>
 						</div>
-						<div class="row d-none d-lg-block">
-							<div class="col-lg-12">
-								<div class="footer_contents">
-									<p>
-										Lorem ipsum, dolor sit amet consectetur
-										adipisicing elit. Animi eum accusantium
-										fugiat dolore accusamus quae, officia
-										omnis veniam deserunt excepturi est
-										iusto repellendus quis quidem non
-										pariatur nulla quod facilis.
-									</p>
+						<!-- desk footer middle column  -->
+						<div class="col-7 col-md-6 col-lg-7 no-gutters">
+							<div class="row py-3">
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>information</h1>
+										<ul>
+											<li>
+												<a href="#"
+													>privacy policy of social
+													network</a
+												>
+											</li>
+											<li>
+												<a href="#">term of use</a>
+											</li>
+											<li>
+												<a href="#">privacy policy</a>
+											</li>
+											<li>
+												<a href="#"
+													>term & conditions</a
+												>
+											</li>
+											<li>
+												<a href="#">cookies policy</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>customar service</h1>
+										<ul>
+											<li>
+												<a href="#"
+													>genelar conditions</a
+												>
+											</li>
+											<li>
+												<a href="#">contact us</a>
+											</li>
+											<li>
+												<a href="#">My account</a>
+											</li>
+											<li>
+												<a href="#">shipping policy</a>
+											</li>
+											<li>
+												<a href="#">return policy</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>payment & shipping</h1>
+										<ul>
+											<li>
+												<a href="#"
+													>Delivery information</a
+												>
+											</li>
+											<li>
+												<a href="#">Payment methods</a>
+											</li>
+											<li>
+												<a href="#">shipping guide</a>
+											</li>
+											<li>
+												<a href="#"
+													>locations we ship to</a
+												>
+											</li>
+											<li>
+												<a href="#"
+													>estimated delivery time</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>about market</h1>
+										<ul>
+											<li>
+												<a href="#">about us</a>
+											</li>
+											<li><a href="#">blog</a></li>
+											<li>
+												<a href="#">term of use</a>
+											</li>
+											<li>
+												<a href="#">privecy policy</a>
+											</li>
+											<li>
+												<a href="#">site map</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row d-none d-lg-block">
+								<div class="col-lg-12">
+									<div class="footer_contents">
+										<p>
+											Lorem ipsum, dolor sit amet
+											consectetur adipisicing elit. Animi
+											eum accusantium fugiat dolore
+											accusamus quae, officia omnis veniam
+											deserunt excepturi est iusto
+											repellendus quis quidem non pariatur
+											nulla quod facilis.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- most right column  -->
-					<div class="col-5 col-md-6 col-lg-3 align-self-start">
-						<!-- elements for mobile  -->
-						<div class="footer_element_for_mobile d-lg-none mb-5">
-							<img
-								class="img-fluid"
-								src="./assets/img/backgounds/pngguru.com-6.png"
-								alt=""
-							/>
-						</div>
-						<!-- shipping and payments  -->
-						<div class="shipping_payments_wraapper">
-							<!-- shipping partners  -->
+						<!-- most right column  -->
+						<div class="col-5 col-md-6 col-lg-3 align-self-start">
+							<!-- elements for mobile  -->
 							<div
-								class="shipping_partner d-flex align-items-center justify-content-between"
+								class="footer_element_for_mobile d-lg-none mb-5"
 							>
-								<div class="shippings_options">
-									<h1>shipping partner</h1>
-									<div class="shipping_partner_logo d-flex">
+								<img
+									class="img-fluid"
+									src="./assets/img/backgounds/pngguru.com-6.png"
+									alt=""
+								/>
+							</div>
+							<!-- shipping and payments  -->
+							<div class="shipping_payments_wraapper">
+								<!-- shipping partners  -->
+								<div
+									class="shipping_partner d-flex align-items-center justify-content-between"
+								>
+									<div class="shippings_options">
+										<h1>shipping partner</h1>
+										<div
+											class="shipping_partner_logo d-flex"
+										>
+											<a href="#"
+												><img
+													class="img-fluid"
+													src="./assets/img/backgounds/ups.png"
+													alt=""
+											/></a>
+											<a href="#"
+												><img
+													class="img-fluid"
+													src="./assets/img/backgounds/mbe-logo.png"
+													alt=""
+											/></a>
+										</div>
+									</div>
+									<div
+										class="shippings_bg_img d-none d-lg-flex"
+									>
+										<img
+											class="img-fluid"
+											src="./assets/img/backgounds/pngguru.com-6.png"
+											alt=""
+										/>
+									</div>
+								</div>
+								<!-- payments  -->
+								<div class="payments_methods">
+									<h1>payment methods</h1>
+									<div class="payments_methods_logo d-flex">
 										<a href="#"
 											><img
 												class="img-fluid"
-												src="./assets/img/backgounds/ups.png"
+												src="./assets/img/backgounds/american-express.png"
 												alt=""
 										/></a>
 										<a href="#"
 											><img
 												class="img-fluid"
-												src="./assets/img/backgounds/mbe-logo.png"
+												src="./assets/img/backgounds/visa-card.png"
+												alt=""
+										/></a>
+										<a href="#"
+											><img
+												class="img-fluid"
+												src="./assets/img/backgounds/mastercart.png"
+												alt=""
+										/></a>
+										<a href="#"
+											><img
+												class="img-fluid"
+												src="./assets/img/backgounds/paypal.png"
 												alt=""
 										/></a>
 									</div>
 								</div>
-								<div class="shippings_bg_img d-none d-lg-flex">
-									<img
-										class="img-fluid"
-										src="./assets/img/backgounds/pngguru.com-6.png"
-										alt=""
-									/>
-								</div>
 							</div>
-							<!-- payments  -->
-							<div class="payments_methods">
-								<h1>payment methods</h1>
-								<div class="payments_methods_logo d-flex">
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/american-express.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/visa-card.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/mastercart.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/paypal.png"
-											alt=""
-									/></a>
-								</div>
+							<!-- elements for mobile  -->
+							<div
+								class="footer_element_for_mobile d-lg-none mt-5"
+							>
+								<img
+									class="img-fluid"
+									src="./assets/img/backgounds/footer-logo.png"
+									alt=""
+								/>
 							</div>
-						</div>
-						<!-- elements for mobile  -->
-						<div class="footer_element_for_mobile d-lg-none mt-5">
-							<img
-								class="img-fluid"
-								src="./assets/img/backgounds/footer-logo.png"
-								alt=""
-							/>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- .footer for desktop area END -->
-
-		<!-- Footer start -->
-		<footer class="footer">
-			<!-- Footer top -->
+			</section>
+			<!-- .footer for desktop area END -->
+			<!-- Footer mobile  -->
 			<div class="footer-top d-none d-lg-block">
 				<div class="container">
 					<div class="row">
@@ -8108,6 +8207,7 @@
 				</div>
 			</div>
 		</footer>
+		</section>
 		<!-- footer end -->
 		<!-- jquery library  -->
 		<script src="./assets/js/jquery.min.js"></script>

@@ -1,3 +1,4 @@
+
 @media (min-width: 320px) {
 	.hero_left_bg {
 		width: 93px;
@@ -16,6 +17,22 @@
 		width: 300px;
 		padding: 15px;
 	}
+	.product_counter_number {
+		padding: 11px;
+		width: 40px;
+	}
+	.counter_plus_minus span {
+		padding: 5px 5px;
+	}
+	.product_buy_now_btn a {
+		font-size: 9px;
+		padding: 16px 8px;
+	}
+
+	.product_buy_now_btn {
+		top: -2px;
+	}
+
 	/* all product slider css  */
 	.single_blog_items_wrapper,
 	.arival_single_item,
@@ -63,8 +80,7 @@
 		font-size: 12px;
 		line-height: 17px;
 	}
-	.perrier_jouet_wrapper .hero_slider_contents .hero_price_area {
-	}
+
 	.perrier_jouet_wrapper
 		.hero_slider_contents
 		.hero_price_area
@@ -114,10 +130,21 @@
 	.newsletter_content p {
 		font-size: 10px;
 	}
+		.product__map_page_counter .product_counter_number {
+		border-top-left-radius: 15px !important;
+		border-bottom-left-radius: 15px !important;
+		padding: 7px 5px;
+	}
+	.product__map_btn a {
+		padding: 14px 25px !important;
+	}
 }
 @media (min-width: 400px) {
 	.perrier_jouet_bg_right {
 		background-position: 120px;
+	}
+	.product_buy_now_btn a {
+		padding: 16px 30px;
 	}
 }
 @media (min-width: 420px) {
@@ -211,7 +238,7 @@
 		height: 40px;
 		padding: 8px;
 	}
-	.mobile_navbar_menu .action-link button{
+	.mobile_navbar_menu .action-link button {
 		width: 50%;
 	}
 }
@@ -334,12 +361,15 @@
 		width: 100%;
 		height: 100%;
 	}
-	.mobile_navbar_menu .action-link button{
+	.mobile_navbar_menu .action-link button {
 		width: 40%;
 	}
 }
 
 @media (min-width: 992px) {
+	.product_buy_now_btn {
+		top: 0px;
+	}
 	.price_options > span,
 	.currency_options > span,
 	.language_options > span {
@@ -453,7 +483,7 @@
 	}
 	.product_counter_number {
 		padding: 10px;
-		width: 50px;
+		width: 37px;
 	}
 	.counter_plus_minus span,
 	.product_buy_now_btn a {
@@ -470,7 +500,7 @@
 	}
 	.counter_minus_btn {
 		padding-left: 6px !important;
-		padding-right:  6px !important;
+		padding-right: 6px !important;
 	}
 	.wine_maker_contents h1 {
 		font-size: 55px;
@@ -491,6 +521,12 @@
 	}
 	.newsletter_content h1 {
 		font-size: 38px;
+	}
+		.product__map_page_counter .product_counter_number {
+		padding: 10px 10px;
+	}
+	.product__map_btn a {
+		padding: 14px 15px !important;
 	}
 }
 @media (min-width: 1024px) {
@@ -516,6 +552,10 @@
 		background-color: transparent;
 		border-radius: 30px;
 		padding: 10px 11px;
+	}
+		.product_counter_number {
+		padding: 10px;
+		width: 50px;
 	}
 	/* for fluid container  */
 	.container-fluid > nav > .navigation_menu ul > li > a {
@@ -624,9 +664,36 @@
 	.single_blog_items_wrapper {
 		height: 480px;
 	}
+
+		.product__map_page_counter .product_counter_number {
+		border-top-left-radius: 15px !important;
+		border-bottom-left-radius: 15px !important;
+	}
+	.product__map_btn a {
+		padding: 14px 25px !important;
+	}
 }
 /* media query max width 
 ==========================
 */
-@media (min-width: 575.98px) {
+
+
+
+
+@media (min-width: 320px) {
+
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }

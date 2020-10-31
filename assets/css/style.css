@@ -79,6 +79,9 @@ button:focus {
 	font-family: PT_Serif_Bold;
 }
 
+html,body{
+	height: 100%;
+}
 body,
 p,
 a,
@@ -114,8 +117,7 @@ span {
 	color: #3f3f3f;
 	font-size: 14px;
 }
-.top_social_links {
-}
+
 .top_social_links a {
 	color: #3f3f3f;
 	padding: 0px 11px;
@@ -127,8 +129,7 @@ span {
 	margin-right: 0px;
 	padding-right: 0px;
 }
-.top_social_links a i {
-}
+
 
 /* 002 --> top cookies policys START 
 ===================================================
@@ -137,8 +138,7 @@ span {
 	background-color: #091d0c;
 	padding: 13px 0px;
 }
-.cookies_policy_message {
-}
+
 .cookies_policy_message p {
 	color: #ffffff;
 	font-size: 14px;
@@ -146,8 +146,7 @@ span {
 .cookies_policy_message p strong {
 	font-weight: bold;
 }
-.cookies_close_btn {
-}
+
 .cookies_btn {
 	padding: 17px 24px;
 	color: #000000;
@@ -171,8 +170,7 @@ span {
 }
 /* .search bar row */
 
-.produc_search_bar {
-}
+
 .produc_search_bar .form-control {
 	border-top: 1px solid #e6e6e6 !important;
 	border-bottom: 1px solid #e6e6e6 !important;
@@ -207,8 +205,7 @@ span {
 
 /* search dropdown  */
 
-.searching_area {
-}
+
 .search_product_heading {
 	margin-bottom: 15px;
 }
@@ -229,53 +226,28 @@ span {
 	font-size: 14px;
 	text-transform: capitalize;
 }
-.search_product_name {
-}
+
 .search_product_name a {
 	color: #818184;
 }
 
 /* price  */
-.price_options span {
-}
-.price_dropdown {
-}
-.price_dropdown button {
-}
 
-.price_dropdown_lists {
-}
-.price_dropdown_item {
-}
+
+
 
 /* language  */
 
-.language_options span {
-}
-.laguage_dropdown {
-}
-.laguage_dropdown button {
-}
 
-.language_dropdown_lists {
-}
-.language_dropdown_item {
-}
 
 /* currency  */
 
-.currency_options {
-}
-.currency_options span {
-}
-.currency_dropdown button {
-}
+
 
 .currency_dropdown_lists {
 	min-width: 5rem;
 }
-.currency_dropdown_item {
-}
+
 .price_dropdown button:focus,
 .laguage_dropdown button:focus,
 .currency_dropdown button:focus {
@@ -322,7 +294,7 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 3;
 	padding: 15px;
 	opacity: 0;
 	/* transition: opacity ease 0.5s; */
@@ -380,15 +352,12 @@ nav {
 .logo_img img {
 	width: 60px;
 }
-.nav_toggler_btn {
-}
+
 .bars_icon {
 	font-size: 30px;
 }
-.mobile_add_toCart {
-}
-.mobile_add_toCart {
-}
+
+
 .mobile_add_toCart .cart_btn {
 	position: relative;
 }
@@ -411,14 +380,12 @@ nav {
 	position: relative;
 	top: 8px;
 }
-.navigation_menu {
-}
+
 .navigation_menu > ul {
 	display: flex;
 	align-items: center;
 }
-.navigation_menu ul li {
-}
+
 .navigation_menu ul li a {
 	color: #292929;
 	text-transform: uppercase;
@@ -433,6 +400,9 @@ nav {
 .navigation_menu > ul > li.show > a {
 	color: #bf4800;
 	text-decoration: underline;
+}
+.user_menu_wrapper.show > a{
+	text-decoration: none !important;
 }
 .navigation_menu ul li a:hover {
 	text-decoration: none;
@@ -490,14 +460,13 @@ nav {
 	border: 0;
 	margin-top: 0px;
 }
-.navigation_menu ul li a.user_menu_btn {
+.navigation_menu ul li a.user_menu_btn:hover {
+	text-decoration: none;
 }
 .navigation_menu ul li a.user_menu_btn {
 	font-size: 10px !important;
 	position: relative;
-	/* top: -12px; */
-	/* padding-top: 0px !important;
-	padding-right: 0px !important; */
+
 }
 .navigation_menu ul li a.user_menu_btn img {
 	width: 35px;
@@ -549,7 +518,9 @@ button.cart_price_btn {
 	background-color: transparent;
 	color: #848e85;
 	margin-left: 2px;
-	padding: 0px 15px;
+	padding: 12px 15px;
+	border-top-right-radius: 32px;
+	border-bottom-right-radius: 32px;
 }
 button.cart_price_btn span i {
 	margin-left: 5px;
@@ -561,8 +532,7 @@ button.cart_price_btn span i {
 	margin-bottom: 15px;
 	line-height: 24px;
 }
-.cart_drand_total_price {
-}
+
 .cart_drand_total_price span.grand_total {
 	color: #091d0c;
 	text-transform: capitalize;
@@ -597,8 +567,7 @@ span.grand_total {
 	border-radius: 30px;
 	transition: background-color 0.3s;
 }
-.cart_checkout_wrapper {
-}
+
 
 .cart_checkout_wrapper {
 	margin-top: 38px;
@@ -648,11 +617,13 @@ p.cart_vat span {
 	padding: 0px 10px;
 }
 
+.user_dropdown_wrapper ul li a:hover {text-decoration: none;}
 .user_dropdown_wrapper ul li a {
 	text-transform: capitalize;
 	font-size: 14px !important;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #f0f0f0;
 	display: block !important;
+	color: #091d0c;
 }
 
 .user_dropdown_wrapper ul li:last-child a {
@@ -729,8 +700,7 @@ p.cart_vat span {
 	background-repeat: no-repeat;
 	background-size: contain;
 }
-.hero_slider {
-}
+
 .hero_slider .owl-nav {
 	margin-top: 0px !important;
 }
@@ -750,8 +720,7 @@ p.cart_vat span {
 .hero_slider .owl-nav button:focus {
 	outline: none;
 }
-.hero_slider .owl-nav button.owl-prev {
-}
+
 .hero_slider .owl-nav button.owl-next {
 	left: auto;
 	right: 50px;
@@ -783,12 +752,7 @@ p.cart_vat span {
 	height: 13px;
 	margin: 2px;
 }
-.hero_slider_img {
-}
-.hero_slider_img img {
-}
-.hero_slider_contents {
-}
+
 .hero_slider_contents h1 {
 	font-size: 16px;
 	text-transform: uppercase;
@@ -830,10 +794,7 @@ p.cart_vat span {
 	font-size: 10px;
 }
 /* hero review   */
-.review_pannel {
-}
-.review_area {
-}
+
 .reviews_start {
 	color: #303030;
 	font-weight: 800;
@@ -969,8 +930,7 @@ p.cart_vat span {
 	background-color: #091d0c;
 	padding: 50px 0px;
 }
-.single_promo {
-}
+
 .single_promo img {
 	margin-right: 15px;
 }
@@ -998,8 +958,7 @@ p.cart_vat span {
 	background-color: #fff;
 	padding: 50px 0px;
 }
-.section_title {
-}
+
 .section_title h1 {
 	font-size: 20px;
 	font-weight: 700;
@@ -1010,8 +969,7 @@ p.cart_vat span {
 	font-family: Nunito_Sans_Semi_B !important;
 }
 
-.product_contents {
-}
+
 .product_contents h1 {
 	font-size: 14px;
 	font-weight: 400;
@@ -1037,10 +995,7 @@ p.cart_vat span {
 .product_img {
 	margin-right: 15px;
 }
-.product_img img {
-}
-.product_spacifications {
-}
+
 .product_country {
 	width: 25px;
 	height: 25px;
@@ -1053,8 +1008,7 @@ p.cart_vat span {
 	height: auto;
 	left: 15px;
 }
-.product_country span {
-}
+
 .product_riesling {
 	width: 25px;
 	height: 25px;
@@ -1067,13 +1021,11 @@ p.cart_vat span {
 	height: auto;
 	left: 17px;
 }
-.product_riesling span {
-}
+
 .product_parker {
 	padding: 5px 0px;
 }
-.product_parker span {
-}
+
 .parker_number {
 	padding: 4px 12px;
 	border: 1px solid #8eb378;
@@ -1100,8 +1052,7 @@ p.cart_vat span {
 	color: #ffaf00;
 	margin-right: 23px;
 }
-.penin_name {
-}
+
 .product_sommelier {
 	padding: 5px 0px;
 	margin-bottom: 10px;
@@ -1113,15 +1064,11 @@ p.cart_vat span {
 	color: #791216;
 	margin-right: 23px;
 }
-.sommelier_name {
+
+span.product_vat_included {
+	font-size: 11px;
 }
 
-.product_price_counter {
-}
-.product_price {
-}
-.product_price span {
-}
 .product_price span img {
 	width: 13px;
 }
@@ -1145,8 +1092,7 @@ p.cart_vat span {
 	font-weight: 500;
 	font-family: Nunito_Sans_B !important;
 }
-.product_counter {
-}
+
 .product_counter img {
 	width: 13px !important;
 	height: auto;
@@ -1160,8 +1106,7 @@ p.cart_vat span {
 	width: 40px;
 	text-align: center;
 }
-.counter_plus_minus {
-}
+
 .counter_plus_minus span {
 	border: 0;
 	background-color: #791216;
@@ -1177,9 +1122,11 @@ p.cart_vat span {
 	margin-bottom: 1px;
 }
 .counter_minus_btn {
-	margin-top: 2px;
+	margin-top: 1px;
 }
+
 .product_buy_now_btn {
+	position: relative;
 }
 .product_buy_now_btn a {
 	color: #ffffff;
@@ -1236,8 +1183,7 @@ p.cart_vat span {
 	height: 2px;
 	background-color: #b5b6b7;
 }
-.latest_blog_container {
-}
+
 .blog_slider {
 	position: relative;
 }
@@ -1284,8 +1230,7 @@ p.cart_vat span {
 	margin-right: 5px;
 	font-size: 18px;
 }
-.blog_contents {
-}
+
 .blog_contents h1 {
 	font-size: 18px;
 	text-transform: capitalize;
@@ -1487,8 +1432,7 @@ p.cart_vat span {
 	position: relative;
 	left: 4px;
 }
-.video_promo_content {
-}
+
 .video_promo_content h1 {
 	font-size: 12px;
 	color: #fff;
@@ -1577,8 +1521,7 @@ p.cart_vat span {
 	font-weight: 400;
 	margin-bottom: 20px;
 }
-.wine_maker_name {
-}
+
 .maker_name {
 	margin-right: 40px;
 }
@@ -1597,8 +1540,7 @@ p.cart_vat span {
 	color: #ffeb00;
 	font-family: PT_Serif !important;
 }
-.know_more {
-}
+
 .know_more a {
 	background-color: #fff;
 	padding: 10px;
@@ -1655,7 +1597,19 @@ p.cart_vat span {
 /* 014 --> social wizaerd area start 
 =======================================
 */
-
+.twitter__wizard_area{
+height: 500px;
+}
+.social_wizard_heading{
+	background-color: #0d2110;
+	padding: 15px;
+	display: block;
+	color: #ffffff;
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+}
+.social_wizard_heading .icons{font-size: 20px;}
+.social_wizard_heading .heading{text-transform: capitalize; font-size: 25px; font-weight: 600; letter-spacing: 3px;}
 /* socia wizaerd will be start later  */
 
 /* 015 --> perrier jouet area 
@@ -1705,8 +1659,7 @@ p.cart_vat span {
 	background-size: contain;
 	z-index: 1;
 }
-.perrier_jouet_wrapper .hero_slider_contents {
-}
+
 
 /* 016 --> news letter ares START 
 =================================
@@ -1727,8 +1680,7 @@ p.cart_vat span {
 .nwws_letter_img {
 	width: 50%;
 }
-.nwws_letter_img img {
-}
+
 .newsletter_content {
 	position: relative;
 }
@@ -1760,8 +1712,7 @@ p.cart_vat span {
 	font-weight: 700;
 	font-family: Nunito_Sans_B !important;
 }
-.email_submission {
-}
+
 .email_submission p {
 	color: #020e35;
 	font-weight: 400;
@@ -1780,10 +1731,8 @@ p.cart_vat span {
 	font-size: 8px;
 }
 
-.email_submission:first-child {
-}
-.email_submission {
-}
+
+
 .email_submission .input-group {
 	margin-top: 15px;
 }
@@ -1848,18 +1797,13 @@ p.cart_vat span {
 	font-family: PT_Serif_Bold !important;
 	margin: 10px 0;
 }
-.shipping_payments_wraapper {
-}
-.shipping_partner {
-}
-.shippings_options {
-}
+
+
 .shippings_options h1 {
 	text-transform: uppercase;
 	margin-bottom: 15px;
 }
-.shipping_partner_logo {
-}
+
 .shipping_partner_logo img,
 .payments_methods_logo img {
 	width: 25px;
@@ -1873,10 +1817,8 @@ p.cart_vat span {
 .shippings_bg_img {
 	width: 44%;
 }
-.shippings_bg_img img {
-}
-.payments_methods {
-}
+
+
 .payments_methods h1 {
 	text-transform: uppercase;
 	font-size: 8px;
@@ -1892,14 +1834,10 @@ p.cart_vat span {
 .footer_element_for_mobile img {
 	width: 90px;
 }
+
+
 /* 
 ======================================================
 responsive  
 =======================================================
 */
-
-@media (min-width: 1900px) {
-	.container {
-		/* min-width: 100%; */
-	}
-}

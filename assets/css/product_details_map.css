@@ -1,3 +1,4 @@
+html,
 body {
 	height: 100%;
 }
@@ -5,13 +6,8 @@ body {
 	min-height: 100%;
 	position: relative;
 }
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-.product__map {
-}
+
+
 .product__map h2 {
 	color: #791216;
 	text-transform: uppercase;
@@ -43,8 +39,7 @@ body {
 	border-bottom-left-radius: 30px;
 	margin-left: 15px;
 }
-.product__map_page_carousel {
-}
+
 .product__map_page_carousel .owl-dots .owl-dot {
 	border: 1px solid #b79e94;
 	border-radius: 50%;
@@ -61,8 +56,7 @@ body {
 	background-color: #791216;
 	padding: 4px;
 }
-.product__map_page_carousel {
-}
+
 .product__map_page_carousel img.item {
 	width: auto !important;
 	margin: auto auto !important;
@@ -81,8 +75,7 @@ body {
 .shipping__side {
 	background-color: #f8fbfd;
 }
-.google_map_wrapper {
-}
+
 .google_map_wrapper h1 {
 	color: #303030;
 	font-size: 18px;

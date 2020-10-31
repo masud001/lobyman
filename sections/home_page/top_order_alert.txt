@@ -1,3 +1,4 @@
+		<section class="main_page_container d-flex flex-column">
 		<!-- top order alert START  -->
 		<section class="top_order_alert d-none d-lg-block">
 			<div class="container">

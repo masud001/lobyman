@@ -25,6 +25,7 @@
 		<title>FILTER RESULT || MASSETO</title>
 	</head>
 	<body>
+		<section class="main_page_container d-flex flex-column">
 		<!-- top order alert START  -->
 		<section class="top_order_alert d-none d-lg-block">
 			<div class="container">
@@ -398,7 +399,7 @@
 		<!-- top product searcing options and search bar END-->
 
 		<!-- heaer logo and menu area START -->
-		<header class="header_area">
+			<header class="header_area">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg">
 					<!-- brand logo  -->
@@ -2756,7 +2757,7 @@
 
 						<!-- search_filter -->
 						<div
-							class="col-10 col-lg-4 search_filter"
+							class="col-10 col-lg-3 search_filter"
 							id="search_filter"
 						>
 							<div class="help_bord_area mb-3">
@@ -2873,7 +2874,9 @@
 								>
 									<h1>uvas</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#uvas">
 									<ul>
 										<li>
 											<a
@@ -2995,7 +2998,9 @@
 								>
 									<h1>price</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#price">
 									<ul>
 										<li>
 											<a
@@ -3054,7 +3059,9 @@
 								>
 									<h1>volume</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#volume">
 									<ul>
 										<li>
 											<a
@@ -3113,7 +3120,9 @@
 								>
 									<h1>stocks</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#stocks">
 									<ul>
 										<li>
 											<a
@@ -3172,7 +3181,9 @@
 								>
 									<h1>state of botttol</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#stateOfBotttol">
 									<ul>
 										<li>
 											<a
@@ -3231,7 +3242,9 @@
 								>
 									<h1>productor</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#productor">
 									<ul>
 										<li>
 											<a
@@ -3290,7 +3303,9 @@
 								>
 									<h1>parker note</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#parkerNote">
 									<ul>
 										<li>
 											<a
@@ -3349,7 +3364,9 @@
 								>
 									<h1>vinous note</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#vinousNote">
 									<ul>
 										<li>
 											<a
@@ -3408,7 +3425,9 @@
 								>
 									<h1>packaging</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#packaging">
 									<ul>
 										<li>
 											<a
@@ -3467,7 +3486,9 @@
 								>
 									<h1>alcohol level</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#alcoholLevel">
 									<ul>
 										<li>
 											<a
@@ -3526,7 +3547,9 @@
 								>
 									<h1>discounted bottles</h1>
 								</div>
-								<div class="help_bord_menu">
+								<div class="help_bord_menu"
+									data-toggle="modal"
+									data-target="#discountedBottles">
 									<ul>
 										<li>
 											<a
@@ -3583,7 +3606,7 @@
 							</div>
 						</div>
 
-						<div class="col-12 col-lg-8">
+						<div class="col-12 col-lg-9">
 							<div
 								class="about_section_title search_result_view pb-4 d-flex justify-content-between align-items-center"
 							>
@@ -3838,7 +3861,8 @@
 																	src="./assets/img/backgounds/note-icon.png"
 																	alt=""
 																/>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -3856,13 +3880,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -4047,7 +4071,8 @@
 																	src="./assets/img/backgounds/note-icon.png"
 																	alt=""
 																/>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -4065,13 +4090,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -4256,7 +4281,8 @@
 																	src="./assets/img/backgounds/note-icon.png"
 																	alt=""
 																/>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -4274,13 +4300,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -4465,7 +4491,8 @@
 																	src="./assets/img/backgounds/note-icon.png"
 																	alt=""
 																/>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -4483,13 +4510,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -4675,7 +4702,8 @@
 																		/></span>
 																	</span>
 																</div>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -4693,13 +4721,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -4874,7 +4902,8 @@
 																		/></span>
 																	</span>
 																</div>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -4892,13 +4921,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -5073,7 +5102,8 @@
 																		/></span>
 																	</span>
 																</div>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -5091,13 +5121,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -5272,7 +5302,8 @@
 																		/></span>
 																	</span>
 																</div>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -5290,13 +5321,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -5471,7 +5502,8 @@
 																		/></span>
 																	</span>
 																</div>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -5489,13 +5521,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -5670,7 +5702,8 @@
 																		/></span>
 																	</span>
 																</div>
-																<form
+															<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -5688,13 +5721,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -5869,7 +5902,8 @@
 																		/></span>
 																	</span>
 																</div>
-																<form
+																<!-- form  -->
+										<form
 											action="#"
 											method="GET"
 											class="product_counter_btn d-flex align-items-center"
@@ -5887,13 +5921,13 @@
 													class="counter_plus_btn"
 													onclick="incrmnt(this)"
 												>
-													+
+													<i class="fa fa-plus"></i>
 												</span>
 												<span
 													class="counter_minus_btn"
 													onclick="dcrmnt(this)"
 												>
-													-
+													<i class="fa fa-minus"></i>
 												</span>
 											</div>
 											<div class="product_buy_now_btn">
@@ -6033,192 +6067,236 @@
 		</div>
 		<!-- news letter ares END -->
 
-		<!-- footer for desktop area START -->
-		<section class="desktop_footer desk_footer_bg_img">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="col-lg-2 d-none d-lg-flex">
-						<div class="desk_footer_logo">
-							<img
-								class="img-fluid"
-								src="./assets/img/backgounds/footer-logo.png"
-								alt=""
-							/>
-						</div>
-					</div>
-					<!-- desk footer middle column  -->
-					<div class="col-7 col-md-6 col-lg-7 no-gutters">
-						<div class="row py-3">
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>information</h1>
-									<ul>
-										<li>
-											<a href="#"
-												>privacy policy of social
-												network</a
-											>
-										</li>
-										<li><a href="#">term of use</a></li>
-										<li><a href="#">privacy policy</a></li>
-										<li>
-											<a href="#">term & conditions</a>
-										</li>
-										<li><a href="#">cookies policy</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>customar service</h1>
-									<ul>
-										<li>
-											<a href="#">genelar conditions</a>
-										</li>
-										<li><a href="#">contact us</a></li>
-										<li><a href="#">My account</a></li>
-										<li><a href="#">shipping policy</a></li>
-										<li><a href="#">return policy</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>payment & shipping</h1>
-									<ul>
-										<li>
-											<a href="#">Delivery information</a>
-										</li>
-										<li><a href="#">Payment methods</a></li>
-										<li><a href="#">shipping guide</a></li>
-										<li>
-											<a href="#">locations we ship to</a>
-										</li>
-										<li>
-											<a href="#"
-												>estimated delivery time</a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="desk_single_footer_items">
-									<h1>about market</h1>
-									<ul>
-										<li><a href="#">about us</a></li>
-										<li><a href="#">blog</a></li>
-										<li><a href="#">term of use</a></li>
-										<li><a href="#">privecy policy</a></li>
-										<li><a href="#">site map</a></li>
-									</ul>
-								</div>
+		
+
+		<!-- Footer start -->
+		<footer class="footer mt-auto">
+			<!-- footer for desktop area START -->
+			<section class="desktop_footer desk_footer_bg_img">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-lg-2 d-none d-lg-flex">
+							<div class="desk_footer_logo">
+								<img
+									class="img-fluid"
+									src="./assets/img/backgounds/footer-logo.png"
+									alt=""
+								/>
 							</div>
 						</div>
-						<div class="row d-none d-lg-block">
-							<div class="col-lg-12">
-								<div class="footer_contents">
-									<p>
-										Lorem ipsum, dolor sit amet consectetur
-										adipisicing elit. Animi eum accusantium
-										fugiat dolore accusamus quae, officia
-										omnis veniam deserunt excepturi est
-										iusto repellendus quis quidem non
-										pariatur nulla quod facilis.
-									</p>
+						<!-- desk footer middle column  -->
+						<div class="col-7 col-md-6 col-lg-7 no-gutters">
+							<div class="row py-3">
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>information</h1>
+										<ul>
+											<li>
+												<a href="#"
+													>privacy policy of social
+													network</a
+												>
+											</li>
+											<li>
+												<a href="#">term of use</a>
+											</li>
+											<li>
+												<a href="#">privacy policy</a>
+											</li>
+											<li>
+												<a href="#"
+													>term & conditions</a
+												>
+											</li>
+											<li>
+												<a href="#">cookies policy</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>customar service</h1>
+										<ul>
+											<li>
+												<a href="#"
+													>genelar conditions</a
+												>
+											</li>
+											<li>
+												<a href="#">contact us</a>
+											</li>
+											<li>
+												<a href="#">My account</a>
+											</li>
+											<li>
+												<a href="#">shipping policy</a>
+											</li>
+											<li>
+												<a href="#">return policy</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>payment & shipping</h1>
+										<ul>
+											<li>
+												<a href="#"
+													>Delivery information</a
+												>
+											</li>
+											<li>
+												<a href="#">Payment methods</a>
+											</li>
+											<li>
+												<a href="#">shipping guide</a>
+											</li>
+											<li>
+												<a href="#"
+													>locations we ship to</a
+												>
+											</li>
+											<li>
+												<a href="#"
+													>estimated delivery time</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="desk_single_footer_items">
+										<h1>about market</h1>
+										<ul>
+											<li>
+												<a href="#">about us</a>
+											</li>
+											<li><a href="#">blog</a></li>
+											<li>
+												<a href="#">term of use</a>
+											</li>
+											<li>
+												<a href="#">privecy policy</a>
+											</li>
+											<li>
+												<a href="#">site map</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row d-none d-lg-block">
+								<div class="col-lg-12">
+									<div class="footer_contents">
+										<p>
+											Lorem ipsum, dolor sit amet
+											consectetur adipisicing elit. Animi
+											eum accusantium fugiat dolore
+											accusamus quae, officia omnis veniam
+											deserunt excepturi est iusto
+											repellendus quis quidem non pariatur
+											nulla quod facilis.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- most right column  -->
-					<div class="col-5 col-md-6 col-lg-3 align-self-start">
-						<!-- elements for mobile  -->
-						<div class="footer_element_for_mobile d-lg-none mb-5">
-							<img
-								class="img-fluid"
-								src="./assets/img/backgounds/pngguru.com-6.png"
-								alt=""
-							/>
-						</div>
-						<!-- shipping and payments  -->
-						<div class="shipping_payments_wraapper">
-							<!-- shipping partners  -->
+						<!-- most right column  -->
+						<div class="col-5 col-md-6 col-lg-3 align-self-start">
+							<!-- elements for mobile  -->
 							<div
-								class="shipping_partner d-flex align-items-center justify-content-between"
+								class="footer_element_for_mobile d-lg-none mb-5"
 							>
-								<div class="shippings_options">
-									<h1>shipping partner</h1>
-									<div class="shipping_partner_logo d-flex">
+								<img
+									class="img-fluid"
+									src="./assets/img/backgounds/pngguru.com-6.png"
+									alt=""
+								/>
+							</div>
+							<!-- shipping and payments  -->
+							<div class="shipping_payments_wraapper">
+								<!-- shipping partners  -->
+								<div
+									class="shipping_partner d-flex align-items-center justify-content-between"
+								>
+									<div class="shippings_options">
+										<h1>shipping partner</h1>
+										<div
+											class="shipping_partner_logo d-flex"
+										>
+											<a href="#"
+												><img
+													class="img-fluid"
+													src="./assets/img/backgounds/ups.png"
+													alt=""
+											/></a>
+											<a href="#"
+												><img
+													class="img-fluid"
+													src="./assets/img/backgounds/mbe-logo.png"
+													alt=""
+											/></a>
+										</div>
+									</div>
+									<div
+										class="shippings_bg_img d-none d-lg-flex"
+									>
+										<img
+											class="img-fluid"
+											src="./assets/img/backgounds/pngguru.com-6.png"
+											alt=""
+										/>
+									</div>
+								</div>
+								<!-- payments  -->
+								<div class="payments_methods">
+									<h1>payment methods</h1>
+									<div class="payments_methods_logo d-flex">
 										<a href="#"
 											><img
 												class="img-fluid"
-												src="./assets/img/backgounds/ups.png"
+												src="./assets/img/backgounds/american-express.png"
 												alt=""
 										/></a>
 										<a href="#"
 											><img
 												class="img-fluid"
-												src="./assets/img/backgounds/mbe-logo.png"
+												src="./assets/img/backgounds/visa-card.png"
+												alt=""
+										/></a>
+										<a href="#"
+											><img
+												class="img-fluid"
+												src="./assets/img/backgounds/mastercart.png"
+												alt=""
+										/></a>
+										<a href="#"
+											><img
+												class="img-fluid"
+												src="./assets/img/backgounds/paypal.png"
 												alt=""
 										/></a>
 									</div>
 								</div>
-								<div class="shippings_bg_img d-none d-lg-flex">
-									<img
-										class="img-fluid"
-										src="./assets/img/backgounds/pngguru.com-6.png"
-										alt=""
-									/>
-								</div>
 							</div>
-							<!-- payments  -->
-							<div class="payments_methods">
-								<h1>payment methods</h1>
-								<div class="payments_methods_logo d-flex">
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/american-express.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/visa-card.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/mastercart.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											class="img-fluid"
-											src="./assets/img/backgounds/paypal.png"
-											alt=""
-									/></a>
-								</div>
+							<!-- elements for mobile  -->
+							<div
+								class="footer_element_for_mobile d-lg-none mt-5"
+							>
+								<img
+									class="img-fluid"
+									src="./assets/img/backgounds/footer-logo.png"
+									alt=""
+								/>
 							</div>
-						</div>
-						<!-- elements for mobile  -->
-						<div class="footer_element_for_mobile d-lg-none mt-5">
-							<img
-								class="img-fluid"
-								src="./assets/img/backgounds/footer-logo.png"
-								alt=""
-							/>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- .footer for desktop area END -->
-
-		<!-- Footer start -->
-		<footer class="footer">
-			<!-- Footer top -->
+			</section>
+			<!-- .footer for desktop area END -->
+			<!-- Footer mobile  -->
 			<div class="footer-top d-none d-lg-block">
 				<div class="container">
 					<div class="row">
@@ -6495,8 +6573,186 @@
 				</div>
 			</div>
 		</footer>
+		</section>
 		<!-- footer end -->
 		<!-- all modal here start   -->
+
+		<!-- modal for uvas  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="uvas"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+							uvas
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>arien</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal for year  -->
 		<div
 			class="modal fade modal_wrapper"
 			id="year"
@@ -6523,7 +6779,7 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-					<div class="modal-body modal_body">
+					<div class="modal-body modal_body px-3">
 						<form action="">
 							<div class="input-group">
 								<input
@@ -6670,6 +6926,1574 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- modal for volume  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="volume"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+						Volume
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal for stocks  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="stocks"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+						Stocks
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal for stateOfBotttol  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="stateOfBotttol"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+						State Of Botttol
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal for productor  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="productor"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+						Productor
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal for parkerNote  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="parkerNote"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+							Parker Note
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal for vinousNote  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="vinousNote"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+							Vinous Note
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal for packaging  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="packaging"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+							Packaging
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal for alcoholLevel  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="alcoholLevel"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+						Alcohol Level
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal for discountedBottles  -->
+		<div
+			class="modal fade modal_wrapper"
+			id="discountedBottles"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal_header">
+						<h5
+							class="modal-title modal_title"
+							id="exampleModalLabel"
+						>
+							Discounted Bottles
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal_body px-3">
+						<form action="">
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Username"
+									aria-label="Username"
+									aria-describedby="basic-addon1"
+								/>
+								<div class="input-group-append">
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+										><i class="fas fa-search"></i
+									></span>
+								</div>
+							</div>
+						</form>
+						<div class="help_bord_menu">
+							<ul>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="d-flex active justify-content-between align-items-center"
+										><span>2015</span>
+										<span class="question_no">(1)</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 
 		<!-- all modal here end   -->
 		<!-- jquery library  -->
