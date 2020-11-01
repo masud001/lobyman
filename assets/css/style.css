@@ -224,7 +224,7 @@ span {
 .search_product_items span {
 	color: #818184;
 	font-size: 14px;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 .search_product_name a {

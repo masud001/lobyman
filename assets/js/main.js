@@ -232,6 +232,12 @@ $(document).ready(function () {
 		let valueInt = Number.parseInt(value);
 		input.value = valueInt <= 0 ? 0 : --valueInt;
 	})
+
+
+
+
+
+
 });
 
 

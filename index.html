@@ -107,11 +107,12 @@
 												>Search</span
 											>
 										</div>
-										<input
+										<input  
+											id="desktopSearch"
 											type="text"
 											class="form-control"
 											placeholder="Type wine name"
-											autocomplete="off"
+											
 										/>
 
 										<div class="input-group-append">
@@ -122,14 +123,15 @@
 									</div>
 									<!-- search result dropdown menu -->
 									<div
+										
 										class="dropdown-menu w-100"
 										aria-labelledby="searchResultDropdown"
 									>
-										<div class="searching_area">
+										<div class="searching_area" id="searchResultForDesktop">
 											<div
 												class="search_product_heading pt-1 px-3"
 											>
-												<h1>Wine</h1>
+												<h1 class="">Wine</h1>
 											</div>
 											<!-- single rows  -->
 											<div
@@ -137,12 +139,12 @@
 											>
 												<span
 													class="search_product_name w-50 text-capitalize"
-													><a href="#"
+													><a href="#"  class=""
 														>Close Erusmus</a
 													></span
 												>
-												<span>2015</span>
-												<span>spain</span>
+												<span  class="">2015</span>
+												<span>Spain</span>
 												<span class="text-uppercase"
 													>5cl</span
 												>
@@ -159,7 +161,7 @@
 													</a></span
 												>
 												<span>2015</span>
-												<span>spain</span>
+												<span>Spain</span>
 												<span class="text-uppercase"
 													>5cl</span
 												>
@@ -175,7 +177,7 @@
 													></span
 												>
 												<span>2015</span>
-												<span>spain</span>
+												<span>Spain</span>
 												<span class="text-uppercase"
 													>5cl</span
 												>
@@ -183,8 +185,8 @@
 											<div
 												class="search_product_heading pt-1 px-3"
 											>
-												<h1 class="text-capitalize">
-													spritis
+												<h1 class="">
+													Spritis
 												</h1>
 											</div>
 											<!-- single rows  -->
@@ -198,7 +200,7 @@
 													></span
 												>
 												<span>2015</span>
-												<span>spain</span>
+												<span>Spain</span>
 												<span class="text-uppercase"
 													>5cl</span
 												>
@@ -215,7 +217,7 @@
 													</a></span
 												>
 												<span>2015</span>
-												<span>spain</span>
+												<span>Spain</span>
 												<span class="text-uppercase"
 													>5cl</span
 												>
@@ -231,7 +233,7 @@
 													></span
 												>
 												<span>2015</span>
-												<span>spain</span>
+												<span>Spain</span>
 												<span class="text-uppercase"
 													>5cl</span
 												>
@@ -2576,6 +2578,7 @@
 						<span class="input-group-text">Search</span>
 					</div>
 					<input
+						id="mobileSearch"
 						type="text"
 						class="form-control"
 						placeholder="Type wine name"
@@ -2593,7 +2596,7 @@
 					class="dropdown-menu w-100"
 					aria-labelledby="searchResultDropdown"
 				>
-					<div class="searching_area">
+					<div class="searching_area" id="searchResultForMobile">
 						<div class="search_product_heading pt-1 px-3">
 							<h1>Wine</h1>
 						</div>
@@ -8317,6 +8320,8 @@
 		<!-- footer end -->
 		<!-- jquery library  -->
 		<script src="./assets/js/jquery.min.js"></script>
+		<!-- Hilitor.js for hilite search result  -->
+		<script src="./assets/js/hilitor.js"></script>
 		<!-- properjs for bootstrap  -->
 		<script src="./assets/js/popper.min.js"></script>
 		<!-- bootstrap  -->
@@ -8325,7 +8330,36 @@
 		<script src="./assets/js/owl.carousel.js"></script>
 		<!-- magnificent js  -->
 		<script src="./assets/js/jquery.magnific-popup.min.js"></script>
+
 		<!-- custom js  -->
 		<script src="./assets/js/main.js"></script>
+		<script>
+				// Search result hilitor for desktop
+	  window.addEventListener("DOMContentLoaded", function(e) {
+    var myHilitor2 = new Hilitor("searchResultForDesktop");
+    myHilitor2.setMatchType("left");
+    document.getElementById("desktopSearch").addEventListener("keyup", function(e) {
+      myHilitor2.apply(this.value);
+    }, false);
+  }, false);
+				// Search result hilitor for mobile
+	  window.addEventListener("DOMContentLoaded", function(e) {
+    var myHilitor2 = new Hilitor("searchResultForMobile");
+    myHilitor2.setMatchType("left");
+    document.getElementById("mobileSearch").addEventListener("keyup", function(e) {
+      myHilitor2.apply(this.value);
+    }, false);
+  }, false);
+
+// $(document).ready(function(){
+	
+// 	$("#keywords").keyup(function(){
+// 		var myHilitor2 = new Hilitor("searchResult");
+// 	myHilitor2.setMatchType("left");
+// 		 myHilitor2.apply(this.value);
+// 		 console.log("keyup")
+// 	});
+// });
+		</script>
 	</body>
 </html>
