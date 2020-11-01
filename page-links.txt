@@ -23,3 +23,24 @@ https://masud001.github.io/lobyman/region_page.html
 https://masud001.github.io/lobyman/product_details.html
 https://masud001.github.io/lobyman/shipping_cost.html
 https://masud001.github.io/lobyman/my_account_history.html
+
+email page link
+
+https://masud001.github.io/lobyman/email/Account_Template.html
+https://masud001.github.io/lobyman/email/Backoffice_Template.html
+https://masud001.github.io/lobyman/email/Backwire_Template.html
+https://masud001.github.io/lobyman/email/Cheque_Template.html
+https://masud001.github.io/lobyman/email/Contact_Template.html
+https://masud001.github.io/lobyman/email/Contact_form_Template.html
+https://masud001.github.io/lobyman/email/Fowad_msg_Template.html
+https://masud001.github.io/lobyman/email/account_password_Template.html
+https://masud001.github.io/lobyman/email/download_Template.html
+https://masud001.github.io/lobyman/email/guest_to_costumer_Template.html
+https://masud001.github.io/lobyman/email/import_Template.html
+https://masud001.github.io/lobyman/email/in_tansit_Template.html
+https://masud001.github.io/lobyman/email/log_alrt_Template.html
+https://masud001.github.io/lobyman/email/news_letter_Template.html
+https://masud001.github.io/lobyman/email/oder_cancel_Template.html
+https://masud001.github.io/lobyman/email/oder_changed_Template.html
+https://masud001.github.io/lobyman/email/oder_confg_Template.html
+https://masud001.github.io/lobyman/email/slip_Template.html
