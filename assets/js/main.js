@@ -233,8 +233,18 @@ $(document).ready(function () {
 		input.value = valueInt <= 0 ? 0 : --valueInt;
 	})
 
+	// Dropdown sub menu
+	$(".search_product_items").mouseover(function(){
+		let target = $(this).attr("target");
+		console.log(target)
+		$(".sub-dropdown .dropdown-menu").removeClass("show");
+		$("#"+target).addClass("show");
+	})
 
-
+	// $(".search_product_items").mouseout(function(){
+	// 	let target = $(this).attr("target");
+	// 	// $("#"+target).removeClass("show");
+	// })
 
 
 

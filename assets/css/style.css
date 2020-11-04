@@ -168,6 +168,11 @@ span {
 	padding-bottom: 42px;
 	box-shadow: 0px 10px 8px 1px #f7f7f7;
 }
+.sub-dropdown{
+	position: absolute;
+	top: 0;
+	right: -100%;
+}
 /* .search bar row */
 
 
