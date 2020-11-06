@@ -173,6 +173,9 @@ span {
 	top: 0;
 	right: -100%;
 }
+.search_product_name a mark{
+	text-decoration: underline;
+}
 /* .search bar row */
 
 

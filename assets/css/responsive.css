@@ -253,6 +253,22 @@
 	}
 }
 @media (min-width: 768px) {
+	.search_dropdown{
+		width: 750px!important;
+	}
+	.search_area_left{
+		width: 60%;
+	}
+	.bodegas_section{
+		width: 40%;
+	}
+	.bodegas_section h1{
+		color: #0d2110;
+		font-size: 22px;
+		font-weight: 600;
+		font-family: Nunito_Sans_Semi_B !important;
+	}
+
 	.hero_left_bg {
 		width: 170px;
 	}
@@ -367,6 +383,9 @@
 }
 
 @media (min-width: 992px) {
+	.search_dropdown{
+		width: 800px!important;
+	}
 	.product_buy_now_btn {
 		top: 0px;
 	}
