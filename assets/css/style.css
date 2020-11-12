@@ -176,6 +176,10 @@ span {
 .search_product_name a mark{
 	text-decoration: underline;
 }
+.searching_area_mobile{
+	max-height: 300px;
+	overflow-y: scroll;
+}
 /* .search bar row */
 
 
