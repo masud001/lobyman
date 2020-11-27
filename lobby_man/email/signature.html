@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+			crossorigin="anonymous"
+		/>
+		<title>newslatter</title>
+
+		<style>
+			body {
+				margin: 0 !important;
+				padding: 0;
+				background-color: #ffffff;
+			}
+			table {
+				border-spacing: 0;
+				font-family: sans-serif;
+				color: #333333;
+			}
+			td {
+				padding: 0;
+			}
+			img {
+				border: 0;
+			}
+			div[style*="margin: 16px 0"] {
+				margin: 0 !important;
+			}
+			.wrapper {
+				width: 100%;
+				table-layout: fixed;
+				-webkit-text-size-adjust: 100%;
+				-ms-text-size-adjust: 100%;
+			}
+			.webkit {
+				max-width: 600px;
+				margin: 0 auto;
+			}
+			.outer {
+				margin: 0 auto;
+				width: 100%;
+				max-width: 600px;
+				background-color: #ffffff;
+			}
+
+			/* three column section design   */
+
+			.inner {
+				padding: 10px;
+			}
+
+			/* One column layout */
+			.one-column .contents {
+				text-align: left;
+			}
+			.one-column p {
+				margin-bottom: 10px;
+			}
+
+			/*Two column layout*/
+			.two-column {
+				text-align: center;
+				font-size: 0;
+			}
+
+			.two-column .column70 {
+				width: 100%;
+				max-width: 380px;
+				display: inline-block;
+				vertical-align: middle;
+				padding-left: 15px;
+			}
+
+			.two-column .column30 {
+				width: 100%;
+				max-width: 200px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.contents {
+				width: 100%;
+			}
+			.two-column .contents {
+				font-size: 14px;
+				text-align: left;
+			}
+			.two-column img {
+				width: 100%;
+				max-width: 200px;
+				height: auto;
+			}
+			.address__menu{}
+			.address__menu ul{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			.address__menu ul li{
+				display: block;
+			}
+			.address__menu ul li a{
+				color: #405a5b;
+				text-transform: capitalize;
+				display: block;
+				padding-top: 3px;
+				padding-bottom: 3px;
+			}
+
+			/*Media Queries*/
+			@media screen and (max-width: 400px) {
+				.two-column .column30,
+				.two-column .column70 {
+					max-width: 100% !important;
+				}
+			}
+			@media screen and (min-width: 401px) and (max-width: 620px) {
+				.two-column .column30 {
+					max-width: 33%;
+				}
+				.two-column .column70 {
+					max-width: 66% !important;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<center class="wrapper">
+			<div class="webkit">
+				<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+				<table class="outer" align="center">
+					<!-- logo and menu start  -->
+					<tr>
+						<td class="two-column">
+							<!--[if (gte mso 9)|(IE)]>
+								<table width="100%">
+									<tr>
+										<td width="50%" valign="top">
+											<![endif]-->
+							<div class="column30">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<table class="contents">
+												<tr>
+													<td>
+														<div
+															class="image__logo"
+															style="
+																border-right: 1px
+																	solid
+																	#791216;
+																padding-right: 15px;
+															"
+														>
+															<img
+																src="./images/logo.png"
+																alt="forest pexels"
+																width="100%"
+															/>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div
+															class="image__logo"
+															style="
+																width: 200px !important;
+															"
+														>
+															<span
+																><a
+																	href="#"
+																	style="
+																		color: #791216;
+																		padding-left: 3px;
+																		padding-right: 3px;
+																		font-size: 20px;
+																	"
+																	><i
+																		class="fas fa-envelope"
+																	></i></a
+															></span>
+															<span
+																><a
+																	href="#"
+																	style="
+																		color: #791216;
+																		padding-left: 3px;
+																		padding-right: 3px;
+																		font-size: 20px;
+																	"
+																	><i
+																		class="fab fa-instagram"
+																	></i></a
+															></span>
+															<span
+																><a
+																	href="#"
+																	style="
+																		color: #791216;
+																		padding-left: 3px;
+																		padding-right: 3px;
+																		font-size: 20px;
+																	"
+																	><i
+																		class="fab fa-facebook-square"
+																	></i></a
+															></span>
+															<span
+																><a
+																	href="#"
+																	style="
+																		color: #791216;
+																		padding-left: 3px;
+																		padding-right: 3px;
+																		font-size: 20px;
+																	"
+																	><i
+																		class="fab fa-twitter"
+																	></i></a
+															></span>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<!--[if (gte mso 9)|(IE)]>
+							</td><td width="50%" valign="top">
+        <![endif]-->
+							<div class="column70">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<table class="contents">
+												<tr>
+													<td>
+														<h1
+															style="
+																text-transform: capitalize;
+																font-weight: bold;
+																margin: 0;
+															"
+														>
+															lobby man
+														</h1>
+														<h2
+															style="
+																text-transform: capitalize;
+																font-size: 14px;
+																font-weight: normal;
+															"
+														>
+															head of salse
+														</h2>
+														<h2
+															style="
+																text-transform: capitalize;
+																font-size: 12px;
+																font-weight: normal;
+															"
+														>
+															EnjoyWine
+														</h2>
+													</td>
+												</tr>
+												<tr align="">
+													<td class="">
+														<div
+															class="address__menu"
+														>
+															<ul>
+																<li>
+																	<a href="#"></a>
+																		<span><i class="fas fa-book-open" style="margin-right: 15px;"></i></span>
+																		<span style="text-transform: uppercase; font-size: 13px;">sparkling address   barcelona, spain.
+																		wine</span></a
+																	>
+																</li>
+																<li>
+																	<a href="#"></a>
+																		<span><i class="fas fa-envelope" style="margin-right: 15px;"></i></span>
+																		<span style="text-transform: capitalize; font-size: 13px;">info@example.com</span></a
+																	>
+																</li>
+																<li>
+																	<a href="#"></a>
+																		<span><i class="fas fa-globe" style="margin-right: 15px;"></i></span>
+																		<span style="text-transform: capitalize; font-size: 13px;">www.enjoywinebcn.com</span></a
+																	>
+																</li>
+																<li>
+																	<a href="#"></a>
+																		<span><i class="fas fa-phone-alt" style="margin-right: 15px;"></i></span>
+																		<span style="text-transform: capitalize; font-size: 13px;">+12 123 1234 123</span></a
+																	>
+																</li>
+																
+																
+															</ul>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<!--[if (gte mso 9)|(IE)]>
+							</td>
+						</tr>
+					</table>
+					<![endif]-->
+						</td>
+					</tr>
+				</table>
+				<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+			</div>
+		</center>
+	</body>
+</html>
