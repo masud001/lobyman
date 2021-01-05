@@ -1607,6 +1607,10 @@ span.product_vat_included {
 .wine_advocate_slider .owl-nav button.owl-next {
 	left: auto;
 }
+.see-all-btn {
+	color: #791216;
+	font-weight: 800;
+}
 /* 014 --> social wizaerd area start 
 =======================================
 */
