@@ -5279,6 +5279,7 @@
 														src="./assets/img/backgounds/note-icon.png"
 														alt=""
 													/>
+													<!-- form  -->
 													<form
 														action="#"
 														method="GET"
@@ -5721,6 +5722,17 @@
 							</div>
 						</div>
 					</div>
+					<!-- see all buttons for mobile  -->
+					<div class="row d-block d-md-none mt-4 mb-4">
+						<div class="col justify-content-end">
+							<a
+								href="#"
+								class="text-capitalize see-all-btn float-right"
+								>see all</a
+							>
+						</div>
+					</div>
+					<!-- end  -->
 					<!-- best seller slider for mobile end -->
 				</div>
 			</div>
@@ -6017,13 +6029,13 @@
 											</div>
 											<!-- product price and counter  -->
 											<div
-												class="product_price_counter d-flex align-items-end align-items-lg-center justify-content-lg-center"
+												class="product_price_counter d-flex align-items-center justify-content-center"
 											>
 												<div
 													class="product_price d-flex flex-column"
 												>
 													<span
-														class="product_vat d-flex d-lg-none align-items-center pb-2"
+														class="product_vat d-flex align-items-center pb-2 d-flex d-md-none"
 													>
 														<span
 															class="product_vat_included"
@@ -6036,7 +6048,7 @@
 														</span>
 													</span>
 													<span
-														class="product_old d-none d-lg-flex align-items-center pb-2"
+														class="product_old d-flex align-items-center pb-2 d-none d-md-flex"
 													>
 														<span
 															class="product_old_price"
@@ -6050,7 +6062,7 @@
 														/></span>
 													</span>
 													<span
-														class="product_new d-flex align-items-center pt-2"
+														class="product_new d-flex align-items-center pt-md-2"
 													>
 														<span
 															class="product_new_price"
@@ -6064,44 +6076,54 @@
 														/></span>
 													</span>
 												</div>
-												<!-- form  -->
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
+												<div
+													class="product_counter d-flex align-items-center ml-3"
 												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
+													<img
+														class="img-fluid mr-3"
+														src="./assets/img/backgounds/note-icon.png"
+														alt=""
 													/>
+													<form
+														action="#"
+														method="GET"
+														class="product_counter_btn d-flex align-items-center"
+													>
+														<input
+															type="text"
+															class="product_counter_number"
+															value="1"
+														/>
 
-													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
-													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
+														<div
+															class="counter_plus_minus d-flex flex-column align-items-center"
 														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
+															<span
+																class="counter_plus_btn"
+																onclick="incrmnt(this)"
+															>
+																<i
+																	class="fa fa-plus"
+																></i>
+															</span>
+															<span
+																class="counter_minus_btn"
+																onclick="dcrmnt(this)"
+															>
+																<i
+																	class="fa fa-minus"
+																></i>
+															</span>
+														</div>
+														<div
+															class="product_buy_now_btn"
 														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
-													</div>
-													<div
-														class="product_buy_now_btn"
-													>
-														<a href="#"> buy now</a>
-													</div>
-												</form>
+															<a href="#">
+																buy now</a
+															>
+														</div>
+													</form>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -6217,13 +6239,14 @@
 											</div>
 											<!-- product price and counter  -->
 											<div
-												class="product_price_counter d-flex align-items-end align-items-lg-center justify-content-lg-center"
+												class="product_price_counter d-flex align-items-center justify-content-center"
 											>
+												<!-- product price  -->
 												<div
 													class="product_price d-flex flex-column"
 												>
 													<span
-														class="product_vat d-flex d-lg-none align-items-center pb-2"
+														class="product_vat d-flex align-items-center pb-2 d-flex d-md-none"
 													>
 														<span
 															class="product_vat_included"
@@ -6236,7 +6259,7 @@
 														</span>
 													</span>
 													<span
-														class="product_old d-none d-lg-flex align-items-center pb-2"
+														class="product_old d-flex align-items-center pb-2 d-none d-md-flex"
 													>
 														<span
 															class="product_old_price"
@@ -6250,7 +6273,7 @@
 														/></span>
 													</span>
 													<span
-														class="product_new d-flex align-items-center pt-2"
+														class="product_new d-flex align-items-center pt-md-2"
 													>
 														<span
 															class="product_new_price"
@@ -6264,44 +6287,55 @@
 														/></span>
 													</span>
 												</div>
-												<!-- form  -->
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
-												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
-													/>
 
-													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
+												<div
+													class="product_counter d-flex align-items-center ml-3"
+												>
+													<img
+														class="img-fluid mr-3"
+														src="./assets/img/backgounds/note-icon.png"
+														alt=""
+													/>
+													<form
+														action="#"
+														method="GET"
+														class="product_counter_btn d-flex align-items-center"
 													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
+														<input
+															type="text"
+															class="product_counter_number"
+															value="1"
+														/>
+
+														<div
+															class="counter_plus_minus d-flex flex-column align-items-center"
 														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
+															<span
+																class="counter_plus_btn"
+																onclick="incrmnt(this)"
+															>
+																<i
+																	class="fa fa-plus"
+																></i>
+															</span>
+															<span
+																class="counter_minus_btn"
+																onclick="dcrmnt(this)"
+															>
+																<i
+																	class="fa fa-minus"
+																></i>
+															</span>
+														</div>
+														<div
+															class="product_buy_now_btn"
 														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
-													</div>
-													<div
-														class="product_buy_now_btn"
-													>
-														<a href="#"> buy now</a>
-													</div>
-												</form>
+															<a href="#">
+																buy now</a
+															>
+														</div>
+													</form>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -6417,13 +6451,14 @@
 											</div>
 											<!-- product price and counter  -->
 											<div
-												class="product_price_counter d-flex align-items-end align-items-lg-center justify-content-lg-center"
+												class="product_price_counter d-flex align-items-center justify-content-center"
 											>
+												<!-- product price  -->
 												<div
 													class="product_price d-flex flex-column"
 												>
 													<span
-														class="product_vat d-flex d-lg-none align-items-center pb-2"
+														class="product_vat d-flex align-items-center pb-2 d-flex d-md-none"
 													>
 														<span
 															class="product_vat_included"
@@ -6436,7 +6471,7 @@
 														</span>
 													</span>
 													<span
-														class="product_old d-none d-lg-flex align-items-center pb-2"
+														class="product_old d-flex align-items-center pb-2 d-none d-md-flex"
 													>
 														<span
 															class="product_old_price"
@@ -6450,7 +6485,7 @@
 														/></span>
 													</span>
 													<span
-														class="product_new d-flex align-items-center pt-2"
+														class="product_new d-flex align-items-center pt-md-2"
 													>
 														<span
 															class="product_new_price"
@@ -6464,44 +6499,54 @@
 														/></span>
 													</span>
 												</div>
-												<!-- form  -->
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
+												<div
+													class="product_counter d-flex align-items-center ml-3"
 												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
+													<img
+														class="img-fluid mr-3"
+														src="./assets/img/backgounds/note-icon.png"
+														alt=""
 													/>
+													<form
+														action="#"
+														method="GET"
+														class="product_counter_btn d-flex align-items-center"
+													>
+														<input
+															type="text"
+															class="product_counter_number"
+															value="1"
+														/>
 
-													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
-													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
+														<div
+															class="counter_plus_minus d-flex flex-column align-items-center"
 														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
+															<span
+																class="counter_plus_btn"
+																onclick="incrmnt(this)"
+															>
+																<i
+																	class="fa fa-plus"
+																></i>
+															</span>
+															<span
+																class="counter_minus_btn"
+																onclick="dcrmnt(this)"
+															>
+																<i
+																	class="fa fa-minus"
+																></i>
+															</span>
+														</div>
+														<div
+															class="product_buy_now_btn"
 														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
-													</div>
-													<div
-														class="product_buy_now_btn"
-													>
-														<a href="#"> buy now</a>
-													</div>
-												</form>
+															<a href="#">
+																buy now</a
+															>
+														</div>
+													</form>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -6617,13 +6662,14 @@
 											</div>
 											<!-- product price and counter  -->
 											<div
-												class="product_price_counter d-flex align-items-end align-items-lg-center justify-content-lg-center"
+												class="product_price_counter d-flex align-items-center justify-content-center"
 											>
+												<!-- product price  -->
 												<div
 													class="product_price d-flex flex-column"
 												>
 													<span
-														class="product_vat d-flex d-lg-none align-items-center pb-2"
+														class="product_vat d-flex align-items-center pb-2 d-flex d-md-none"
 													>
 														<span
 															class="product_vat_included"
@@ -6636,7 +6682,7 @@
 														</span>
 													</span>
 													<span
-														class="product_old d-none d-lg-flex align-items-center pb-2"
+														class="product_old d-flex align-items-center pb-2 d-none d-md-flex"
 													>
 														<span
 															class="product_old_price"
@@ -6650,7 +6696,7 @@
 														/></span>
 													</span>
 													<span
-														class="product_new d-flex align-items-center pt-2"
+														class="product_new d-flex align-items-center pt-md-2"
 													>
 														<span
 															class="product_new_price"
@@ -6664,44 +6710,54 @@
 														/></span>
 													</span>
 												</div>
-												<!-- form  -->
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
+												<div
+													class="product_counter d-flex align-items-center ml-3"
 												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
+													<img
+														class="img-fluid mr-3"
+														src="./assets/img/backgounds/note-icon.png"
+														alt=""
 													/>
+													<form
+														action="#"
+														method="GET"
+														class="product_counter_btn d-flex align-items-center"
+													>
+														<input
+															type="text"
+															class="product_counter_number"
+															value="1"
+														/>
 
-													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
-													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
+														<div
+															class="counter_plus_minus d-flex flex-column align-items-center"
 														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
+															<span
+																class="counter_plus_btn"
+																onclick="incrmnt(this)"
+															>
+																<i
+																	class="fa fa-plus"
+																></i>
+															</span>
+															<span
+																class="counter_minus_btn"
+																onclick="dcrmnt(this)"
+															>
+																<i
+																	class="fa fa-minus"
+																></i>
+															</span>
+														</div>
+														<div
+															class="product_buy_now_btn"
 														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
-													</div>
-													<div
-														class="product_buy_now_btn"
-													>
-														<a href="#"> buy now</a>
-													</div>
-												</form>
+															<a href="#">
+																buy now</a
+															>
+														</div>
+													</form>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -6710,6 +6766,17 @@
 							</div>
 						</div>
 					</div>
+					<!-- see all buttons for mobile  -->
+					<div class="row d-block d-md-none mt-4 mb-4">
+						<div class="col justify-content-end">
+							<a
+								href="#"
+								class="text-capitalize see-all-btn float-right"
+								>see all</a
+							>
+						</div>
+					</div>
+					<!-- end  -->
 				</div>
 			</div>
 			<!-- just arrived section END -->
@@ -6838,13 +6905,14 @@
 											</div>
 											<!-- product price and counter  -->
 											<div
-												class="product_price_counter d-flex align-items-end align-items-lg-center justify-content-lg-center"
+												class="product_price_counter d-flex align-items-center justify-content-center"
 											>
+												<!-- product price  -->
 												<div
 													class="product_price d-flex flex-column"
 												>
 													<span
-														class="product_vat d-flex d-lg-none align-items-center pb-2"
+														class="product_vat d-flex align-items-center pb-2 d-flex d-md-none"
 													>
 														<span
 															class="product_vat_included"
@@ -6857,7 +6925,7 @@
 														</span>
 													</span>
 													<span
-														class="product_old d-none d-lg-flex align-items-center pb-2"
+														class="product_old d-flex align-items-center pb-2 d-none d-md-flex"
 													>
 														<span
 															class="product_old_price"
@@ -6871,7 +6939,7 @@
 														/></span>
 													</span>
 													<span
-														class="product_new d-flex align-items-center pt-2"
+														class="product_new d-flex align-items-center pt-md-2"
 													>
 														<span
 															class="product_new_price"
@@ -6885,44 +6953,55 @@
 														/></span>
 													</span>
 												</div>
-												<!-- form  -->
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
-												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
-													/>
 
-													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
+												<div
+													class="product_counter d-flex align-items-center ml-3"
+												>
+													<img
+														class="img-fluid mr-3"
+														src="./assets/img/backgounds/note-icon.png"
+														alt=""
+													/>
+													<form
+														action="#"
+														method="GET"
+														class="product_counter_btn d-flex align-items-center"
 													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
+														<input
+															type="text"
+															class="product_counter_number"
+															value="1"
+														/>
+
+														<div
+															class="counter_plus_minus d-flex flex-column align-items-center"
 														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
+															<span
+																class="counter_plus_btn"
+																onclick="incrmnt(this)"
+															>
+																<i
+																	class="fa fa-plus"
+																></i>
+															</span>
+															<span
+																class="counter_minus_btn"
+																onclick="dcrmnt(this)"
+															>
+																<i
+																	class="fa fa-minus"
+																></i>
+															</span>
+														</div>
+														<div
+															class="product_buy_now_btn"
 														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
-													</div>
-													<div
-														class="product_buy_now_btn"
-													>
-														<a href="#"> buy now</a>
-													</div>
-												</form>
+															<a href="#">
+																buy now</a
+															>
+														</div>
+													</form>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -7038,13 +7117,14 @@
 											</div>
 											<!-- product price and counter  -->
 											<div
-												class="product_price_counter d-flex align-items-end align-items-lg-center justify-content-lg-center"
+												class="product_price_counter d-flex align-items-center justify-content-center"
 											>
+												<!-- product price  -->
 												<div
 													class="product_price d-flex flex-column"
 												>
 													<span
-														class="product_vat d-flex d-lg-none align-items-center pb-2"
+														class="product_vat d-flex align-items-center pb-2 d-flex d-md-none"
 													>
 														<span
 															class="product_vat_included"
@@ -7057,7 +7137,7 @@
 														</span>
 													</span>
 													<span
-														class="product_old d-none d-lg-flex align-items-center pb-2"
+														class="product_old d-flex align-items-center pb-2 d-none d-md-flex"
 													>
 														<span
 															class="product_old_price"
@@ -7071,7 +7151,7 @@
 														/></span>
 													</span>
 													<span
-														class="product_new d-flex align-items-center pt-2"
+														class="product_new d-flex align-items-center pt-md-2"
 													>
 														<span
 															class="product_new_price"
@@ -7085,44 +7165,55 @@
 														/></span>
 													</span>
 												</div>
-												<!-- form  -->
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
-												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
-													/>
 
-													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
+												<div
+													class="product_counter d-flex align-items-center ml-3"
+												>
+													<img
+														class="img-fluid mr-3"
+														src="./assets/img/backgounds/note-icon.png"
+														alt=""
+													/>
+													<form
+														action="#"
+														method="GET"
+														class="product_counter_btn d-flex align-items-center"
 													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
+														<input
+															type="text"
+															class="product_counter_number"
+															value="1"
+														/>
+
+														<div
+															class="counter_plus_minus d-flex flex-column align-items-center"
 														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
+															<span
+																class="counter_plus_btn"
+																onclick="incrmnt(this)"
+															>
+																<i
+																	class="fa fa-plus"
+																></i>
+															</span>
+															<span
+																class="counter_minus_btn"
+																onclick="dcrmnt(this)"
+															>
+																<i
+																	class="fa fa-minus"
+																></i>
+															</span>
+														</div>
+														<div
+															class="product_buy_now_btn"
 														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
-													</div>
-													<div
-														class="product_buy_now_btn"
-													>
-														<a href="#"> buy now</a>
-													</div>
-												</form>
+															<a href="#">
+																buy now</a
+															>
+														</div>
+													</form>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -7238,13 +7329,14 @@
 											</div>
 											<!-- product price and counter  -->
 											<div
-												class="product_price_counter d-flex align-items-end align-items-lg-center justify-content-lg-center"
+												class="product_price_counter d-flex align-items-center justify-content-center"
 											>
+												<!-- product price  -->
 												<div
 													class="product_price d-flex flex-column"
 												>
 													<span
-														class="product_vat d-flex d-lg-none align-items-center pb-2"
+														class="product_vat d-flex align-items-center pb-2 d-flex d-md-none"
 													>
 														<span
 															class="product_vat_included"
@@ -7257,7 +7349,7 @@
 														</span>
 													</span>
 													<span
-														class="product_old d-none d-lg-flex align-items-center pb-2"
+														class="product_old d-flex align-items-center pb-2 d-none d-md-flex"
 													>
 														<span
 															class="product_old_price"
@@ -7271,7 +7363,7 @@
 														/></span>
 													</span>
 													<span
-														class="product_new d-flex align-items-center pt-2"
+														class="product_new d-flex align-items-center pt-md-2"
 													>
 														<span
 															class="product_new_price"
@@ -7285,44 +7377,55 @@
 														/></span>
 													</span>
 												</div>
-												<!-- form  -->
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
-												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
-													/>
 
-													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
+												<div
+													class="product_counter d-flex align-items-center ml-3"
+												>
+													<img
+														class="img-fluid mr-3"
+														src="./assets/img/backgounds/note-icon.png"
+														alt=""
+													/>
+													<form
+														action="#"
+														method="GET"
+														class="product_counter_btn d-flex align-items-center"
 													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
+														<input
+															type="text"
+															class="product_counter_number"
+															value="1"
+														/>
+
+														<div
+															class="counter_plus_minus d-flex flex-column align-items-center"
 														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
+															<span
+																class="counter_plus_btn"
+																onclick="incrmnt(this)"
+															>
+																<i
+																	class="fa fa-plus"
+																></i>
+															</span>
+															<span
+																class="counter_minus_btn"
+																onclick="dcrmnt(this)"
+															>
+																<i
+																	class="fa fa-minus"
+																></i>
+															</span>
+														</div>
+														<div
+															class="product_buy_now_btn"
 														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
-													</div>
-													<div
-														class="product_buy_now_btn"
-													>
-														<a href="#"> buy now</a>
-													</div>
-												</form>
+															<a href="#">
+																buy now</a
+															>
+														</div>
+													</form>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -7438,13 +7541,14 @@
 											</div>
 											<!-- product price and counter  -->
 											<div
-												class="product_price_counter d-flex align-items-end align-items-lg-center justify-content-lg-center"
+												class="product_price_counter d-flex align-items-center justify-content-center"
 											>
+												<!-- product price  -->
 												<div
 													class="product_price d-flex flex-column"
 												>
 													<span
-														class="product_vat d-flex d-lg-none align-items-center pb-2"
+														class="product_vat d-flex align-items-center pb-2 d-flex d-md-none"
 													>
 														<span
 															class="product_vat_included"
@@ -7457,7 +7561,7 @@
 														</span>
 													</span>
 													<span
-														class="product_old d-none d-lg-flex align-items-center pb-2"
+														class="product_old d-flex align-items-center pb-2 d-none d-md-flex"
 													>
 														<span
 															class="product_old_price"
@@ -7471,7 +7575,7 @@
 														/></span>
 													</span>
 													<span
-														class="product_new d-flex align-items-center pt-2"
+														class="product_new d-flex align-items-center pt-md-2"
 													>
 														<span
 															class="product_new_price"
@@ -7485,44 +7589,55 @@
 														/></span>
 													</span>
 												</div>
-												<!-- form  -->
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
-												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
-													/>
 
-													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
+												<div
+													class="product_counter d-flex align-items-center ml-3"
+												>
+													<img
+														class="img-fluid mr-3"
+														src="./assets/img/backgounds/note-icon.png"
+														alt=""
+													/>
+													<form
+														action="#"
+														method="GET"
+														class="product_counter_btn d-flex align-items-center"
 													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
+														<input
+															type="text"
+															class="product_counter_number"
+															value="1"
+														/>
+
+														<div
+															class="counter_plus_minus d-flex flex-column align-items-center"
 														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
+															<span
+																class="counter_plus_btn"
+																onclick="incrmnt(this)"
+															>
+																<i
+																	class="fa fa-plus"
+																></i>
+															</span>
+															<span
+																class="counter_minus_btn"
+																onclick="dcrmnt(this)"
+															>
+																<i
+																	class="fa fa-minus"
+																></i>
+															</span>
+														</div>
+														<div
+															class="product_buy_now_btn"
 														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
-													</div>
-													<div
-														class="product_buy_now_btn"
-													>
-														<a href="#"> buy now</a>
-													</div>
-												</form>
+															<a href="#">
+																buy now</a
+															>
+														</div>
+													</form>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -7531,6 +7646,17 @@
 							</div>
 						</div>
 					</div>
+					<!-- see all buttons for mobile  -->
+					<div class="row d-block d-md-none mt-4 mb-4">
+						<div class="col justify-content-end">
+							<a
+								href="#"
+								class="text-capitalize see-all-btn float-right"
+								>see all</a
+							>
+						</div>
+					</div>
+					<!-- end  -->
 				</div>
 			</div>
 			<!-- wine of the week section END -->
@@ -8452,6 +8578,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- see all buttons for mobile  -->
 					<div class="row d-block d-md-none mt-4 mb-4">
 						<div class="col justify-content-end">
 							<a
@@ -8461,6 +8588,7 @@
 							>
 						</div>
 					</div>
+					<!-- end  -->
 				</div>
 			</div>
 			<!-- 100 points wine advocate section START  END -->
@@ -8475,95 +8603,100 @@
 							</div>
 						</div>
 					</div>
-					<div class="row py-3">
-						<div class="col-md-4 py-3">
-							<div class="social_media_wizerd">
-								<div class="social_wizard_heading">
-									<span class="icons mr-3"
-										><i class="fab fa-twitter"></i
-									></span>
-									<span class="heading">twitter</span>
-								</div>
-								<div class="twitter__wizard_area w-100">
-									<a
-										class="twitter-timeline"
-										data-height="500"
-										href="https://twitter.com/enjoywinebcn?ref_src=twsrc%5Etfw"
-										>Tweets by enjoywinebcn</a
+
+					<!-- to make social media without carousel, you have to delete
+					those classes from row ( loop owl-carousel owl-theme),
+					and every single  "social_media_wizerd" 
+					should be inside "col-md-*" class for column. 
+					
+					note: from main.js file you should delete "social media slider start" block.
+					-->
+
+					<div class="row py-3 loop owl-carousel owl-theme">
+						<div class="social_media_wizerd">
+							<div class="social_wizard_heading">
+								<span class="icons mr-3"
+									><i class="fab fa-twitter"></i
+								></span>
+								<span class="heading">twitter</span>
+							</div>
+							<div class="twitter__wizard_area w-100">
+								<a
+									class="twitter-timeline"
+									data-height="500"
+									href="https://twitter.com/enjoywinebcn?ref_src=twsrc%5Etfw"
+									>Tweets by enjoywinebcn</a
+								>
+								<script
+									async
+									src="https://platform.twitter.com/widgets.js"
+									charset="utf-8"
+								></script>
+							</div>
+						</div>
+
+						<div class="social_media_wizerd">
+							<div class="social_wizard_heading">
+								<span class="icons mr-3"
+									><i class="fab fa-instagram"></i
+								></span>
+								<span class="heading text-uppercase"
+									>instagram</span
+								>
+							</div>
+							<div class="twitter__wizard_area w-100">
+								<div
+									class="fb-page"
+									data-href="https://www.facebook.com/enjoywineblog/"
+									data-tabs="timeline"
+									data-width=""
+									data-height=""
+									data-small-header="false"
+									data-adapt-container-width="true"
+									data-hide-cover="false"
+									data-show-facepile="true"
+								>
+									<blockquote
+										cite="https://www.facebook.com/enjoywineblog/"
+										class="fb-xfbml-parse-ignore"
 									>
-									<script
-										async
-										src="https://platform.twitter.com/widgets.js"
-										charset="utf-8"
-									></script>
+										<a
+											href="https://www.facebook.com/enjoywineblog/"
+											>Enjoy Wine Blog</a
+										>
+									</blockquote>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 py-3">
-							<div class="social_media_wizerd">
-								<div class="social_wizard_heading">
-									<span class="icons mr-3"
-										><i class="fab fa-instagram"></i
-									></span>
-									<span class="heading text-uppercase"
-										>instagram</span
-									>
-								</div>
-								<div class="twitter__wizard_area w-100">
-									<div
-										class="fb-page"
-										data-href="https://www.facebook.com/enjoywineblog/"
-										data-tabs="timeline"
-										data-width=""
-										data-height=""
-										data-small-header="false"
-										data-adapt-container-width="true"
-										data-hide-cover="false"
-										data-show-facepile="true"
-									>
-										<blockquote
-											cite="https://www.facebook.com/enjoywineblog/"
-											class="fb-xfbml-parse-ignore"
-										>
-											<a
-												href="https://www.facebook.com/enjoywineblog/"
-												>Enjoy Wine Blog</a
-											>
-										</blockquote>
-									</div>
-								</div>
+
+						<div class="social_media_wizerd">
+							<div class="social_wizard_heading">
+								<span class="icons mr-3"
+									><i class="fab fa-facebook"></i
+								></span>
+								<span class="heading">facebook</span>
 							</div>
-						</div>
-						<div class="col-md-4 py-3">
-							<div class="social_media_wizerd">
-								<div class="social_wizard_heading">
-									<span class="icons mr-3"
-										><i class="fab fa-facebook"></i
-									></span>
-									<span class="heading">facebook</span>
-								</div>
-								<div class="twitter__wizard_area w-100">
-									<div
-										class="fb-page"
-										data-href="https://www.facebook.com/enjoywineblog/"
-										data-tabs="timeline"
-										data-width=""
-										data-height=""
-										data-small-header="false"
-										data-adapt-container-width="true"
-										data-hide-cover="false"
-										data-show-facepile="true"
+							<div class="twitter__wizard_area w-100">
+								<div
+									class="fb-page"
+									data-href="https://www.facebook.com/enjoywineblog/"
+									data-tabs="timeline"
+									data-width=""
+									data-height=""
+									data-small-header="false"
+									data-adapt-container-width="true"
+									data-hide-cover="false"
+									data-show-facepile="true"
+								>
+									<blockquote
+										cite="https://www.facebook.com/enjoywineblog/"
+										class="fb-xfbml-parse-ignore"
 									>
-										<blockquote
-											cite="https://www.facebook.com/enjoywineblog/"
-											class="fb-xfbml-parse-ignore"
+										<a
+											href="https://www.facebook.com/enjoywineblog/"
+											>Enjoy Wine Blog</a
 										>
-											<a
-												href="https://www.facebook.com/enjoywineblog/"
-												>Enjoy Wine Blog</a
-											>
-										</blockquote>
-									</div>
+									</blockquote>
 								</div>
 							</div>
 						</div>

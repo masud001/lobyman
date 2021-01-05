@@ -137,6 +137,28 @@ $(document).ready(function () {
 		},
 	});
 	// wine_advocate_slider for home page end
+	// social media slider start
+	$(".loop").owlCarousel({
+		center: true,
+		items: 3,
+		loop: true,
+		dots: false,
+		nav: false,
+		margin: 10,
+		responsive: {
+			300: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			},
+			768: {
+				items: 3,
+			},
+		},
+	});
+	// social media slider end
+
 	// customar details page testimonials slider start
 	$(".testimonial_slider_wrapper").owlCarousel({
 		center: true,
@@ -207,58 +229,52 @@ $(document).ready(function () {
 		$(this).addClass("active");
 	});
 
-
-	$("#filter_trigger").click(function(){
+	$("#filter_trigger").click(function () {
 		$("#search_filter").addClass("active");
 		$("#search_filter_bg").addClass("active");
-	})
+	});
 
-	$("#search_filter_bg").click(function(){
+	$("#search_filter_bg").click(function () {
 		$(this).removeClass("active");
 		$("#search_filter").removeClass("active");
-	})
+	});
 
-
-	$(".quantity__plus").click(function(){
+	$(".quantity__plus").click(function () {
 		let input = $(this).parent().children()[1];
 		let value = input.value;
 		let valueInt = Number.parseInt(value);
 		input.value = ++valueInt;
-	})
+	});
 
-	$(".quantity__minus").click(function(){
+	$(".quantity__minus").click(function () {
 		let input = $(this).parent().children()[1];
 		let value = input.value;
 		let valueInt = Number.parseInt(value);
 		input.value = valueInt <= 0 ? 0 : --valueInt;
-	})
+	});
 
 	// Dropdown sub menu
-	$(".search_product_items").mouseover(function(){
+	$(".search_product_items").mouseover(function () {
 		let target = $(this).attr("target");
-		console.log(target)
+		console.log(target);
 		$(".sub-dropdown .dropdown-menu").removeClass("show");
-		$("#"+target).addClass("show");
-	})
+		$("#" + target).addClass("show");
+	});
 
 	// $(".search_product_items").mouseout(function(){
 	// 	let target = $(this).attr("target");
 	// 	// $("#"+target).removeClass("show");
 	// })
-
-
-
 });
 
-
-function incrmnt(val){
+function incrmnt(val) {
 	let input = val.parentNode.parentNode.childNodes[1];
 	let value = input.value;
 	let valueInt = Number.parseInt(value);
 	input.value = ++valueInt;
 }
 
-function dcrmnt(val){
+function dcrmnt(val) {
 	let input = val.parentNode.parentNode.childNodes[1];
 	let value = input.value;
 	let valueInt = Number.parseInt(value);
