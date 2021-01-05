@@ -25,306 +25,304 @@
 	<body>
 		<section class="main_page_container  d-flex flex-column">
 			<!-- heaer logo and menu area START -->
-			
-				<header class="header_area d-md-none mb-sm-5">
-			<div class="container">
-				<nav class="navbar navbar-expand-lg">
-					<!-- brand logo  -->
-					<a class="navbar-brand logo_img order-2 order-lg-0" href="#"
-						><img
-							class="img-fluid"
-							src="./assets/img/logo/logo.png"
-							alt="logo"
-					/></a>
-					<!-- navbar toggler button  -->
-					<button
-						class="navbar-toggler nav_toggler_btn order-1"
-						data-toggle="collapse"
-						data-target="#navbarMenu"
-					>
-						<span class="bars_icon"
-							><i class="fas fa-bars"></i
-						></span>
-					</button>
-
-					<div class="mobile_add_toCart order-3 d-lg-none dropdown cart_menu_wrapper">
-						<a 
-							class="cart_btn" 
-							href=""
-							id="cart_dropdown"
-							data-toggle="dropdown"
-							aria-haspopup="true">
-							<span class="badge_number">2</span>
-							<img
-								src="./assets/img/cart-icon/supermarket.png"
-								alt="cart icon"
+			<header class="header_area d-md-none mb-sm-5">
+				<div class="container">
+					<nav class="navbar navbar-expand-lg">
+						<!-- brand logo  -->
+						<a class="navbar-brand logo_img order-2 order-lg-0" href="#"
+							><img
+								class="img-fluid"
+								src="./assets/img/logo/logo.png"
+								alt="logo"
 						/></a>
-						<!-- cart_dropdown drop down  -->
-								<div
-									class="dropdown-menu cart_dropdown dropdown-menu-right"
-									aria-labelledby="cart_dropdown"
-								>
-									<div class="cart_dropdown_wrapper">
-										<h1>my cart</h1>
-										<!-- single items  -->
-										<div
-											class="single_cart_items d-flex align-items-center justify-content-between"
-										>
-											<div class="cart_item_img">
-												<img
-													src="./assets/img/bottol/bottol.png"
-													alt=""
-												/>
-											</div>
+						<!-- navbar toggler button  -->
+						<button
+							class="navbar-toggler nav_toggler_btn order-1"
+							data-toggle="collapse"
+							data-target="#navbarMenu"
+						>
+							<span class="bars_icon"
+								><i class="fas fa-bars"></i
+							></span>
+						</button>
+
+						<div class="mobile_add_toCart order-3 d-lg-none dropdown cart_menu_wrapper p-2">
+							<a 
+								class="cart_btn" 
+								href=""
+								id="cart_dropdown"
+								data-toggle="dropdown"
+								aria-haspopup="true">
+								<span class="badge_number">2</span>
+								<img
+									src="./assets/img/cart-icon/supermarket.png"
+									alt="cart icon"
+							/></a>
+							<!-- cart_dropdown drop down  -->
+									<div
+										class="dropdown-menu cart_dropdown dropdown-menu-right"
+										aria-labelledby="cart_dropdown"
+									>
+										<div class="cart_dropdown_wrapper">
+											<h1>my cart</h1>
+											<!-- single items  -->
 											<div
-												class="cart_item_name w-50 mr-auto"
+												class="single_cart_items d-flex align-items-center justify-content-between"
 											>
-												<h1>
-													perrier jouet belle eoque
-													2012
-												</h1>
-												<h1 class="cart_price">
-													129,41
-													<i
-														class="fas fa-euro-sign"
-													></i>
-												</h1>
-												<p class="cart_vat">
-													<span>vat</span> included
-												</p>
-											</div>
-											<div
-												class="cart_dropdown_menu_btn d-flex flex-column"
-											>
-											
-												<span
-													class="align-self-start ml-auto"
-													><i class="fas fa-trash"></i
-												></span>
-												<div
-													class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
-												>
-												<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-													<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-													<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
-											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
-												>
-													<i class="fa fa-plus"></i>
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
-												>
-													<i class="fa fa-minus"></i>
-												</span>
-											</div>
-													<button
-														class="cart_price_btn d-flex align-items-center"
-													>
-														<span>258,82</span>
-														<span
-															><i
-																class="fas fa-euro-sign"
-															></i
-														></span>
-													</button>
-													</form>
+												<div class="cart_item_img">
+													<img
+														src="./assets/img/bottol/bottol.png"
+														alt=""
+													/>
 												</div>
-											</div>
-										</div>
-										<hr />
-										<!-- single items  -->
-										<div
-											class="single_cart_items d-flex align-items-center justify-content-between"
-										>
-											<div class="cart_item_img">
-												<img
-													src="./assets/img/bottol/bottol.png"
-													alt=""
-												/>
-											</div>
-											<div
-												class="cart_item_name w-50 mr-auto"
-											>
-												<h1>
-													perrier jouet belle eoque
-													2012
-												</h1>
-												<h1 class="cart_price">
-													129,41
-													<i
-														class="fas fa-euro-sign"
-													></i>
-												</h1>
-												<p class="cart_vat">
-													<span>vat</span> included
-												</p>
-											</div>
-											<div
-												class="cart_dropdown_menu_btn d-flex flex-column"
-											>
-												<span
-													class="align-self-start ml-auto"
-													><i class="fas fa-trash"></i
-												></span>
 												<div
-													class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
+													class="cart_item_name w-50 mr-auto"
 												>
+													<h1>
+														perrier jouet belle eoque
+														2012
+													</h1>
+													<h1 class="cart_price">
+														129,41
+														<i
+															class="fas fa-euro-sign"
+														></i>
+													</h1>
+													<p class="cart_vat">
+														<span>vat</span> included
+													</p>
+												</div>
+												<div
+													class="cart_dropdown_menu_btn d-flex flex-column"
+												>
+												
+													<span
+														class="align-self-start ml-auto"
+														><i class="fas fa-trash"></i
+													></span>
+													<div
+														class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
+													>
 													<form
-											action="#"
-											method="GET"
-											class="product_counter_btn d-flex align-items-center"
-										>
-													<input
-												type="text"
-												class="product_counter_number"
-												value="1"
-											/>
-													<div
-												class="counter_plus_minus d-flex flex-column align-items-center"
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
 											>
-												<span
-													class="counter_plus_btn"
-													onclick="incrmnt(this)"
+														<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+														<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
 												>
-													<i class="fa fa-plus"></i>
-												</span>
-												<span
-													class="counter_minus_btn"
-													onclick="dcrmnt(this)"
-												>
-													<i class="fa fa-minus"></i>
-												</span>
-											</div>
-													<button
-														class="cart_price_btn d-flex align-items-center"
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
 													>
-														<span>258,82</span>
-														<span
-															><i
-																class="fas fa-euro-sign"
-															></i
-														></span>
-													</button>
-													</form>
+														<i class="fa fa-plus"></i>
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														<i class="fa fa-minus"></i>
+													</span>
+												</div>
+														<button
+															class="cart_price_btn d-flex align-items-center"
+														>
+															<span>258,82</span>
+															<span
+																><i
+																	class="fas fa-euro-sign"
+																></i
+															></span>
+														</button>
+														</form>
+													</div>
 												</div>
 											</div>
-										</div>
-										<hr />
-										<div
-											class="cart_drand_total_price d-flex justify-content-end"
-										>
-											<span class="grand_total"
-												>grand total</span
+											<hr />
+											<!-- single items  -->
+											<div
+												class="single_cart_items d-flex align-items-center justify-content-between"
 											>
-											<span class="text-center">
-												<button>
-													531,49
-													<i
-														class="fas fa-euro-sign"
-													></i>
+												<div class="cart_item_img">
+													<img
+														src="./assets/img/bottol/bottol.png"
+														alt=""
+													/>
+												</div>
+												<div
+													class="cart_item_name w-50 mr-auto"
+												>
+													<h1>
+														perrier jouet belle eoque
+														2012
+													</h1>
+													<h1 class="cart_price">
+														129,41
+														<i
+															class="fas fa-euro-sign"
+														></i>
+													</h1>
+													<p class="cart_vat">
+														<span>vat</span> included
+													</p>
+												</div>
+												<div
+													class="cart_dropdown_menu_btn d-flex flex-column"
+												>
+													<span
+														class="align-self-start ml-auto"
+														><i class="fas fa-trash"></i
+													></span>
+													<div
+														class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
+													>
+														<form
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
+											>
+														<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+														<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
+												>
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														<i class="fa fa-plus"></i>
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														<i class="fa fa-minus"></i>
+													</span>
+												</div>
+														<button
+															class="cart_price_btn d-flex align-items-center"
+														>
+															<span>258,82</span>
+															<span
+																><i
+																	class="fas fa-euro-sign"
+																></i
+															></span>
+														</button>
+														</form>
+													</div>
+												</div>
+											</div>
+											<hr />
+											<div
+												class="cart_drand_total_price d-flex justify-content-end"
+											>
+												<span class="grand_total"
+													>grand total</span
+												>
+												<span class="text-center">
+													<button>
+														531,49
+														<i
+															class="fas fa-euro-sign"
+														></i>
+													</button>
+													<p class="cart_vat">
+														<span>vat</span> included
+													</p>
+												</span>
+											</div>
+											<div class="cart_checkout_wrapper">
+												<button type="submit">
+													proceed to checkout
 												</button>
-												<p class="cart_vat">
-													<span>vat</span> included
-												</p>
-											</span>
-										</div>
-										<div class="cart_checkout_wrapper">
-											<button type="submit">
-												proceed to checkout
-											</button>
+											</div>
 										</div>
 									</div>
-								</div>
-					</div>
-
-					<!-- navbar menu  -->
-					<!-- Mobile navbar menu -->
-					<div
-						class="mobile_navbar_menu d-flex flex-column d-lg-none"
-						id="navbarMenu"
-					>
-						<!-- Crose button -->
-						<div class="crose_btn d-flex justify-content-end">
-							<button
-								class="btn float-right text-light navbar-toggler"
-								data-toggle="collapse"
-								data-target="#navbarMenu"
-							>
-								<i class="fas fa-times"></i>
-							</button>
 						</div>
 
-						<!-- Profile -->
+						<!-- navbar menu  -->
+						<!-- Mobile navbar menu -->
 						<div
-							class="mobile_navbar_menu_profile d-flex align-items-center"
+							class="mobile_navbar_menu d-flex flex-column d-lg-none"
+							id="navbarMenu"
 						>
-							<!-- Image -->
-							<img
-								src="https://via.placeholder.com/50x50"
-								alt="profile"
-							/>
-							<!-- Name -->
-							<a href="#">Maribel Verdú</a>
-						</div>
+							<!-- Crose button -->
+							<div class="crose_btn d-flex justify-content-end">
+								<button
+									class="btn float-right text-light navbar-toggler"
+									data-toggle="collapse"
+									data-target="#navbarMenu"
+								>
+									<i class="fas fa-times"></i>
+								</button>
+							</div>
 
-						<!-- Menu item -->
-						<ul class="mobile_navbar_menu_items list-unstyled">
-							<li>
-								<a href="#">PRICE LIST</a>
-							</li>
-							<li>
-								<a href="#">Red Wine</a>
-							</li>
-							<li>
-								<a href="#">White Wine</a>
-							</li>
-							<li>
-								<a href="#">Sparkling Wine</a>
-							</li>
-							<li>
-								<a href="#">Spirits</a>
-							</li>
-							<li>
-								<a href="#">By Vintage</a>
-							</li>
-						</ul>
-
-						<!-- Action link -->
-						<div class="action-link d-flex flex-column">
-							<!-- Link -->
-							<a href="#" class="action_link">NEW ARRIVALS</a>
-							<!-- Button -->
-							<button class="btn btn-warning mt-3">
-								VERY GOOD DEALS
-							</button>
-						</div>
-
-						<!-- Logout -->
-						<div
-							class="d-flex flex-column justify-content-end h-100"
-						>
-							<a href="#" class="mobile_navbar_logout"
-								>Sign Out</a
+							<!-- Profile -->
+							<div
+								class="mobile_navbar_menu_profile d-flex align-items-center"
 							>
+								<!-- Image -->
+								<img
+									src="https://via.placeholder.com/50x50"
+									alt="profile"
+								/>
+								<!-- Name -->
+								<a href="#">Maribel Verdú</a>
+							</div>
+
+							<!-- Menu item -->
+							<ul class="mobile_navbar_menu_items list-unstyled">
+								<li>
+									<a href="#">PRICE LIST</a>
+								</li>
+								<li>
+									<a href="#">Red Wine</a>
+								</li>
+								<li>
+									<a href="#">White Wine</a>
+								</li>
+								<li>
+									<a href="#">Sparkling Wine</a>
+								</li>
+								<li>
+									<a href="#">Spirits</a>
+								</li>
+								<li>
+									<a href="#">By Vintage</a>
+								</li>
+							</ul>
+
+							<!-- Action link -->
+							<div class="action-link d-flex flex-column">
+								<!-- Link -->
+								<a href="#" class="action_link">NEW ARRIVALS</a>
+								<!-- Button -->
+								<button class="btn btn-warning mt-3">
+									VERY GOOD DEALS
+								</button>
+							</div>
+
+							<!-- Logout -->
+							<div
+								class="d-flex flex-column justify-content-end h-100"
+							>
+								<a href="#" class="mobile_navbar_logout"
+									>Sign Out</a
+								>
+							</div>
 						</div>
-					</div>
-				</nav>
-			</div>
-			
-		</header>
+					</nav>
+				</div>
+			</header>
 			<!-- heaer logo and menu area  END -->
 
 			<section
