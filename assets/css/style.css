@@ -961,6 +961,33 @@ p.cart_vat span {
 	padding: 50px 0px;
 	position: relative;
 }
+.section_contents_wrapper {
+	position: relative;
+}
+.section_contents_wrapper_bg_img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 14%;
+	height: 39%;
+	background-image: url(../img/exported/footer-top-right.png);
+	background-position: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: translate(-5%, -85%);
+}
+.section_contents_wrapper_edit_bg_img {
+	position: absolute;
+	top: 0%;
+	right: 0;
+	width: 14%;
+	height: 39%;
+	background-image: url(../img/exported/footer-top-right.png);
+	background-position: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: translate(-5%, 0%);
+}
 .best_seller_bg_img {
 	position: absolute;
 	top: 50%;
