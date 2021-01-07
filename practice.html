@@ -20,59 +20,555 @@
 		<!-- footer css  -->
 		<link rel="stylesheet" href="./assets/css/footer.css" />
 		<link rel="stylesheet" href="./assets/css/responsive.css" />
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v8.0" nonce="hN4oZiZ9"></script>
-        		<script>
-				// Search result hilitor 
-	  window.addEventListener("DOMContentLoaded", function(e) {
-    var myHilitor2 = new Hilitor("search_result");
-    myHilitor2.setMatchType("left");
-    document.getElementById("inputText").addEventListener("keyup", function(e) {
-        console.log("key up");
-      myHilitor2.apply(this.value);
-    }, false);
-  }, false);
-		</script>
+		<script
+			async
+			defer
+			crossorigin="anonymous"
+			src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v8.0"
+			nonce="hN4oZiZ9"
+		></script>
 		<title>MASSETO</title>
 	</head>
 	<body>
 		<section class="main_page_container d-flex flex-column">
-	
+			<!-- best seller area START -->
+			<div class="best_seller_area">
+				<span class="best_seller_bg_img"></span>
+				<div class="container">
+					<div class="row mb-4">
+						<div class="col-lg-12">
+							<div class="section_title">
+								<h1>Bast sellers</h1>
+							</div>
+						</div>
+					</div>
 
-     
-          <input type="text"
-            class="" name="" id="inputText" aria-describedby="helpId" placeholder="">
-	  
-			
-			<ul  id="search_result">
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ea.</a></li>
-			</ul>
+					<!-- best seller single item rows for DESKTOP -->
+					<div class="row py-5">
+						<!-- single product item  -->
+						<div class="col-md-6 col-lg-6 col-xl-4 py-3">
+							<div class="product_wrapper">
+								<div class="product_contents">
+									<!-- product price and counter  -->
+									<div
+										class="product_price_counter d-flex align-items-center justify-content-center"
+									>
+										<div
+											class="product_price d-flex flex-column"
+										>
+											<span
+												class="product_old d-flex align-items-center pb-2"
+											>
+												<span class="product_old_price"
+													>2162,00</span
+												>
+												<span
+													class="product_currency_img"
+													><img
+														src="./assets/img/currency-icons/euro.png"
+														alt=""
+												/></span>
+											</span>
+											<span
+												class="product_new d-flex align-items-center pt-md-2"
+											>
+												<span class="product_new_price"
+													>1003,09</span
+												>
+												<span
+													class="product_currency_img"
+													><img
+														src="./assets/img/currency-icons/euro.png"
+														alt=""
+												/></span>
+											</span>
+										</div>
+										<div
+											class="product_counter d-flex align-items-center ml-3"
+										>
+											<img
+												class="img-fluid mr-3"
+												src="./assets/img/backgounds/note-icon.png"
+												alt=""
+											/>
+											<form
+												action="#"
+												method="GET"
+												class="product_counter_btn d-flex align-items-center"
+											>
+												<input
+													type="text"
+													class="product_counter_number"
+													value="1"
+												/>
+
+												<div
+													class="counter_plus_minus d-flex flex-column align-items-center"
+												>
+													<span
+														class="counter_plus_btn"
+														onclick="incrmnt(this)"
+													>
+														<i
+															class="fa fa-plus"
+														></i>
+													</span>
+													<span
+														class="counter_minus_btn"
+														onclick="dcrmnt(this)"
+													>
+														<i
+															class="fa fa-minus"
+														></i>
+													</span>
+												</div>
+												<div
+													class="product_buy_now_btn"
+												>
+													<a href="#"> buy now</a>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end  -->
+					</div>
+
+					<!-- best seller slider for mobile end -->
+				</div>
+			</div>
+			<!-- best seller area END -->
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<!-- single product item  -->
+						<div class="col-md-6 col-lg-6 col-xl-4 py-3">
+							<div class="product_wrapper">
+								<div class="product_contents">
+									<!-- product price and counter  -->
+									<div class="d-flex">
+										<form class="row no-gutters" action="#">
+											<div
+												class="d-flex align-items-center"
+											>
+												<div class="input-group">
+													<div
+														class="d-flex align-items-center"
+													>
+														<input
+															type="text"
+															name=""
+															id=""
+															value="2162,00"
+															disabled
+															readonly
+														/>
+														<label for=""
+															>&euro;</label
+														>
+													</div>
+													<div
+														class="d-flex align-items-center"
+													>
+														<input
+															type="text"
+															name=""
+															id=""
+															value="2162,00"
+															disabled
+															readonly
+														/>
+														<label for=""
+															>&euro;</label
+														>
+													</div>
+												</div>
+												<div
+													class="input-group"
+													style="
+														width: 50px !important;
+														display: inline-block;
+													"
+												>
+													<div class="">
+														<img
+															src="https://via.placeholder.com/1000x100"
+															alt=""
+															class="img-fluid"
+															width="50"
+														/>
+													</div>
+												</div>
+												<div class="input-group">
+													<input
+														type="text"
+														name=""
+														value="1"
+														id=""
+													/>
+												</div>
+												<div class="input-group">
+													<div class="">
+														<div>
+															<input
+																type="button"
+																name=""
+																id=""
+																value="+"
+															/>
+														</div>
+														<div>
+															<input
+																type="button"
+																name=""
+																id=""
+																value="-"
+															/>
+														</div>
+													</div>
+												</div>
+												<div class="input-group">
+													<input
+														type="submit"
+														value="Buy now"
+													/>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end  -->
+					</div>
+				</div>
+			</div>
+			<!-- best seller area END -->
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<!-- single product item  -->
+						<div class="col-md-6 col-lg-6 col-xl-4 py-3">
+							<div class="product_wrapper">
+								<div class="product_contents">
+									<!-- product price and counter  -->
+									<div class="d-flex">
+										<form class="row no-gutters" action="#">
+											<div
+												class="d-flex align-items-center"
+											>
+												<div class="input-group">
+													<div
+														class="d-flex align-items-center"
+													>
+														<input
+															type="text"
+															name=""
+															id=""
+															value="2162,00"
+															disabled
+															readonly
+														/>
+														<label for=""
+															>&euro;</label
+														>
+													</div>
+													<div
+														class="d-flex align-items-center"
+													>
+														<input
+															type="text"
+															name=""
+															id=""
+															value="2162,00"
+															disabled
+															readonly
+														/>
+														<label for=""
+															>&euro;</label
+														>
+													</div>
+												</div>
+												<div
+													class="input-group"
+													style="
+														width: 50px !important;
+														display: inline-block;
+													"
+												>
+													<div class="">
+														<img
+															src="https://via.placeholder.com/1000x100"
+															alt=""
+															class="img-fluid"
+															width="50"
+														/>
+													</div>
+												</div>
+												<div class="input-group">
+													<input
+														type="text"
+														name=""
+														value="1"
+														id=""
+													/>
+												</div>
+												<div class="input-group">
+													<div class="">
+														<div>
+															<input
+																type="button"
+																name=""
+																id=""
+																value="+"
+															/>
+														</div>
+														<div>
+															<input
+																type="button"
+																name=""
+																id=""
+																value="-"
+															/>
+														</div>
+													</div>
+												</div>
+												<div class="input-group">
+													<input
+														type="submit"
+														value="Buy now"
+													/>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end  -->
+					</div>
+				</div>
+			</div>
+			<!-- best seller area END -->
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<!-- single product item  -->
+						<div class="col-md-6 col-lg-6 col-xl-4 py-3">
+							<div class="product_wrapper">
+								<div class="product_contents">
+									<!-- product price and counter  -->
+									<div class="d-flex">
+										<form class="row no-gutters" action="#">
+											<div
+												class="d-flex align-items-center"
+											>
+												<div class="input-group">
+													<div
+														class="d-flex align-items-center"
+													>
+														<input
+															type="text"
+															name=""
+															id=""
+															value="2162,00"
+															disabled
+															readonly
+														/>
+														<label for=""
+															>&euro;</label
+														>
+													</div>
+													<div
+														class="d-flex align-items-center"
+													>
+														<input
+															type="text"
+															name=""
+															id=""
+															value="2162,00"
+															disabled
+															readonly
+														/>
+														<label for=""
+															>&euro;</label
+														>
+													</div>
+												</div>
+												<div
+													class="input-group"
+													style="
+														width: 50px !important;
+														display: inline-block;
+													"
+												>
+													<div class="">
+														<img
+															src="https://via.placeholder.com/1000x100"
+															alt=""
+															class="img-fluid"
+															width="50"
+														/>
+													</div>
+												</div>
+												<div class="input-group">
+													<input
+														type="text"
+														name=""
+														value="1"
+														id=""
+													/>
+												</div>
+												<div class="input-group">
+													<div class="">
+														<div>
+															<input
+																type="button"
+																name=""
+																id=""
+																value="+"
+															/>
+														</div>
+														<div>
+															<input
+																type="button"
+																name=""
+																id=""
+																value="-"
+															/>
+														</div>
+													</div>
+												</div>
+												<div class="input-group">
+													<input
+														type="submit"
+														value="Buy now"
+													/>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end  -->
+					</div>
+				</div>
+			</div>
+			<!-- best seller area END -->
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<!-- single product item  -->
+						<div class="col-md-6 col-lg-6 col-xl-4 py-3">
+							<div class="product_wrapper">
+								<div class="product_contents">
+									<!-- product price and counter  -->
+									<div class="d-flex">
+										<form class="row no-gutters" action="#">
+											<div
+												class="d-flex align-items-center"
+											>
+												<div class="input-group">
+													<div
+														class="d-flex align-items-center"
+													>
+														<input
+															type="text"
+															name=""
+															id=""
+															value="2162,00"
+															disabled
+															readonly
+														/>
+														<label for=""
+															>&euro;</label
+														>
+													</div>
+													<div
+														class="d-flex align-items-center"
+													>
+														<input
+															type="text"
+															name=""
+															id=""
+															value="2162,00"
+															disabled
+															readonly
+														/>
+														<label for=""
+															>&euro;</label
+														>
+													</div>
+												</div>
+												<div
+													class="input-group"
+													style="
+														width: 50px !important;
+														display: inline-block;
+													"
+												>
+													<div class="">
+														<img
+															src="https://via.placeholder.com/1000x100"
+															alt=""
+															class="img-fluid"
+															width="50"
+														/>
+													</div>
+												</div>
+												<div class="input-group">
+													<input
+														type="text"
+														name=""
+														value="1"
+														id=""
+													/>
+												</div>
+												<div class="input-group">
+													<div class="">
+														<div>
+															<input
+																type="button"
+																name=""
+																id=""
+																value="+"
+															/>
+														</div>
+														<div>
+															<input
+																type="button"
+																name=""
+																id=""
+																value="-"
+															/>
+														</div>
+													</div>
+												</div>
+												<div class="input-group">
+													<input
+														type="submit"
+														value="Buy now"
+													/>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end  -->
+					</div>
+				</div>
+			</div>
 		</section>
 		<!-- footer end -->
 		<!-- jquery library  -->
 		<script src="./assets/js/jquery.min.js"></script>
+		<!-- Hilitor.js for hilite search result  -->
+		<script src="./assets/js/hilitor.js"></script>
 		<!-- properjs for bootstrap  -->
 		<script src="./assets/js/popper.min.js"></script>
 		<!-- bootstrap  -->
@@ -81,12 +577,42 @@
 		<script src="./assets/js/owl.carousel.js"></script>
 		<!-- magnificent js  -->
 		<script src="./assets/js/jquery.magnific-popup.min.js"></script>
-		<!-- Hilitor.js for hilite search result  -->
-        <script src="./assets/js/hilitor.js"></script>
-        <script src="https://www.the-art-of-web.com/hilitor.js"></script>
 
 		<!-- custom js  -->
 		<script src="./assets/js/main.js"></script>
-
+		<script>
+			// Search result hilitor for desktop
+			window.addEventListener(
+				"DOMContentLoaded",
+				function (e) {
+					var myHilitor2 = new Hilitor("searchResultForDesktop");
+					myHilitor2.setMatchType("left");
+					document.getElementById("desktopSearch").addEventListener(
+						"keyup",
+						function (e) {
+							myHilitor2.apply(this.value);
+						},
+						false
+					);
+				},
+				false
+			);
+			// Search result hilitor for mobile
+			window.addEventListener(
+				"DOMContentLoaded",
+				function (e) {
+					var myHilitor2 = new Hilitor("searchResultForMobile");
+					myHilitor2.setMatchType("left");
+					document.getElementById("mobileSearch").addEventListener(
+						"keyup",
+						function (e) {
+							myHilitor2.apply(this.value);
+						},
+						false
+					);
+				},
+				false
+			);
+		</script>
 	</body>
 </html>

@@ -287,16 +287,6 @@ $(document).ready(function () {
 	});
 
 	// accordion toggle class for faq plus and minus
-	$("button").click(function () {
-		// $(this).toggleClass("color");
-		// if ($("button").hasClass("collapsed")) {
-		// 	$("i.fas").addClass("fa-minus");
-		// 	$("i.fas").removeClass("fa-plus");
-		// } else {
-		// 	$("i.fas").addClass("fa-plus");
-		// 	$("i.fas").removeClass("fa-minus");
-		// }
-	});
 	$(".result_view_button span").click(function () {
 		$(".result_view_button span").removeClass("active");
 		$(this).addClass("active");
