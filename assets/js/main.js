@@ -108,7 +108,34 @@ $(document).ready(function () {
 			},
 		},
 	});
-	// wine_of_weeks for home page start
+	// blog_product_carousel blog 2 page start
+	$(".blog_product_carousel").owlCarousel({
+		loop: true,
+		autoplay: false,
+		dots: false,
+		margin: 15,
+		nav: true,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 1,
+			},
+			992: {
+				items: 1,
+			},
+			1200: {
+				items: 2,
+				navText: [
+					"<i class='fas fa-arrow-left'></i>",
+					"<i class='fas fa-arrow-right'></i>",
+				],
+			},
+		},
+	});
+	//// blog_product_carousel blog 2 page end
 	// wine_advocate_slider home page start
 	$(".wine_advocate_slider").owlCarousel({
 		loop: true,
@@ -172,6 +199,49 @@ $(document).ready(function () {
 		},
 	});
 	// customar details page testimonials slider end
+	// blog page story carousel 1
+	$(".story__carousel").owlCarousel({
+		loop: true,
+		margin: 30,
+		dots: false,
+		nav: true,
+		navText: [
+			"<img class='nav__img_1' src='./assets/img/blog-page-img/icon/arrow_1.png'>",
+			"<img class='nav__img_2' src='./assets/img/blog-page-img/icon/arrow_1.png'>",
+		],
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			},
+			992: {
+				items: 3,
+			},
+		},
+	});
+	$(".related_posts_carousel").owlCarousel({
+		loop: true,
+		margin: 30,
+		dots: false,
+		nav: true,
+		navText: [
+			"<img class='nav__img_1' src='./assets/img/blog-page-img/icon/arrow_1.png'>",
+			"<img class='nav__img_2' src='./assets/img/blog-page-img/icon/arrow_1.png'>",
+		],
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			},
+			992: {
+				items: 2,
+			},
+		},
+	});
 	// video play button youtube video play
 
 	//

@@ -1343,10 +1343,12 @@ span.product_vat_included {
 	background-color: #fff;
 	padding-bottom: 50px;
 }
-.wine_of_weeks_slider {
+.wine_of_weeks_slider,
+.blog_product_carousel {
 	position: relative;
 }
-.wine_of_weeks_slider .owl-nav button {
+.wine_of_weeks_slider .owl-nav button,
+.blog_product_carousel .owl-nav button {
 	position: absolute;
 	width: 39px;
 	height: 39px;
@@ -1361,11 +1363,13 @@ span.product_vat_included {
 	box-shadow: 0px 0px 6px 4px #eceff1;
 }
 
-.wine_of_weeks_slider .owl-nav button:focus {
+.wine_of_weeks_slider .owl-nav button:focus,
+.blog_product_carousel .owl-nav button:focus {
 	outline: none;
 }
 
-.wine_of_weeks_slider .owl-nav button.owl-next {
+.wine_of_weeks_slider .owl-nav button.owl-next,
+.blog_product_carousel .owl-nav button.owl-next {
 	left: auto;
 	right: -60px;
 }
@@ -1430,7 +1434,7 @@ span.product_vat_included {
 	line-height: 50px;
 	text-align: center;
 	font-size: 15px;
-	color: #ff9900;
+	color: #791216;
 	background-color: #fff;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
@@ -1522,6 +1526,7 @@ span.product_vat_included {
 	background-size: cover; */
 	z-index: 1;
 }
+
 .wine_maker_bg_right {
 	position: absolute;
 	top: 0;
@@ -1529,6 +1534,41 @@ span.product_vat_included {
 	width: 100%;
 	height: 100%;
 	background-image: url(../img/backgounds/bg-img-005.png);
+	background-position: center !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -0;
+}
+.blog_wine_maker_bg_left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(21, 18, 18);
+	background: rgb(21, 18, 18);
+	background: rgb(21, 18, 18);
+	background: rgb(21, 18, 18);
+	background: linear-gradient(
+		90deg,
+		rgb(0 0 0) 0%,
+		rgb(21 18 18) 50%,
+		rgb(21 18 18) 50%,
+		rgba(142, 151, 143, 0) 100%
+	);
+	/* background-image: url(../img/backgounds/bg-img-006.png);
+	background-position: 100%;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	z-index: 1;
+}
+.blog_wine_maker_bg_right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-image: url(../img/blog-page-img/a-p-x4o_NwB64gE-unsplash.png);
 	background-position: center !important;
 	background-repeat: no-repeat;
 	background-size: cover;
