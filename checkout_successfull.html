@@ -552,205 +552,224 @@
 							class="mobile_add_toCart order-3 d-lg-none dropdown cart_menu_wrapper p-2"
 						>
 							<a
-								class="cart_btn"
-								href=""
-								id="cart_dropdown"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-							>
-								<span class="badge_number">2</span>
-								<img
-									src="./assets/img/cart-icon/supermarket.png"
-									alt="cart icon"
-							/></a>
-							<!-- cart_dropdown drop down  -->
-							<div
-								class="dropdown-menu cart_dropdown dropdown-menu-right"
-								aria-labelledby="cart_dropdown"
-							>
-								<div class="cart_dropdown_wrapper">
-									<h1>my cart</h1>
-									<!-- single items  -->
-									<div
-										class="single_cart_items d-flex align-items-center justify-content-between"
+										class="cart_btn"
+										href=""
+										id="cart_dropdown"
+										data-toggle="dropdown"
+										aria-haspopup="true"
 									>
-										<div class="cart_item_img">
-											<img
-												src="./assets/img/bottol/bottol.png"
-												alt=""
-											/>
-										</div>
-										<div
-											class="cart_item_name w-50 mr-auto"
-										>
-											<h1>
-												perrier jouet belle eoque 2012
-											</h1>
-											<h1 class="cart_price">
-												129,41
-												<i class="fas fa-euro-sign"></i>
-											</h1>
-											<p class="cart_vat">
-												<span>vat</span> included
-											</p>
-										</div>
-										<div
-											class="cart_dropdown_menu_btn d-flex flex-column"
-										>
-											<span
-												class="align-self-start ml-auto"
-												><i class="fas fa-trash"></i
-											></span>
+										<span class="badge_number">2</span>
+										<img
+											src="./assets/img/cart-icon/supermarket.png"
+											alt="cart icon"
+									/></a>
+									<!-- cart_dropdown drop down  -->
+									<div
+										class="dropdown-menu cart_dropdown dropdown-menu-right"
+										aria-labelledby="cart_dropdown"
+									>
+										<div class="cart_dropdown_wrapper">
+											<h1>my cart</h1>
+											<!-- single items  -->
 											<div
-												class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
+												class="single_cart_items d-flex align-items-center justify-content-between"
 											>
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
-												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
+												<div class="cart_item_img">
+													<img
+														src="./assets/img/bottol/bottol.png"
+														alt=""
 													/>
+												</div>
+												<div
+													class="cart_item_name w-50 mr-auto"
+												>
+													<h1>
+														perrier jouet belle
+														eoque 2012
+													</h1>
+													<h1 class="cart_price">
+														129,41
+														<i
+															class="fas fa-euro-sign"
+														></i>
+													</h1>
+													<p class="cart_vat">
+														<span>vat</span>
+														included
+													</p>
+												</div>
+												<div
+													class="cart_dropdown_menu_btn d-flex flex-column"
+												>
+													<span
+														class="align-self-start ml-auto"
+														><i
+															class="fas fa-trash"
+														></i
+													></span>
 													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
+														class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
 													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
+														<form
+															action="#"
+															method="GET"
+															class="product_counter_btn d-flex align-items-center"
 														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
-														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
+															<input
+																type="text"
+																class="product_counter_number"
+																value="1"
+															/>
+															<div
+																class="counter_plus_minus d-flex flex-column align-items-center"
+															>
+																<span
+																	class="counter_plus_btn"
+																	onclick="incrmntCart(this)"
+																>
+																	<i
+																		class="fa fa-plus"
+																	></i>
+																</span>
+																<span
+																	class="counter_minus_btn"
+																	onclick="dcrmntCart(this)"
+																>
+																	<i
+																		class="fa fa-minus"
+																	></i>
+																</span>
+															</div>
+															<button
+																class="cart_price_btn d-flex align-items-center"
+															>
+																<span
+																	>258,82</span
+																>
+																<span
+																	><i
+																		class="fas fa-euro-sign"
+																	></i
+																></span>
+															</button>
+														</form>
 													</div>
-													<button
-														class="cart_price_btn d-flex align-items-center"
+												</div>
+											</div>
+											<hr />
+											<!-- single items  -->
+											<div
+												class="single_cart_items d-flex align-items-center justify-content-between"
+											>
+												<div class="cart_item_img">
+													<img
+														src="./assets/img/bottol/bottol.png"
+														alt=""
+													/>
+												</div>
+												<div
+													class="cart_item_name w-50 mr-auto"
+												>
+													<h1>
+														perrier jouet belle
+														eoque 2012
+													</h1>
+													<h1 class="cart_price">
+														129,41
+														<i
+															class="fas fa-euro-sign"
+														></i>
+													</h1>
+													<p class="cart_vat">
+														<span>vat</span>
+														included
+													</p>
+												</div>
+												<div
+													class="cart_dropdown_menu_btn d-flex flex-column"
+												>
+													<span
+														class="align-self-start ml-auto"
+														><i
+															class="fas fa-trash"
+														></i
+													></span>
+													<div
+														class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
 													>
-														<span>258,82</span>
-														<span
-															><i
-																class="fas fa-euro-sign"
-															></i
-														></span>
+														<form
+															action="#"
+															method="GET"
+															class="product_counter_btn d-flex align-items-center"
+														>
+															<input
+																type="text"
+																class="product_counter_number"
+																value="1"
+															/>
+															<div
+																class="counter_plus_minus d-flex flex-column align-items-center"
+															>
+																<span
+																	class="counter_plus_btn"
+																	onclick="incrmntCart(this)"
+																>
+																	<i
+																		class="fa fa-plus"
+																	></i>
+																</span>
+																<span
+																	class="counter_minus_btn"
+																	onclick="dcrmntCart(this)"
+																>
+																	<i
+																		class="fa fa-minus"
+																	></i>
+																</span>
+															</div>
+															<button
+																class="cart_price_btn d-flex align-items-center"
+															>
+																<span
+																	>258,82</span
+																>
+																<span
+																	><i
+																		class="fas fa-euro-sign"
+																	></i
+																></span>
+															</button>
+														</form>
+													</div>
+												</div>
+											</div>
+											<hr />
+											<div
+												class="cart_drand_total_price d-flex justify-content-end"
+											>
+												<span class="grand_total"
+													>grand total</span
+												>
+												<span class="text-center">
+													<button>
+														531,49
+														<i
+															class="fas fa-euro-sign"
+														></i>
 													</button>
-												</form>
+													<p class="cart_vat">
+														<span>vat</span>
+														included
+													</p>
+												</span>
+											</div>
+											<div class="cart_checkout_wrapper">
+												<button type="submit">
+													proceed to checkout
+												</button>
 											</div>
 										</div>
 									</div>
-									<hr />
-									<!-- single items  -->
-									<div
-										class="single_cart_items d-flex align-items-center justify-content-between"
-									>
-										<div class="cart_item_img">
-											<img
-												src="./assets/img/bottol/bottol.png"
-												alt=""
-											/>
-										</div>
-										<div
-											class="cart_item_name w-50 mr-auto"
-										>
-											<h1>
-												perrier jouet belle eoque 2012
-											</h1>
-											<h1 class="cart_price">
-												129,41
-												<i class="fas fa-euro-sign"></i>
-											</h1>
-											<p class="cart_vat">
-												<span>vat</span> included
-											</p>
-										</div>
-										<div
-											class="cart_dropdown_menu_btn d-flex flex-column"
-										>
-											<span
-												class="align-self-start ml-auto"
-												><i class="fas fa-trash"></i
-											></span>
-											<div
-												class="price_btn_dropdown align-self-end d-flex justify-content-start mt-auto"
-											>
-												<form
-													action="#"
-													method="GET"
-													class="product_counter_btn d-flex align-items-center"
-												>
-													<input
-														type="text"
-														class="product_counter_number"
-														value="1"
-													/>
-													<div
-														class="counter_plus_minus d-flex flex-column align-items-center"
-													>
-														<span
-															class="counter_plus_btn"
-															onclick="incrmnt(this)"
-														>
-															<i
-																class="fa fa-plus"
-															></i>
-														</span>
-														<span
-															class="counter_minus_btn"
-															onclick="dcrmnt(this)"
-														>
-															<i
-																class="fa fa-minus"
-															></i>
-														</span>
-													</div>
-													<button
-														class="cart_price_btn d-flex align-items-center"
-													>
-														<span>258,82</span>
-														<span
-															><i
-																class="fas fa-euro-sign"
-															></i
-														></span>
-													</button>
-												</form>
-											</div>
-										</div>
-									</div>
-									<hr />
-									<div
-										class="cart_drand_total_price d-flex justify-content-end"
-									>
-										<span class="grand_total"
-											>grand total</span
-										>
-										<span class="text-center">
-											<button>
-												531,49
-												<i class="fas fa-euro-sign"></i>
-											</button>
-											<p class="cart_vat">
-												<span>vat</span> included
-											</p>
-										</span>
-									</div>
-									<div class="cart_checkout_wrapper">
-										<button type="submit">
-											proceed to checkout
-										</button>
-									</div>
-								</div>
-							</div>
 						</div>
 
 						<!-- navbar menu  -->
@@ -2906,7 +2925,7 @@
 															>
 																<span
 																	class="counter_plus_btn"
-																	onclick="incrmnt(this)"
+																	onclick="incrmntCart(this)"
 																>
 																	<i
 																		class="fa fa-plus"
@@ -2914,7 +2933,7 @@
 																</span>
 																<span
 																	class="counter_minus_btn"
-																	onclick="dcrmnt(this)"
+																	onclick="dcrmntCart(this)"
 																>
 																	<i
 																		class="fa fa-minus"
@@ -2993,7 +3012,7 @@
 															>
 																<span
 																	class="counter_plus_btn"
-																	onclick="incrmnt(this)"
+																	onclick="incrmntCart(this)"
 																>
 																	<i
 																		class="fa fa-plus"
@@ -3001,7 +3020,7 @@
 																</span>
 																<span
 																	class="counter_minus_btn"
-																	onclick="dcrmnt(this)"
+																	onclick="dcrmntCart(this)"
 																>
 																	<i
 																		class="fa fa-minus"
@@ -3051,7 +3070,6 @@
 											</div>
 										</div>
 									</div>
-									<!-- cart dromdown menu end  -->
 								</li>
 							</ul>
 						</div>
