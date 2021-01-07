@@ -330,16 +330,20 @@ $(document).ready(function () {
 	// })
 });
 
-function incrmnt(val) {
-	let input = val.parentNode.parentNode.childNodes[1];
+function genValue(input){
 	let value = input.value;
-	let valueInt = Number.parseInt(value);
+	return Number.parseInt(value);
+}
+
+function incrmnt(val) {
+	// console.log(val.parentNode.parentNode.parentNode.parentNode.childNodes[5].children[0].value)
+	let input = val.parentNode.parentNode.parentNode.parentNode.childNodes[5].children[0];
+	let valueInt = genValue(input)
 	input.value = ++valueInt;
 }
 
 function dcrmnt(val) {
-	let input = val.parentNode.parentNode.childNodes[1];
-	let value = input.value;
-	let valueInt = Number.parseInt(value);
+	let input = val.parentNode.parentNode.parentNode.parentNode.childNodes[5].children[0];
+	let valueInt = genValue(input)
 	input.value = valueInt <= 0 ? 0 : --valueInt;
 }
