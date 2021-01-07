@@ -114,20 +114,23 @@ $(document).ready(function () {
 		autoplay: false,
 		dots: false,
 		margin: 15,
-		nav: true,
 		responsiveClass: true,
 		responsive: {
 			0: {
 				items: 1,
+				nav: false,
 			},
 			600: {
 				items: 1,
+				nav: false,
 			},
 			992: {
 				items: 1,
+				nav: false,
 			},
 			1200: {
 				items: 2,
+				nav: true,
 				navText: [
 					"<i class='fas fa-arrow-left'></i>",
 					"<i class='fas fa-arrow-right'></i>",
