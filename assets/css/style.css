@@ -24,6 +24,97 @@
 
 */
 
+/* product price 
+=================
+*/
+.common_design {
+	text-align: center;
+	background-color: transparent;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	font-size: 14px;
+	font-weight: 700;
+	width: 75px;
+}
+.common_price_group {
+	width: 80px !important;
+}
+.p_vat_price {
+	font-size: 12px;
+}
+.P_old_price {
+	text-decoration: line-through;
+	color: #091d0c;
+}
+.p_new_price {
+	border-bottom: 0;
+	color: #791216;
+}
+.p_unit_number {
+	text-align: center;
+	background-color: transparent;
+	width: 39px;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border: 1px solid #cda6a8;
+	padding: 10px;
+}
+.p_unit_number_group {
+	width: 39px !important;
+	margin-right: 1px !important;
+}
+.p_increment {
+	margin-bottom: 1px;
+}
+.p_dcrement {
+	margin-top: 1px;
+}
+.i_d_common_btn {
+	width: 20px;
+	height: 20px;
+	border: 0;
+	background-color: #791216;
+	color: #ffffff;
+	text-align: center;
+	line-height: 20px;
+}
+.i_d_common_btn_group {
+	width: 20px;
+}
+.p_submit_btn {
+	text-align: center;
+	background-color: transparent;
+	text-transform: uppercase;
+	background-color: #791216;
+	color: #ffffff;
+	border: 0;
+	padding: 10px;
+	margin-left: 2px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.btn_col_3 {
+}
+.btn_col_4 {
+	padding: 10px 25px;
+}
+.btn_col_5 {
+	padding: 10px 50px;
+}
+.btn_col_6 {
+	padding: 10px 40px;
+}
+.p_note {
+	width: 20px;
+}
+.p_note img {
+	width: 100%;
+}
+.p_note_group {
+	width: 20px !important;
+}
+
 /* common css  */
 a:focus,
 button:focus {
