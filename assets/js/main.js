@@ -336,10 +336,6 @@ function genValue(input) {
 }
 
 function incrmnt(val) {
-	console.log(
-		val.parentNode.parentNode.parentNode.parentNode.childNodes[5]
-			.children[0].value
-	);
 	let input =
 		val.parentNode.parentNode.parentNode.parentNode.childNodes[5]
 			.children[0];
@@ -351,6 +347,18 @@ function dcrmnt(val) {
 	let input =
 		val.parentNode.parentNode.parentNode.parentNode.childNodes[5]
 			.children[0];
+	let valueInt = genValue(input);
+	input.value = valueInt <= 0 ? 0 : --valueInt;
+}
+
+function incrmntCart(val) {
+	let input = val.parentNode.parentNode.childNodes[1];
+	let valueInt = genValue(input);
+	input.value = ++valueInt;
+}
+
+function dcrmntCart(val) {
+	let input = val.parentNode.parentNode.childNodes[1];
 	let valueInt = genValue(input);
 	input.value = valueInt <= 0 ? 0 : --valueInt;
 }

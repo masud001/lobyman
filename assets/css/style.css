@@ -998,12 +998,7 @@ p.cart_vat span {
 	width: 10px !important;
 	object-fit: contain;
 }
-.current_price .actual_price,
-.before_price .reduce-price {
-	font-size: 10px;
-	font-weight: 600;
-	margin-right: 25px;
-}
+
 .buy_now_btn a {
 	padding: 10px 24px;
 	background-color: #791216;
@@ -1014,6 +1009,34 @@ p.cart_vat span {
 	color: #ffffff;
 	font-family: Nunito_Sans_Semi_B !important;
 	font-size: 5px;
+}
+input.reduce-price {
+	background-color: transparent;
+	width: 100px !important;
+	border: none;
+	font-size: 20px;
+	text-decoration: line-through;
+	margin-right: 10px;
+}
+input.actual_price {
+	color: #791216;
+	width: 100px !important;
+	border: 0;
+	font-size: 25px !important;
+	background-color: transparent;
+	margin-right: 15px;
+}
+input.buy_now_btn {
+	padding: 10px 25px;
+	background-color: #791216;
+	border-radius: 30px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 15px;
+	color: #ffffff;
+	font-family: Nunito_Sans_Semi_B !important;
+	font-size: 14px;
+	border: 0;
 }
 
 .buy_now_btn a:hover {
