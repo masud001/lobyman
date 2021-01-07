@@ -31,6 +31,182 @@
 	</head>
 	<body>
 		<section class="main_page_container d-flex flex-column">
+			<!-- hero slider area START  -->
+			<section class="hero_slider_area hero_slider_bg">
+				<span class="hero_left_bg"></span>
+				<span class="hero_right_bg"></span>
+				<div class="hero_slider owl-carousel owl-theme">
+					<!-- hero slider single items  -->
+					<div class="container">
+						<div
+							class="row justify-content-start align-items-center pt-5 pb-0 pb-md-5"
+						>
+							<div class="col-3 col-gl-3 offset-lg-1">
+								<div class="hero_slider_img">
+									<img
+										class="img-fluid"
+										src="./assets/img/hero-slider-img/hero-slider-img-01.png"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="col-9 col-lg-8">
+								<div class="hero_slider_contents">
+									<h1 class="font-PT_b">masseto</h1>
+									<h2 class="font-PT_reg">
+										tenutal dell' Ornellaia
+									</h2>
+									<h3 class="font-nunito_semi_b">
+										Italian red wine
+									</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur
+										adipisicing elit. Delectus perspiciatis
+										quod eius adipisci dolorum unde rem.
+										Aliquid sequi voluptates laboriosam
+										inventore dolorem ut eos est, quo cum
+										quasi amet numquam?
+									</p>
+									<h4 class="hero_contry d-flex">
+										<img
+											src="./assets/img/country-flags/italy.png"
+											alt=""
+										/>
+										<span>Italy</span>
+									</h4>
+
+									<!-- review pannel  -->
+									<div
+										class="review_pannel d-flex justify-content-start align-items-start pb-3"
+									>
+										<div
+											class="col-7 col-sm-6 col-lg-6 p-0"
+										>
+											<!-- hero review  -->
+											<div class="review_area">
+												<div class="reviews_start">
+													<span class="starts">
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														<i
+															class="fas fa-star"
+														></i>
+														4.9
+													</span>
+													<span class="rating"
+														>39 Reviews</span
+													>
+												</div>
+												<div
+													class="penin d-flex align-items-center"
+												>
+													<span
+														class="name d-none d-sm-block"
+														>penin</span
+													>
+													<span
+														class="number d-none d-sm-block"
+														>90</span
+													>
+												</div>
+												<div
+													class="perker d-flex align-items-center"
+												>
+													<span
+														class="name d-none d-sm-block"
+														>perker</span
+													>
+													<span
+														class="number d-none d-sm-block"
+														>95</span
+													>
+												</div>
+												<div
+													class="sommelier d-flex align-items-center"
+												>
+													<span
+														class="name d-none d-sm-block"
+														>sommelier</span
+													>
+													<span
+														class="number d-none d-sm-block"
+														>98</span
+													>
+												</div>
+											</div>
+										</div>
+										<div class="col-5 col-sm-6 p-0">
+											<!-- hero price  -->
+											<div
+												class="hero_price_area d-flex flex-column align-items-center align-items-sm-start mt-md-3"
+											>
+												<form
+													action="price"
+													method="post"
+												>
+													<div
+														class="before_price d-flex align-items-center"
+													>
+														<label for=""
+															>&euro;</label
+														>
+														<input
+															type="text"
+															class="reduce-price"
+															value="1978,00"
+															readonly
+														/>
+														<span
+															class="font-nunito_b d-none d-sm-block"
+															>before</span
+														>
+													</div>
+													<div
+														class="current_price d-flex align-items-center"
+													>
+														<label for=""
+															>&euro;</label
+														>
+														<input
+															type="text"
+															class="actual_price"
+															readonly
+															value="1162,00"
+														/>
+
+														<span
+															class="d-none d-sm-block"
+															>now</span
+														>
+													</div>
+
+													<input
+														type="submit"
+														class="buy_now_btn"
+														value="buy now"
+													/>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- slider item ends  -->
+				</div>
+			</section>
+			<!-- hero slider area END  -->
 			<!-- best seller area START -->
 			<div class="best_seller_area">
 				<span class="best_seller_bg_img"></span>
@@ -319,6 +495,7 @@
 																name=""
 																id=""
 																value="+"
+																onclick="incrmnt(this)"
 															/>
 														</div>
 														<div>
@@ -328,6 +505,7 @@
 																name=""
 																id=""
 																value="-"
+																onclick="dcrmnt(this)"
 															/>
 														</div>
 													</div>
