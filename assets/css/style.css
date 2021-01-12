@@ -1871,7 +1871,7 @@ span.product_vat_included {
 	transform: translate(0%, -50%);
 }
 .perrier_jouet_bg_right {
-	position: absolute;
+	/* position: absolute;
 	top: 0;
 	right: 0;
 	width: 100%;
@@ -1880,7 +1880,17 @@ span.product_vat_included {
 	background-position: 114%;
 	background-repeat: no-repeat;
 	background-size: contain;
-	z-index: 1;
+	z-index: 1; */
+}
+.perrier_jouet_bg_right {
+	position: absolute;
+	height: 548px;
+	right: 0;
+	top: -50px;
+}
+.perrier_jouet_bg_right img {
+	width: 100%;
+	height: 100%;
 }
 
 /* 016 --> news letter ares START 
