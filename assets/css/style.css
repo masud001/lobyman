@@ -398,6 +398,19 @@ nav {
 	opacity: 0;
 	/* transition: opacity ease 0.5s; */
 }
+/* my accout on mobile menu design  */
+ul.mobile_my_account_dropdown li a {
+	font-size: 18px;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 10px 10px;
+}
+
+ul.mobile_my_account_dropdown {
+	margin-top: 15px;
+	display: none;
+}
+
 .mobile_navbar_menu.show {
 	width: 70%;
 	opacity: 1;

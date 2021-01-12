@@ -321,10 +321,11 @@ $(document).ready(function () {
 		$("#" + target).addClass("show");
 	});
 
-	// $(".search_product_items").mouseout(function(){
-	// 	let target = $(this).attr("target");
-	// 	// $("#"+target).removeClass("show");
-	// })
+	$(".mobile_my_account").click(function () {
+		// let target = $(this).attr("target");
+		console.log("menu clicked");
+		$(".mobile_my_account_dropdown").toggle();
+	});
 });
 
 function genValue(input) {
