@@ -267,6 +267,11 @@
 	letter-spacing: 2px;
 	font-size: 12px;
 }
+
+.blog_product_carousel.owl-theme .owl-nav [class*="owl-"] {
+	text-align: center;
+}
+
 /* only for blog page 1 and 2   */
 @media (min-width: 320px) {
 	.story__separator span p,
@@ -290,6 +295,9 @@
 	}
 	.story_details_section_bg_img {
 		background-image: none;
+	}
+	.blog_product_carousel.owl-theme .owl-nav [class*="owl-"] {
+		margin: auto 54px;
 	}
 }
 @media (min-width: 576px) {
@@ -369,6 +377,10 @@
 	}
 	.vertical_line {
 		height: 14px;
+	}
+	.blog_product_carousel.owl-theme .owl-nav [class*="owl-"] {
+		text-align: center;
+		margin: auto 10px;
 	}
 }
 
