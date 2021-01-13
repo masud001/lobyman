@@ -1859,16 +1859,11 @@ span.product_vat_included {
 }
 .perrier_jouet_bg_left {
 	position: absolute;
-	left: 0%;
-	width: 34%;
+	left: 0;
 	height: 100%;
-	background-image: url(../img/backgounds/bg-img-008.png);
-	background-position: 100%;
-	background-repeat: no-repeat;
-	background-size: contain;
-	z-index: 1;
-	top: 50%;
-	transform: translate(0%, -50%);
+}
+.perrier_jouet_bg_left img {
+	height: 100%;
 }
 .perrier_jouet_bg_right {
 	/* position: absolute;

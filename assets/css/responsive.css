@@ -546,6 +546,9 @@
 	.product__map_btn a {
 		padding: 14px 15px !important;
 	}
+	.perrier_jouet_bg_left img {
+		width: 50%;
+	}
 }
 @media (min-width: 1024px) {
 	/* .perrier_jouet_bg_right {
@@ -689,6 +692,9 @@
 	}
 	.product__map_btn a {
 		padding: 14px 25px !important;
+	}
+	.perrier_jouet_bg_left img {
+		width: 65%;
 	}
 }
 /* media query max width 
