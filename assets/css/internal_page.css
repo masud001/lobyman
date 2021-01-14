@@ -2195,16 +2195,17 @@ body {
 @media (min-width: 320px) {
 	.address_heading h1,
 	.my_account_tab_content h1,
-	.section_breadcrumb_title h1,
 	.delivery.section_contents .contents h1,
 	.help_bord_area.faq_head h1,
 	.help_bord_area h1 {
 		font-size: 16px;
 	}
+	.section_breadcrumb_title h1 {
+		font-size: 30px;
+	}
 	.address_delete_update a p,
 	.order_history_contents table thead th,
 	.table td,
-	.section_breadcrumb_title h2,
 	.testing_nots_text h4,
 	.rigion .section_breadcrumb_title p,
 	.checkout_oprions .card button,
@@ -2214,6 +2215,9 @@ body {
 	.authentication_successfull h2,
 	.filter-reset span {
 		font-size: 12px;
+	}
+	.section_breadcrumb_title h2 {
+		font-size: 20px;
 	}
 	.single_order_step h1,
 	.single_order_step p,

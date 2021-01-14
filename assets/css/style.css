@@ -338,11 +338,17 @@ span {
 }
 
 /* price  */
-
+.price_dropdown_lists {
+	margin-top: -15px;
+}
 /* language  */
-
+.language_dropdown_lists {
+	margin-top: -15px;
+}
 /* currency  */
-
+.currency_dropdown_lists {
+	margin-top: -15px;
+}
 .currency_dropdown_lists {
 	min-width: 5rem;
 }
