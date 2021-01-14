@@ -322,9 +322,16 @@ $(document).ready(function () {
 	});
 
 	$(".mobile_my_account").click(function () {
-		// let target = $(this).attr("target");
-		console.log("menu clicked");
 		$(".mobile_my_account_dropdown").toggle();
+	});
+	$(".mobile__price").click(function () {
+		$("#collapsePrice").toggle();
+	});
+	$(".mobile__language").click(function () {
+		$("#collapseLanguage").toggle();
+	});
+	$(".mobile__currency").click(function () {
+		$("#collapseCurrency").toggle();
 	});
 });
 

@@ -497,7 +497,25 @@ ul.mobile_my_account_dropdown {
 	position: relative;
 	top: 8px;
 }
-
+.mobile_collapse {
+	display: none;
+}
+.mobile__price {
+}
+#collapsePrice {
+}
+#collapsePrice {
+}
+.mobile_collapse {
+}
+.mobile_collapse ul {
+}
+.mobile_collapse ul li {
+}
+.mobile_collapse ul li a {
+	font-size: 14px;
+	display: inline-block;
+}
 .navigation_menu > ul {
 	display: flex;
 	align-items: center;
