@@ -35,21 +35,25 @@
 	border-right: 0;
 	font-size: 14px;
 	font-weight: 700;
-	width: 75px;
+	width: 83px;
 }
 .common_price_group {
 	width: 80px !important;
 }
 .p_vat_price {
 	font-size: 12px;
+	font-weight: 900;
+	color: #091d0c;
 }
 .P_old_price {
 	text-decoration: line-through;
 	color: #091d0c;
+	font-weight: 700;
 }
 .p_new_price {
+	color: #791216 !important;
+	font-weight: 700;
 	border-bottom: 0;
-	color: #791216;
 }
 .p_unit_number {
 	text-align: center;
@@ -502,6 +506,12 @@ ul.mobile_my_account_dropdown {
 }
 .js-active.active > a {
 	color: yellow;
+}
+.js-active > a > span i {
+	transform: rotate(-90deg);
+}
+.js-active.active > a > span i {
+	transform: rotate(0deg);
 }
 #collapsePrice {
 }
