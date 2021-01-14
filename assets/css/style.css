@@ -500,7 +500,8 @@ ul.mobile_my_account_dropdown {
 .mobile_collapse {
 	display: none;
 }
-.mobile__price {
+.js-active.active > a {
+	color: yellow;
 }
 #collapsePrice {
 }

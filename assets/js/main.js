@@ -324,14 +324,21 @@ $(document).ready(function () {
 	$(".mobile_my_account").click(function () {
 		$(".mobile_my_account_dropdown").toggle();
 	});
-	$(".mobile__price").click(function () {
+	$(".mobile__price").click(function (e) {
+		e.preventDefault();
 		$("#collapsePrice").toggle();
 	});
-	$(".mobile__language").click(function () {
+	$(".mobile__language").click(function (e) {
+		e.preventDefault();
 		$("#collapseLanguage").toggle();
 	});
-	$(".mobile__currency").click(function () {
+	$(".mobile__currency").click(function (e) {
+		e.preventDefault();
 		$("#collapseCurrency").toggle();
+	});
+	$(".js-active").click(function () {
+		$(".js-active").removeClass("active");
+		$(this).addClass("active");
 	});
 });
 
