@@ -501,7 +501,7 @@ ul.mobile_my_account_dropdown {
 	position: relative;
 	top: 8px;
 }
-.mobile_collapse {
+.js-active .mobile_collapse:not(.active) {
 	display: none;
 }
 .mobile_collapse ul li {
@@ -537,16 +537,7 @@ ul.mobile_my_account_dropdown {
 .js-active.active > a > span i {
 	transform: rotate(0deg);
 }
-#collapsePrice {
-}
-#collapsePrice {
-}
-.mobile_collapse {
-}
-.mobile_collapse ul {
-}
-.mobile_collapse ul li {
-}
+
 .mobile_collapse ul li a {
 	font-size: 14px;
 	display: inline-block;
@@ -947,7 +938,7 @@ p.cart_vat span {
 }
 .hero_slider_contents p {
 	color: #303030;
-	font-size: 7px;
+	font-size: 14px;
 	margin-bottom: 10px;
 }
 .hero_contry {
@@ -975,13 +966,13 @@ p.cart_vat span {
 	border: 1px solid #fdf6df;
 	background-color: #faf5e4;
 	margin-right: 5px;
-	font-size: 7px;
+	font-size: 14px;
 }
 .reviews_start i {
 	color: #ffc850;
 }
 .reviews_start .rating {
-	font-size: 7px;
+	font-size: 14px;
 	font-weight: 700;
 	color: #791216;
 }
@@ -1677,7 +1668,7 @@ span.product_vat_included {
 }
 .video_promo_content p {
 	color: #ffffff;
-	font-size: 8px;
+	font-size: 14px;
 	line-height: 15px;
 }
 
@@ -1788,7 +1779,7 @@ span.product_vat_included {
 }
 .wine_maker_contents p {
 	color: #ffffff;
-	font-size: 9px;
+	font-size: 14px;
 	font-weight: 400;
 	margin-bottom: 20px;
 }
