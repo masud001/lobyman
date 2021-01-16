@@ -344,6 +344,34 @@ $(document).ready(function () {
 		$(".mobile_collapse ul li").removeClass("active");
 		$(this).addClass("active");
 	});
+	// mobile my account click event
+	$(".mobile_my_account").click(function () {
+		var $this = $(this);
+		if ($this.hasClass("myaccount_expand")) {
+			$this.removeClass("myaccount_expand");
+			$this.addClass("myaccount_collaps");
+		}
+		// else {
+		// 	$this.addClass("myaccount_expand");
+		// 	$this.removeClass("myaccount_collaps");
+		// }
+		if ($this.hasClass("myaccount_collaps")) {
+			$this.removeClass("myaccount_collaps");
+			$this.addClass("myaccount_expand");
+		}
+	});
+
+	$(".mobile_my_account").click(function () {
+		if ($(this).hasClass("my_account_expand")) {
+			$(this)
+				.addClass("my_account_collaps")
+				.removeClass("my_account_expand");
+		} else {
+			$(this)
+				.addClass("my_account_expand")
+				.removeClass("my_account_collaps");
+		}
+	});
 });
 
 function genValue(input) {

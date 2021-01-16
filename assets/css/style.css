@@ -409,6 +409,34 @@ nav {
 	/* transition: opacity ease 0.5s; */
 }
 /* my accout on mobile menu design  */
+.mobile_my_account {
+	position: relative;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+.my_account_expand::before {
+	color: #ffffff;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f107";
+	position: absolute;
+	right: 25%;
+	transform: translate(-25%, -0%);
+	font-size: 25px;
+}
+.my_account_collaps::before {
+	color: #ffffff;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f105";
+	position: absolute;
+	right: 25%;
+	transform: translate(-25%, -0%);
+	font-size: 25px;
+}
 ul.mobile_my_account_dropdown li a {
 	font-size: 18px;
 	text-transform: capitalize;
@@ -1660,7 +1688,7 @@ span.product_vat_included {
 }
 
 .video_promo_content h1 {
-	font-size: 12px;
+	font-size: 18px;
 	color: #fff;
 	font-weight: 700;
 	margin-bottom: 15px;
