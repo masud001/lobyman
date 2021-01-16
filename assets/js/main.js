@@ -340,6 +340,10 @@ $(document).ready(function () {
 		$(".js-active").removeClass("active");
 		$(this).addClass("active");
 	});
+	$(".mobile_collapse ul li").click(function () {
+		$(".mobile_collapse ul li").removeClass("active");
+		$(this).addClass("active");
+	});
 });
 
 function genValue(input) {

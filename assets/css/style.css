@@ -504,7 +504,31 @@ ul.mobile_my_account_dropdown {
 .mobile_collapse {
 	display: none;
 }
-.js-active.active > a {
+.mobile_collapse ul li {
+	position: relative;
+}
+.mobile_collapse ul li::before {
+	content: "\f061";
+	display: none;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #ffffff;
+	margin-right: 5px;
+	transition: 0.3s all;
+}
+.mobile_collapse ul li.active::before {
+	color: yellow;
+	display: inline-block;
+	transition: 0.3s all;
+}
+.mobile_collapse ul li:hover::before {
+	display: inline-block;
+	transition: 0.3s all;
+}
+.js-active.active > .mobile_collapse ul li.active a {
 	color: yellow;
 }
 .js-active > a > span i {
@@ -2036,7 +2060,7 @@ span.product_vat_included {
 	margin: 10px 0;
 }
 .desk_single_footer_items ul li a {
-	font-size: 10px;
+	font-size: 14px;
 	color: #091d0c;
 	font-family: PT_Serif;
 	display: block;
@@ -2065,9 +2089,9 @@ span.product_vat_included {
 
 .shipping_partner_logo img,
 .payments_methods_logo img {
-	width: 25px;
+	width: 33px;
 	margin-right: 10px !important;
-	height: 25px;
+	height: 33px;
 	padding: 2px;
 	background-color: #e9d8d8;
 	border-radius: 5px;
